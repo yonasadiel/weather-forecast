@@ -1,31 +1,31 @@
 package com.yonasadiel.weatherdata;
 
 public class Weather {
-    private Condition condition;
     private String description;
+    private String summary;
+    private String iconId;
     private int id;
-    private int iconId;
 
-    public Weather(Condition condition, String description, int id, int iconId) {
-        this.condition = condition;
+    public Weather(int id, String summary, String description, String iconId) {
+        this.summary = summary;
         this.description = description;
         this.id = id;
         this.iconId = iconId;
-    }
-
-    public Condition getCondition() {
-        return condition;
-    }
-
-    public String getDescription() {
-        return description;
     }
 
     public int getId() {
         return id;
     }
 
-    public int getIconId() {
+    public String getSummary() {
+        return summary;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getIconId() {
         return iconId;
     }
 }

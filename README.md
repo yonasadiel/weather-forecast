@@ -45,6 +45,9 @@ higher level of abstraction, separates features and layers, and some more.
 
 ### To Do
 * `openweatherapi` package
+* all of exception
+* unit test
+* Java Swing GUI
 
 ### Done
 * `city` model
