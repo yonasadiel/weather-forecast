@@ -44,11 +44,11 @@ higher level of abstraction, separates features and layers, and some more.
 ## Checklist
 
 ### To Do
-* `openweatherapi` package
 * all of exception
 * unit test
 * Java Swing GUI
 
 ### Done
+* `openweatherapi` package
 * `city` model
 * `weatherdata` model
