@@ -21,12 +21,16 @@ Program will send GET request with city name to search, and get list of cities m
           |__yonasadiel
              |__openwheaterapi
              |  |__OpenWeatherAPIConnection
+             |  |__ResponseParser
              |__city
              |  |__City
-             |__forecast
-             |  |__Forecast
+             |  |__Coordinate
+             |__weatherdata
              |  |__Condition
+             |  |__Forecast
+             |  |__Temperature
              |  |__Weather
+             |  |__WeatherData
              |__WeatherForecast
 
 The package use yonasadiel.com domain,
@@ -40,9 +44,8 @@ higher level of abstraction, separates features and layers, and some more.
 ## Checklist
 
 ### To Do
-* OpenWeatherAPIConnection
-* City
-* Forecast
-* Condition
-* Weather
-* WeatherForecast
+* `openweatherapi` package
+
+### Done
+* `city` model
+* `weatherdata` model
