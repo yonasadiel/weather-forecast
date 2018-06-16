@@ -23,10 +23,11 @@ public class CityPanel extends JPanel {
 
         this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
         this.setAlignmentX(LEFT_ALIGNMENT);
+        this.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         this.setBorder(new CompoundBorder(
                 BorderFactory.createEmptyBorder(10, 10, 10, 10),
                 new CompoundBorder(
-                        BorderFactory.createLineBorder(Color.BLACK, 2),
+                        BorderFactory.createLineBorder(Color.getHSBColor((float) 0.55, (float) 0.9, (float) 0.8), 2),
                         BorderFactory.createEmptyBorder(5, 5, 5, 5)
                 )
         ));

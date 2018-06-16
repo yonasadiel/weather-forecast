@@ -1,18 +1,25 @@
 package com.yonasadiel.city.views;
 
+import com.yonasadiel.city.City;
+import com.yonasadiel.city.CityList;
+
 import javax.swing.*;
 import javax.swing.border.CompoundBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class SearchBarPanel extends JPanel {
     private JButton searchButton;
     private JLabel citySearchTextFieldLabel;
+    private SearchResultPanel searchResultPanel;
     private JTextField citySearchTextField;
 
     public SearchBarPanel() {
+        this.searchResultPanel = null;
+
         citySearchTextFieldLabel = new JLabel();
         citySearchTextFieldLabel.setText("City Name: ");
 
@@ -25,9 +32,12 @@ public class SearchBarPanel extends JPanel {
 
         searchButton = new JButton();
         searchButton.setText("Search");
+        searchButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         searchButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Logger.getLogger("a").info(citySearchTextField.getText());
+                ArrayList<City> cities = CityList.getInstance().findCitiesByName(citySearchTextField.getText());
+                Logger.getLogger("SearchBarPanel").info(String.valueOf(cities.size()));
+                searchResultPanel.setCityResult(cities);
             }
         });
 
@@ -37,5 +47,9 @@ public class SearchBarPanel extends JPanel {
         this.add(citySearchTextFieldLabel);
         this.add(citySearchTextField);
         this.add(searchButton);
+    }
+
+    public void setSearchResultPanel(SearchResultPanel searchResultPanel) {
+        this.searchResultPanel = searchResultPanel;
     }
 }
