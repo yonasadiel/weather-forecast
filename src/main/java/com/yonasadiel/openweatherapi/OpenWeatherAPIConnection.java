@@ -1,5 +1,6 @@
 package com.yonasadiel.openweatherapi;
 
+import com.yonasadiel.weatherdata.ForecastData;
 import com.yonasadiel.weatherdata.WeatherData;
 import io.github.cdimascio.dotenv.Dotenv;
 
@@ -9,27 +10,25 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class OpenWeatherAPIConnection {
-    private int featureCount;
     private String apiKey;
-    private String cityName;
     private String featureModel;
-    private String featureType;
     private String featureUnit;
     private String plan;
+    private int cityId;
+    private int featureCount;
 
-    public OpenWeatherAPIConnection(String plan, String cityName) {
+    public OpenWeatherAPIConnection(String plan, int cityId) {
         Dotenv dotenv = Dotenv.load();
         this.apiKey = dotenv.get("API_KEY");
-        this.cityName = cityName;
+        this.cityId = cityId;
         this.plan = plan;
         this.featureCount = 7;
         this.featureModel = "json";
-        this.featureType = "like";
         this.featureUnit = "metric";
     }
 
-    public void setCityName(String cityName) {
-        this.cityName = cityName;
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
     }
 
     public void setFeatureCount(int featureCount) {
@@ -44,10 +43,6 @@ public class OpenWeatherAPIConnection {
         this.plan = plan;
     }
 
-    public void setFeatureType(String featureType) {
-        this.featureType = featureType;
-    }
-
     public void setFeatureUnit(String featureUnit) {
         this.featureUnit = featureUnit;
     }
@@ -55,11 +50,10 @@ public class OpenWeatherAPIConnection {
     private String getUrl() {
         String queryUrl = "https://api.openweathermap.org/data/2.5/";
         queryUrl += this.plan;
-        queryUrl += "?q=" + this.cityName;
+        queryUrl += "?id=" + this.cityId;
         queryUrl += "&appid=" + this.apiKey;
         queryUrl += "&cnt=" + this.featureCount;
         queryUrl += "&model=" + this.featureModel;
-        queryUrl += "&type=" + this.featureType;
         queryUrl += "&units=" + this.featureUnit;
 
         return queryUrl;
@@ -88,8 +82,15 @@ public class OpenWeatherAPIConnection {
         }
     }
 
-    public WeatherData getParsed() throws Exception {
+    public ForecastData getParsedForecastData() throws Exception {
         ResponseParser parser = ResponseParser.getInstance();
-        return parser.parseResponse(this.getString());
+        this.plan = "forecast";
+        return parser.parseForecastResponse(this.getString());
+    }
+
+    public WeatherData getParsedWeatherData() throws Exception {
+        ResponseParser parser = ResponseParser.getInstance();
+        this.plan = "weather";
+        return parser.parseWeatherResponse(this.getString());
     }
 }

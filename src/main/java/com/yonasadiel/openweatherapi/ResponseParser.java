@@ -57,20 +57,20 @@ public class ResponseParser {
         }
     }
 
-    private Weather parseWeather(JSONObject weatherObj) {
-        return new Weather(
-                weatherObj.getInt("id"),
-                weatherObj.getString("main"),
-                weatherObj.getString("description"),
-                weatherObj.getString("icon")
+    private WeatherSummary parseWeatherSummary(JSONObject weatherSummaryObj) {
+        return new WeatherSummary(
+                weatherSummaryObj.getInt("id"),
+                weatherSummaryObj.getString("main"),
+                weatherSummaryObj.getString("description"),
+                weatherSummaryObj.getString("icon")
         );
     }
 
     private Forecast parseForecast(JSONObject forecastObj) {
         JSONArray weathersObj = forecastObj.getJSONArray("weather");
-        Weather[] weathers = new Weather[weathersObj.length()];
+        WeatherSummary[] weatherSummaries = new WeatherSummary[weathersObj.length()];
         for (int i = 0; i < weathersObj.length(); i++) {
-            weathers[i] = this.parseWeather(weathersObj.getJSONObject(i));
+            weatherSummaries[i] = this.parseWeatherSummary(weathersObj.getJSONObject(i));
         }
 
         Date dateCalculated;
@@ -85,30 +85,55 @@ public class ResponseParser {
                 this.parseCondition(forecastObj.getJSONObject("main")),
                 new Date(forecastObj.getLong("dt")),
                 dateCalculated,
-                weathers,
+                weatherSummaries,
                 forecastObj.getJSONObject("wind").getDouble("speed"),
                 forecastObj.getJSONObject("wind").getDouble("deg"),
                 (float) forecastObj.getJSONObject("clouds").getInt("all") / 100
         );
     }
 
-    private WeatherData parseWeatherData(JSONObject weatherDataObj) {
-        JSONArray forecastsObj = weatherDataObj.getJSONArray("list");
+    private ForecastData parseForecastData(JSONObject forecastDataObj) {
+        JSONArray forecastsObj = forecastDataObj.getJSONArray("list");
         Forecast[] forecasts = new Forecast[forecastsObj.length()];
         for (int i = 0; i < forecastsObj.length(); i++) {
             forecasts[i] = this.parseForecast(forecastsObj.getJSONObject(i));
         }
 
-        return new WeatherData(
-                this.parseCity(weatherDataObj.getJSONObject("city")),
+        return new ForecastData(
+                this.parseCity(forecastDataObj.getJSONObject("city")),
                 forecasts,
-                weatherDataObj.getString("cod"),
-                weatherDataObj.getDouble("message"),
-                weatherDataObj.getInt("cnt")
+                forecastDataObj.getString("cod"),
+                forecastDataObj.getDouble("message"),
+                forecastDataObj.getInt("cnt")
         );
     }
 
-    public WeatherData parseResponse(String json) {
+    private WeatherData parseWeatherData(JSONObject weatherDataObj) {
+        JSONArray weatherSummariesObj = weatherDataObj.getJSONArray("weather");
+        WeatherSummary[] weatherSummaries = new WeatherSummary[weatherSummariesObj.length()];
+        for (int i = 0; i < weatherSummariesObj.length(); i++) {
+            weatherSummaries[i] = this.parseWeatherSummary(weatherSummariesObj.getJSONObject(i));
+        }
+
+        return new WeatherData(
+                this.parseCondition(weatherDataObj.getJSONObject("main")),
+                new Date(weatherDataObj.getLong("dt")),
+                weatherSummaries,
+                weatherDataObj.getJSONObject("wind").getDouble("speed"),
+                weatherDataObj.getJSONObject("wind").getDouble("deg"),
+                (float) weatherDataObj.getJSONObject("clouds").getInt("all") / 100,
+                this.parseCoordinate(weatherDataObj.getJSONObject("coord")),
+                String.valueOf(weatherDataObj.getInt("cod")),
+                weatherDataObj.getString("name")
+        );
+    }
+
+    public ForecastData parseForecastResponse(String json) {
+        JSONObject forecastDataObj = new JSONObject(json);
+        return this.parseForecastData(forecastDataObj);
+    }
+
+    public WeatherData parseWeatherResponse(String json) {
         JSONObject weatherDataObj = new JSONObject(json);
         return this.parseWeatherData(weatherDataObj);
     }
