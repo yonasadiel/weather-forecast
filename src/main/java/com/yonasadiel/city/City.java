@@ -35,11 +35,6 @@ public class City {
 
     @Override
     public String toString() {
-        return "City{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", coordinate=" + coordinate +
-                ", country='" + country + '\'' +
-                '}';
+        return this.getName() + ", " + this.getCountry();
     }
 }
