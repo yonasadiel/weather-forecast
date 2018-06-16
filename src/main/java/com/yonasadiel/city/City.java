@@ -28,4 +28,18 @@ public class City {
     public String getCountry() {
         return country;
     }
+
+    public boolean similarNameWith(String name) {
+        return this.name.toLowerCase().contains(name.toLowerCase());
+    }
+
+    @Override
+    public String toString() {
+        return "City{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", coordinate=" + coordinate +
+                ", country='" + country + '\'' +
+                '}';
+    }
 }

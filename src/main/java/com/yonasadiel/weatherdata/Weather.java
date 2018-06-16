@@ -1,31 +1,61 @@
 package com.yonasadiel.weatherdata;
 
+import java.util.Arrays;
+import java.util.Date;
+
 public class Weather {
-    private String description;
-    private String summary;
-    private String iconId;
-    private int id;
+    private Condition condition;
+    private Date date;
+    private WeatherSummary[] weatherSummaries;
+    private double windSpeed;
+    private double windDegree;
+    private float clouds;
 
-    public Weather(int id, String summary, String description, String iconId) {
-        this.summary = summary;
-        this.description = description;
-        this.id = id;
-        this.iconId = iconId;
+    public Weather(Condition condition, Date date,
+                    WeatherSummary[] weatherSummaries,
+                    double windSpeed, double windDegree,
+                    float clouds) {
+        this.condition = condition;
+        this.date = date;
+        this.weatherSummaries = weatherSummaries;
+        this.windSpeed = windSpeed;
+        this.windDegree = windDegree;
+        this.clouds = clouds;
     }
 
-    public int getId() {
-        return id;
+    public Condition getCondition() {
+        return this.condition;
     }
 
-    public String getSummary() {
-        return summary;
+    public Date getDate() {
+        return this.date;
     }
 
-    public String getDescription() {
-        return description;
+    public WeatherSummary[] getWeatherSummaries() {
+        return this.weatherSummaries;
     }
 
-    public String getIconId() {
-        return iconId;
+    public double getWindSpeed() {
+        return this.windSpeed;
+    }
+
+    public double getWindDegree() {
+        return this.windDegree;
+    }
+
+    public float getClouds() {
+        return this.clouds;
+    }
+
+    @Override
+    public String toString() {
+        return "Weather{" +
+                "condition=" + this.getCondition() +
+                ", date=" + this.getDate() +
+                ", weatherSummaries=" + Arrays.toString(this.getWeatherSummaries()) +
+                ", windSpeed=" + this.getWindSpeed() +
+                ", windDegree=" + this.getWindDegree() +
+                ", clouds=" + this.getClouds() +
+                '}';
     }
 }

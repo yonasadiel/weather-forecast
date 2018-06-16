@@ -22,30 +22,43 @@ public class Condition {
     }
 
     public Temperature getAvgTemp() {
-        return avgTemp;
+        return this.avgTemp;
     }
 
     public Temperature getMaxTemp() {
-        return maxTemp;
+        return this.maxTemp;
     }
 
     public Temperature getMinTemp() {
-        return minTemp;
+        return this.minTemp;
     }
 
     public double getPressure() {
-        return pressure;
+        return this.pressure;
     }
 
     public double getPressureSea() {
-        return pressureSea;
+        return this.pressureSea;
     }
 
     public double getPressureGround() {
-        return pressureGround;
+        return this.pressureGround;
     }
 
     public float getHumidity() {
-        return humidity;
+        return this.humidity;
+    }
+
+    @Override
+    public String toString() {
+        return "Condition{" +
+                "avgTemp=" + avgTemp +
+                ", maxTemp=" + maxTemp +
+                ", minTemp=" + minTemp +
+                ", pressure=" + pressure +
+                ", pressureGround=" + pressureGround +
+                ", pressureSea=" + pressureSea +
+                ", humidity=" + humidity +
+                '}';
     }
 }

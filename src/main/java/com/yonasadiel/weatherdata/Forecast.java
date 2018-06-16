@@ -1,55 +1,37 @@
 package com.yonasadiel.weatherdata;
 
+import java.util.Arrays;
 import java.util.Date;
 
-public class Forecast {
-    private Condition condition;
-    private Date date;
+public class Forecast extends Weather {
     private Date dateCalculated;
-    private Weather[] weathers;
-    private double windSpeed;
-    private double windDegree;
-    private float clouds;
 
     public Forecast(Condition condition,
                     Date date, Date dateCalculated,
-                    Weather[] weathers,
+                    WeatherSummary[] weatherSummaries,
                     double windSpeed, double windDegree,
                     float clouds) {
-        this.condition = condition;
-        this.date = date;
+        super(condition, date,
+              weatherSummaries,
+              windSpeed, windDegree,
+              clouds);
         this.dateCalculated = dateCalculated;
-        this.weathers = weathers;
-        this.windSpeed = windSpeed;
-        this.windDegree = windDegree;
-        this.clouds = clouds;
-    }
-
-    public Condition getCondition() {
-        return condition;
-    }
-
-    public Date getDate() {
-        return date;
     }
 
     public Date getDateCalculated() {
-        return dateCalculated;
+        return this.dateCalculated;
     }
 
-    public Weather[] getWeathers() {
-        return weathers;
-    }
-
-    public double getWindSpeed() {
-        return windSpeed;
-    }
-
-    public double getWindDegree() {
-        return windDegree;
-    }
-
-    public float getClouds() {
-        return clouds;
+    @Override
+    public String toString() {
+        return "Forecast{" +
+                "condition=" + this.getCondition() +
+                ", date=" + this.getDate() +
+                ", dateCalculated=" + this.getDateCalculated() +
+                ", weathers=" + Arrays.toString(this.getWeatherSummaries()) +
+                ", windSpeed=" + this.getWindSpeed() +
+                ", windDegree=" + this.getWindDegree() +
+                ", clouds=" + this.getClouds() +
+                '}';
     }
 }

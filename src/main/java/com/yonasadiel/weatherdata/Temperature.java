@@ -32,4 +32,11 @@ public class Temperature {
     public double getReamur() {
         return (this.kelvin - 273) * 4 / 5;
     }
+
+    @Override
+    public String toString() {
+        return "Temperature{" +
+                "kelvin=" + this.getKelvin() +
+                '}';
+    }
 }
