@@ -2,6 +2,7 @@
 
 Simple weather forecast java app using [Open Weather API](https://openweathermap.org/api)
 
+
 ## Open Weather API
 
 API is abbreviation from Application Programming Interface.

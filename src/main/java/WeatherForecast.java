@@ -16,14 +16,5 @@ public class WeatherForecast {
         catch (UnsupportedLookAndFeelException e) {
             e.printStackTrace ();
         }
-        /*
-        OpenWeatherAPIConnection con = new OpenWeatherAPIConnection("forecast", 1627896);
-        try {
-            WeatherData weatherData = con.getParsedWeatherData();
-
-            Logger.getLogger("WeatherForecast").info(weatherData.toString());
-        } catch (Exception e) {
-            Logger.getLogger("WeatherForecast").info(e.toString());
-        }*/
     }
 }
