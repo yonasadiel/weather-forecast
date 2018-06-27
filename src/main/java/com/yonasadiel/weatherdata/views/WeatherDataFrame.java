@@ -15,11 +15,12 @@ public class WeatherDataFrame extends JFrame {
     public WeatherDataFrame(City city) {
         this.city = city;
         this.headerPanel = new HeaderPanel(this.city);
-        this.weatherPanel = new WeatherPanel();
+        this.weatherPanel = new WeatherPanel(null);
         this.setLayout(new BorderLayout());
 
         this.setTitle(city.getName());
         this.add(this.headerPanel, BorderLayout.NORTH);
+        this.add(this.weatherPanel, BorderLayout.CENTER);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.pack();
         this.setVisible(true);

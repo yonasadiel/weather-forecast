@@ -36,7 +36,6 @@ public class SearchBarPanel extends JPanel {
         searchButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 ArrayList<City> cities = CityList.getInstance().findCitiesByName(citySearchTextField.getText());
-                Logger.getLogger("SearchBarPanel").info(String.valueOf(cities.size()));
                 searchResultPanel.setCityResult(cities);
             }
         });

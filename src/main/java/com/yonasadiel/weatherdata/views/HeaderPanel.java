@@ -25,7 +25,6 @@ public class HeaderPanel extends JPanel {
 
         this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
         this.setAlignmentX(LEFT_ALIGNMENT);
-        this.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
         this.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         this.add(this.cityNameLabel);
         this.add(this.cityCoordinateLabel);
