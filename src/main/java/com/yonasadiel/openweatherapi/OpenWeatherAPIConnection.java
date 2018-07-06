@@ -15,24 +15,18 @@ public class OpenWeatherAPIConnection {
     private String featureUnit;
     private String plan;
     private int cityId;
-    private int featureCount;
 
-    public OpenWeatherAPIConnection(String plan, int cityId) {
+    public OpenWeatherAPIConnection(int cityId) {
         Dotenv dotenv = Dotenv.load();
         this.apiKey = dotenv.get("API_KEY");
         this.cityId = cityId;
-        this.plan = plan;
-        this.featureCount = 7;
+        this.plan = "weather";
         this.featureModel = "json";
         this.featureUnit = "metric";
     }
 
     public void setCityId(int cityId) {
         this.cityId = cityId;
-    }
-
-    public void setFeatureCount(int featureCount) {
-        this.featureCount = featureCount;
     }
 
     public void setFeatureModel(String featureModel) {
@@ -52,7 +46,6 @@ public class OpenWeatherAPIConnection {
         queryUrl += this.plan;
         queryUrl += "?id=" + this.cityId;
         queryUrl += "&appid=" + this.apiKey;
-        queryUrl += "&cnt=" + this.featureCount;
         queryUrl += "&model=" + this.featureModel;
         queryUrl += "&units=" + this.featureUnit;
 

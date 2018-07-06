@@ -30,4 +30,8 @@ public class HeaderPanel extends JPanel {
         this.add(this.cityCoordinateLabel);
         this.add(this.forecastsPanel);
     }
+
+    public ForecastsPanel getForecastsPanel() {
+        return this.forecastsPanel;
+    }
 }

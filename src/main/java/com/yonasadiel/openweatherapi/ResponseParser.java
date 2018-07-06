@@ -10,6 +10,7 @@ import org.json.JSONObject;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.logging.Logger;
 
 public class ResponseParser {
     private static ResponseParser instance = null;
@@ -83,7 +84,7 @@ public class ResponseParser {
 
         return new Forecast(
                 this.parseCondition(forecastObj.getJSONObject("main")),
-                new Date(forecastObj.getLong("dt")),
+                new Date(forecastObj.getLong("dt") * 1000),
                 dateCalculated,
                 weatherSummaries,
                 forecastObj.getJSONObject("wind").getDouble("speed"),
@@ -117,7 +118,7 @@ public class ResponseParser {
 
         return new WeatherData(
                 this.parseCondition(weatherDataObj.getJSONObject("main")),
-                new Date(weatherDataObj.getLong("dt")),
+                new Date(weatherDataObj.getLong("dt") * 1000),
                 weatherSummaries,
                 weatherDataObj.getJSONObject("wind").getDouble("speed"),
                 weatherDataObj.getJSONObject("wind").getDouble("deg"),

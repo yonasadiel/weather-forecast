@@ -1,20 +1,18 @@
 package com.yonasadiel.city.views;
 
+import com.yonasadiel.city.listeners.CityResultPanelMouseListener;
 import com.yonasadiel.city.City;
-import com.yonasadiel.weatherdata.views.WeatherDataFrame;
 
 import javax.swing.*;
 import javax.swing.border.CompoundBorder;
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
-public class CityPanel extends JPanel implements MouseListener {
+public class CityResultPanel extends JPanel {
     private City city;
     private JLabel cityNameLabel;
     private JLabel cityCoordinateLabel;
 
-    public CityPanel(City city) {
+    public CityResultPanel(City city) {
         this.city = city;
 
         cityNameLabel = new JLabel();
@@ -36,26 +34,6 @@ public class CityPanel extends JPanel implements MouseListener {
         ));
         this.add(cityNameLabel);
         this.add(cityCoordinateLabel);
-        this.addMouseListener(this);
-    }
-
-    public void mouseClicked(MouseEvent e) {
-        new WeatherDataFrame(this.city);
-    }
-
-    public void mousePressed(MouseEvent e) {
-        //
-    }
-
-    public void mouseReleased(MouseEvent e) {
-        //
-    }
-
-    public void mouseEntered(MouseEvent e) {
-        //
-    }
-
-    public void mouseExited(MouseEvent e) {
-        //
+        this.addMouseListener(new CityResultPanelMouseListener(this.city));
     }
 }

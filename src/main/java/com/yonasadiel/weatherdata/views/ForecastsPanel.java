@@ -16,4 +16,8 @@ public class ForecastsPanel extends JPanel {
         this.setAlignmentX(LEFT_ALIGNMENT);
         this.setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
     }
+
+    public ForecastPanel getForecastPanels(int i) {
+        return this.forecastPanels[i];
+    }
 }

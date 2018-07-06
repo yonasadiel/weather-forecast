@@ -1,5 +1,7 @@
 package com.yonasadiel.weatherdata.views;
 
+import com.yonasadiel.weatherdata.Weather;
+
 import javax.swing.*;
 import javax.swing.border.CompoundBorder;
 import java.awt.*;
@@ -10,8 +12,10 @@ import java.util.Date;
 public class ForecastPanel extends JPanel {
     private JLabel dateLabel;
     private JLabel weatherSummaryLabel;
+    private Weather weather;
 
     public ForecastPanel(int difference) {
+        this.weather = null;
         this.dateLabel = new JLabel();
         this.dateLabel.setFont(new Font(dateLabel.getFont().getName(), Font.BOLD, 20));
         this.setDay(difference);
@@ -42,5 +46,11 @@ public class ForecastPanel extends JPanel {
         calendar.add(Calendar.DATE, difference);
         date = calendar.getTime();
         this.dateLabel.setText(formatter.format(date));
+    }
+
+    public void setWeather(Weather weather) {
+        this.weather = weather;
+        this.weatherSummaryLabel.setText(weather.getWeatherSummaries()[0].getSummary());
+        this.repaint();
     }
 }

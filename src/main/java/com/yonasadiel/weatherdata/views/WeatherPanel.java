@@ -5,6 +5,7 @@ import com.yonasadiel.weatherdata.Weather;
 import javax.swing.*;
 import javax.swing.border.CompoundBorder;
 import java.awt.*;
+import java.text.DecimalFormat;
 
 public class WeatherPanel extends JPanel {
     private JLabel humidityLabel;
@@ -85,12 +86,13 @@ public class WeatherPanel extends JPanel {
 
     private void setTempLabelText() {
         String tempText = "Temperature: ";
+        DecimalFormat dc = new DecimalFormat("0.00");
         if (this.weather != null) {
-            tempText += this.weather.getCondition().getAvgTemp().getCelcius();
+            tempText += dc.format(this.weather.getCondition().getAvgTemp().getCelcius());
             tempText += "\u00b0C (Min: ";
-            tempText += this.weather.getCondition().getMinTemp().getCelcius();
+            tempText += dc.format(this.weather.getCondition().getMinTemp().getCelcius());
             tempText += "\u00b0C, Max: ";
-            tempText += this.weather.getCondition().getMaxTemp().getCelcius();
+            tempText += dc.format(this.weather.getCondition().getMaxTemp().getCelcius());
             tempText += "\u00b0C)";
         } else {
             tempText += "-";

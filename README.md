@@ -2,6 +2,7 @@
 
 Simple weather forecast java app using [Open Weather API](https://openweathermap.org/api)
 
+![Demo](demo.gif)
 
 ## Open Weather API
 
@@ -24,9 +25,21 @@ Program will send GET request with city name to search, and get list of cities m
              |  |__OpenWeatherAPIConnection
              |  |__ResponseParser
              |__city
+             |  |__listeners
+             |  |  |__ [ listeners ... ]
+             |  |  |__ ...
+             |  |__views
+             |  |  |__ [ views ... ]
+             |  |  |__ ...
              |  |__City
              |  |__Coordinate
              |__weatherdata
+             |  |__listeners
+             |  |  |__ [ listeners ... ]
+             |  |  |__ ...
+             |  |__views
+             |  |  |__ [ views ... ]
+             |  |  |__ ...
              |  |__Condition
              |  |__Forecast
              |  |__Temperature
@@ -47,9 +60,9 @@ higher level of abstraction, separates features and layers, and some more.
 ### To Do
 * all of exception
 * unit test
-* Java Swing GUI
 
 ### Done
 * `openweatherapi` package
-* `city` model
-* `weatherdata` model
+* `city` package
+* `weatherdata` package
+* Java Swing GUI

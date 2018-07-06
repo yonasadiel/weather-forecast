@@ -7,20 +7,21 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class SearchResultPanel extends JPanel {
-    private ArrayList<CityPanel> cityPanelArrayList;
+    private ArrayList<CityResultPanel> cityResultPanelArrayList;
 
     public SearchResultPanel() {
-        this.cityPanelArrayList = new ArrayList<CityPanel>();
+        this.cityResultPanelArrayList = new ArrayList<CityResultPanel>();
         this.setLayout(new BoxLayout(this, BoxLayout.PAGE_AXIS));
     }
 
     public void setCityResult(ArrayList<City> cityResult) {
-        this.cityPanelArrayList.clear();
+        this.cityResultPanelArrayList.clear();
+        this.removeAll();
         for (int i = 0; i < Math.min(5, cityResult.size()); i++) {
-            CityPanel cityPanel = new CityPanel(cityResult.get(i));
-            cityPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 100));
-            this.cityPanelArrayList.add(cityPanel);
-            this.add(cityPanel);
+            CityResultPanel cityResultPanel = new CityResultPanel(cityResult.get(i));
+            cityResultPanel.setMaximumSize(new Dimension(Integer.MAX_VALUE, 100));
+            this.cityResultPanelArrayList.add(cityResultPanel);
+            this.add(cityResultPanel);
         }
 
         JFrame topFrame = (JFrame) SwingUtilities.getWindowAncestor(this);
