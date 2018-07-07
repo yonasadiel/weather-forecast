@@ -55,6 +55,18 @@ The package divided to features not by layer [(ref)](https://dzone.com/articles/
 for some benefits like higher modularity, easier code navigation,
 higher level of abstraction, separates features and layers, and some more.
 
+## Usage
+
+This program works with IntelliJ IDEA and Maven. Below are description for Maven usage.
+
+### Installing packages
+
+    mvn package
+
+### Compile & Run
+
+    mvn exec:java -Dexec.mainClass="com.yonasadiel.WeatherForecast"
+
 ## Checklist
 
 ### To Do
