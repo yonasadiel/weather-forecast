@@ -12,43 +12,43 @@ import java.util.ArrayList;
 import java.util.logging.Logger;
 
 public class SearchBarPanel extends JPanel {
-    private JButton searchButton;
-    private JLabel citySearchTextFieldLabel;
-    private SearchResultPanel searchResultPanel;
-    private JTextField citySearchTextField;
+  private JButton searchButton;
+  private JLabel citySearchTextFieldLabel;
+  private SearchResultPanel searchResultPanel;
+  private JTextField citySearchTextField;
 
-    public SearchBarPanel() {
-        this.searchResultPanel = null;
+  public SearchBarPanel() {
+    this.searchResultPanel = null;
 
-        citySearchTextFieldLabel = new JLabel();
-        citySearchTextFieldLabel.setText("City Name: ");
+    citySearchTextFieldLabel = new JLabel();
+    citySearchTextFieldLabel.setText("City Name: ");
 
-        citySearchTextField = new JTextField();
-        citySearchTextField.setColumns(30);
-        citySearchTextField.setBorder(new CompoundBorder(
-                citySearchTextField.getBorder(),
-                BorderFactory.createEmptyBorder(0, 10, 0, 10)
-        ));
+    citySearchTextField = new JTextField();
+    citySearchTextField.setColumns(30);
+    citySearchTextField.setBorder(new CompoundBorder(
+        citySearchTextField.getBorder(),
+        BorderFactory.createEmptyBorder(0, 10, 0, 10)
+    ));
 
-        searchButton = new JButton();
-        searchButton.setText("Search");
-        searchButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
-        searchButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                ArrayList<City> cities = CityList.getInstance().findCitiesByName(citySearchTextField.getText());
-                searchResultPanel.setCityResult(cities);
-            }
-        });
+    searchButton = new JButton();
+    searchButton.setText("Search");
+    searchButton.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+    searchButton.addActionListener(new ActionListener() {
+      public void actionPerformed(ActionEvent e) {
+        ArrayList<City> cities = CityList.getInstance().findCitiesByName(citySearchTextField.getText());
+        searchResultPanel.setCityResult(cities);
+      }
+    });
 
-        this.setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
-        this.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
-        this.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
-        this.add(citySearchTextFieldLabel);
-        this.add(citySearchTextField);
-        this.add(searchButton);
-    }
+    this.setLayout(new BoxLayout(this, BoxLayout.LINE_AXIS));
+    this.setMaximumSize(new Dimension(Integer.MAX_VALUE, 40));
+    this.setBorder(BorderFactory.createEmptyBorder(0, 0, 10, 0));
+    this.add(citySearchTextFieldLabel);
+    this.add(citySearchTextField);
+    this.add(searchButton);
+  }
 
-    public void setSearchResultPanel(SearchResultPanel searchResultPanel) {
-        this.searchResultPanel = searchResultPanel;
-    }
+  public void setSearchResultPanel(SearchResultPanel searchResultPanel) {
+    this.searchResultPanel = searchResultPanel;
+  }
 }
