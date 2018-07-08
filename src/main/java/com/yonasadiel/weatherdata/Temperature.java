@@ -1,5 +1,7 @@
 package com.yonasadiel.weatherdata;
 
+import com.yonasadiel.weatherdata.exceptions.UnknownTemperatureUnitException;
+
 public class Temperature {
   private double kelvin;
 
@@ -13,7 +15,7 @@ public class Temperature {
     } else if (unit.equals("Reamur")) {
       this.kelvin = value * 5 / 4 + 273;
     } else {
-      throw new Exception("Unknown unit type");
+      throw new UnknownTemperatureUnitException(unit);
     }
   }
 

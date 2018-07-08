@@ -2,6 +2,7 @@ package com.yonasadiel.weatherdata;
 
 import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class ConditionTest {
@@ -34,7 +35,7 @@ public class ConditionTest {
           25);
       assertEquals(tempMax, condition.getMaxTemp());
     } catch (Exception e) {
-      assertFalse(true);
+      Assert.fail(e.getMessage());
     }
   }
 
@@ -50,7 +51,7 @@ public class ConditionTest {
           25);
       assertEquals(tempMin, condition.getMinTemp());
     } catch (Exception e) {
-      assertFalse(true);
+      Assert.fail(e.getMessage());
     }
   }
 
@@ -66,7 +67,7 @@ public class ConditionTest {
           25);
       assertEquals(4.5, condition.getPressure(), 0.000000001);
     } catch (Exception e) {
-      assertFalse(true);
+      Assert.fail(e.getMessage());
     }
   }
 
@@ -82,7 +83,7 @@ public class ConditionTest {
           25);
       assertEquals(7.8, condition.getPressureSea(), 0.000000001);
     } catch (Exception e) {
-      assertFalse(true);
+      Assert.fail(e.getMessage());
     }
   }
 
@@ -98,7 +99,7 @@ public class ConditionTest {
           25);
       assertEquals(1.6, condition.getPressureGround(), 0.000000001);
     } catch (Exception e) {
-      assertFalse(true);
+      Assert.fail(e.getMessage());
     }
   }
 
@@ -114,7 +115,7 @@ public class ConditionTest {
           25);
       assertEquals(25, condition.getHumidity(), 0.000000001);
     } catch (Exception e) {
-      assertFalse(true);
+      Assert.fail(e.getMessage());
     }
   }
 }
