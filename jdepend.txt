@@ -1,0 +1,5909 @@
+
+--------------------------------------------------
+- Package: Default
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 5
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    MaterialUISwingDemo
+
+Depends Upon:
+    java.awt
+    java.lang
+    javax.swing
+    mdlaf
+    mdlaf.animation
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: com.opencsv
+--------------------------------------------------
+
+Stats:
+    Total Classes: 14
+    Concrete Classes: 12
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 10
+
+    A: 0.14
+    I: 0.83
+    D: 0.02
+
+Abstract Classes:
+    com.opencsv.ICSVParser
+    com.opencsv.ResultSetHelper
+
+Concrete Classes:
+    com.opencsv.CSVIterator
+    com.opencsv.CSVParser
+    com.opencsv.CSVParser$1
+    com.opencsv.CSVParser$StringFragmentCopier
+    com.opencsv.CSVParserBuilder
+    com.opencsv.CSVReader
+    com.opencsv.CSVReaderBuilder
+    com.opencsv.CSVWriter
+    com.opencsv.RFC4180Parser
+    com.opencsv.RFC4180ParserBuilder
+    com.opencsv.ResultSetColumnNameHelperService
+    com.opencsv.ResultSetHelperService
+
+Depends Upon:
+    com.opencsv.enums
+    com.opencsv.stream.reader
+    java.io
+    java.lang
+    java.sql
+    java.text
+    java.util
+    java.util.regex
+    org.apache.commons.lang3
+    org.apache.commons.text
+
+Used By:
+    com.opencsv.bean
+    com.yonasadiel.city
+
+--------------------------------------------------
+- Package: com.opencsv.bean
+--------------------------------------------------
+
+Stats:
+    Total Classes: 24
+    Concrete Classes: 14
+    Abstract Classes: 10
+
+    Ca: 2
+    Ce: 19
+
+    A: 0.42
+    I: 0.9
+    D: 0.32
+
+Abstract Classes:
+    com.opencsv.bean.AbstractBeanField
+    com.opencsv.bean.AbstractCSVToBean
+    com.opencsv.bean.BeanField
+    com.opencsv.bean.CsvBindByName
+    com.opencsv.bean.CsvBindByPosition
+    com.opencsv.bean.CsvCustomBindByName
+    com.opencsv.bean.CsvCustomBindByPosition
+    com.opencsv.bean.CsvDate
+    com.opencsv.bean.CsvToBeanFilter
+    com.opencsv.bean.MappingStrategy
+
+Concrete Classes:
+    com.opencsv.bean.BeanFieldDate
+    com.opencsv.bean.BeanFieldPrimitiveTypes
+    com.opencsv.bean.ColumnPositionMappingStrategy
+    com.opencsv.bean.CsvToBean
+    com.opencsv.bean.CsvToBean$CsvToBeanIterator
+    com.opencsv.bean.CsvToBeanBuilder
+    com.opencsv.bean.HeaderColumnNameMappingStrategy
+    com.opencsv.bean.HeaderColumnNameTranslateMappingStrategy
+    com.opencsv.bean.IterableCSVToBean
+    com.opencsv.bean.IterableCSVToBean$1
+    com.opencsv.bean.IterableCSVToBeanBuilder
+    com.opencsv.bean.StatefulBeanToCsv
+    com.opencsv.bean.StatefulBeanToCsvBuilder
+    com.opencsv.bean.opencsvUtils
+
+Depends Upon:
+    com.opencsv
+    com.opencsv.bean.concurrent
+    com.opencsv.enums
+    com.opencsv.exceptions
+    java.beans
+    java.io
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.text
+    java.util
+    java.util.concurrent
+    javax.xml.datatype
+    org.apache.commons.beanutils
+    org.apache.commons.beanutils.locale
+    org.apache.commons.collections
+    org.apache.commons.lang3
+    org.apache.commons.lang3.reflect
+    org.apache.commons.text
+
+Used By:
+    com.opencsv.bean.concurrent
+    com.opencsv.bean.customconverter
+
+--------------------------------------------------
+- Package: com.opencsv.bean.concurrent
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 5
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 8
+
+    A: 0
+    I: 0.89
+    D: 0.11
+
+Abstract Classes:
+
+Concrete Classes:
+    com.opencsv.bean.concurrent.AccumulateCsvResults
+    com.opencsv.bean.concurrent.IntolerantThreadPoolExecutor
+    com.opencsv.bean.concurrent.OrderedObject
+    com.opencsv.bean.concurrent.ProcessCsvBean
+    com.opencsv.bean.concurrent.ProcessCsvLine
+
+Depends Upon:
+    com.opencsv.bean
+    com.opencsv.exceptions
+    java.beans
+    java.lang
+    java.lang.reflect
+    java.util
+    java.util.concurrent
+    org.apache.commons.lang3
+
+Used By:
+    com.opencsv.bean
+
+--------------------------------------------------
+- Package: com.opencsv.bean.customconverter
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 2
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 8
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    com.opencsv.bean.customconverter.ConvertGermanToBoolean
+    com.opencsv.bean.customconverter.ConvertSplitOnWhitespace
+
+Depends Upon:
+    com.opencsv.bean
+    com.opencsv.exceptions
+    java.lang
+    java.lang.reflect
+    java.util
+    org.apache.commons.beanutils
+    org.apache.commons.beanutils.converters
+    org.apache.commons.lang3
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: com.opencsv.enums
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 1
+
+    A: 0
+    I: 0.33
+    D: 0.67
+
+Abstract Classes:
+
+Concrete Classes:
+    com.opencsv.enums.CSVReaderNullFieldIndicator
+
+Depends Upon:
+    java.lang
+
+Used By:
+    com.opencsv
+    com.opencsv.bean
+
+--------------------------------------------------
+- Package: com.opencsv.exceptions
+--------------------------------------------------
+
+Stats:
+    Total Classes: 7
+    Concrete Classes: 7
+    Abstract Classes: 0
+
+    Ca: 3
+    Ce: 3
+
+    A: 0
+    I: 0.5
+    D: 0.5
+
+Abstract Classes:
+
+Concrete Classes:
+    com.opencsv.exceptions.CsvBadConverterException
+    com.opencsv.exceptions.CsvBeanIntrospectionException
+    com.opencsv.exceptions.CsvConstraintViolationException
+    com.opencsv.exceptions.CsvDataTypeMismatchException
+    com.opencsv.exceptions.CsvException
+    com.opencsv.exceptions.CsvRequiredFieldEmptyException
+    com.opencsv.exceptions.CsvRuntimeException
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+
+Used By:
+    com.opencsv.bean
+    com.opencsv.bean.concurrent
+    com.opencsv.bean.customconverter
+
+--------------------------------------------------
+- Package: com.opencsv.stream.reader
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 2
+
+    A: 0
+    I: 0.67
+    D: 0.33
+
+Abstract Classes:
+
+Concrete Classes:
+    com.opencsv.stream.reader.LineReader
+
+Depends Upon:
+    java.io
+    java.lang
+
+Used By:
+    com.opencsv
+
+--------------------------------------------------
+- Package: com.yonasadiel
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 4
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 9
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    com.yonasadiel.APIManager
+    com.yonasadiel.SearchWindow
+    com.yonasadiel.SearchWindow$1
+    com.yonasadiel.WeatherForecast
+
+Depends Upon:
+    com.yonasadiel.city.views
+    io.github.cdimascio.dotenv
+    java.awt.event
+    java.io
+    java.lang
+    java.net
+    java.util.logging
+    javax.swing
+    mdlaf
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: com.yonasadiel.city
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 6
+    Abstract Classes: 0
+
+    Ca: 5
+    Ce: 7
+
+    A: 0
+    I: 0.58
+    D: 0.42
+
+Abstract Classes:
+
+Concrete Classes:
+    com.yonasadiel.city.City
+    com.yonasadiel.city.CityList
+    com.yonasadiel.city.CityListTest
+    com.yonasadiel.city.CityTest
+    com.yonasadiel.city.Coordinate
+    com.yonasadiel.city.CoordinateTest
+
+Depends Upon:
+    com.opencsv
+    java.io
+    java.lang
+    java.net
+    java.util
+    java.util.logging
+    org.junit
+
+Used By:
+    com.yonasadiel.city.listeners
+    com.yonasadiel.city.views
+    com.yonasadiel.openweatherapi
+    com.yonasadiel.weatherdata
+    com.yonasadiel.weatherdata.views
+
+--------------------------------------------------
+- Package: com.yonasadiel.city.listeners
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 4
+
+    A: 0
+    I: 0.8
+    D: 0.2
+
+Abstract Classes:
+
+Concrete Classes:
+    com.yonasadiel.city.listeners.CityResultPanelMouseListener
+
+Depends Upon:
+    com.yonasadiel.city
+    com.yonasadiel.weatherdata.views
+    java.awt.event
+    java.lang
+
+Used By:
+    com.yonasadiel.city.views
+
+--------------------------------------------------
+- Package: com.yonasadiel.city.views
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 6
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 8
+
+    A: 0
+    I: 0.89
+    D: 0.11
+
+Abstract Classes:
+
+Concrete Classes:
+    com.yonasadiel.city.views.CityResultPanel
+    com.yonasadiel.city.views.SearchBarPanel
+    com.yonasadiel.city.views.SearchBarPanel$1
+    com.yonasadiel.city.views.SearchFrame
+    com.yonasadiel.city.views.SearchPanel
+    com.yonasadiel.city.views.SearchResultPanel
+
+Depends Upon:
+    com.yonasadiel.city
+    com.yonasadiel.city.listeners
+    java.awt
+    java.awt.event
+    java.lang
+    java.util
+    javax.swing
+    javax.swing.border
+
+Used By:
+    com.yonasadiel
+
+--------------------------------------------------
+- Package: com.yonasadiel.openweatherapi
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 2
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 10
+
+    A: 0
+    I: 0.91
+    D: 0.09
+
+Abstract Classes:
+
+Concrete Classes:
+    com.yonasadiel.openweatherapi.OpenWeatherAPIConnection
+    com.yonasadiel.openweatherapi.ResponseParser
+
+Depends Upon:
+    com.yonasadiel.city
+    com.yonasadiel.weatherdata
+    io.github.cdimascio.dotenv
+    java.io
+    java.lang
+    java.net
+    java.text
+    java.util
+    java.util.logging
+    org.json
+
+Used By:
+    com.yonasadiel.weatherdata.views
+
+--------------------------------------------------
+- Package: com.yonasadiel.weatherdata
+--------------------------------------------------
+
+Stats:
+    Total Classes: 9
+    Concrete Classes: 9
+    Abstract Classes: 0
+
+    Ca: 3
+    Ce: 5
+
+    A: 0
+    I: 0.62
+    D: 0.38
+
+Abstract Classes:
+
+Concrete Classes:
+    com.yonasadiel.weatherdata.Condition
+    com.yonasadiel.weatherdata.ConditionTest
+    com.yonasadiel.weatherdata.Forecast
+    com.yonasadiel.weatherdata.ForecastData
+    com.yonasadiel.weatherdata.Temperature
+    com.yonasadiel.weatherdata.TemperatureTest
+    com.yonasadiel.weatherdata.Weather
+    com.yonasadiel.weatherdata.WeatherData
+    com.yonasadiel.weatherdata.WeatherSummary
+
+Depends Upon:
+    com.yonasadiel.city
+    com.yonasadiel.weatherdata.exceptions
+    java.lang
+    java.util
+    org.junit
+
+Used By:
+    com.yonasadiel.openweatherapi
+    com.yonasadiel.weatherdata.listeners
+    com.yonasadiel.weatherdata.views
+
+--------------------------------------------------
+- Package: com.yonasadiel.weatherdata.exceptions
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 1
+
+    A: 0
+    I: 0.5
+    D: 0.5
+
+Abstract Classes:
+
+Concrete Classes:
+    com.yonasadiel.weatherdata.exceptions.UnknownTemperatureUnitException
+
+Depends Upon:
+    java.lang
+
+Used By:
+    com.yonasadiel.weatherdata
+
+--------------------------------------------------
+- Package: com.yonasadiel.weatherdata.listeners
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 4
+
+    A: 0
+    I: 0.8
+    D: 0.2
+
+Abstract Classes:
+
+Concrete Classes:
+    com.yonasadiel.weatherdata.listeners.ForecastPanelMouseListener
+
+Depends Upon:
+    com.yonasadiel.weatherdata
+    com.yonasadiel.weatherdata.views
+    java.awt.event
+    java.lang
+
+Used By:
+    com.yonasadiel.weatherdata.views
+
+--------------------------------------------------
+- Package: com.yonasadiel.weatherdata.views
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 5
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 10
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    com.yonasadiel.weatherdata.views.ForecastPanel
+    com.yonasadiel.weatherdata.views.ForecastsPanel
+    com.yonasadiel.weatherdata.views.HeaderPanel
+    com.yonasadiel.weatherdata.views.WeatherDataFrame
+    com.yonasadiel.weatherdata.views.WeatherPanel
+
+Depends Upon:
+    com.yonasadiel.city
+    com.yonasadiel.openweatherapi
+    com.yonasadiel.weatherdata
+    com.yonasadiel.weatherdata.listeners
+    java.awt
+    java.lang
+    java.text
+    java.util
+    javax.swing
+    javax.swing.border
+
+Used By:
+    com.yonasadiel.city.listeners
+    com.yonasadiel.weatherdata.listeners
+
+--------------------------------------------------
+- Package: io.github.cdimascio.dotenv
+--------------------------------------------------
+
+Stats:
+    Total Classes: 8
+    Concrete Classes: 7
+    Abstract Classes: 1
+
+    Ca: 3
+    Ce: 8
+
+    A: 0.12
+    I: 0.73
+    D: 0.15
+
+Abstract Classes:
+    io.github.cdimascio.dotenv.Dotenv
+
+Concrete Classes:
+    io.github.cdimascio.dotenv.Configuration
+    io.github.cdimascio.dotenv.DotEnvException
+    io.github.cdimascio.dotenv.Dotenv$Instance
+    io.github.cdimascio.dotenv.DotenvBuilder
+    io.github.cdimascio.dotenv.DotenvImpl
+    io.github.cdimascio.dotenv.DslKt
+    io.github.cdimascio.dotenv.DslKt$dotenv$1
+
+Depends Upon:
+    io.github.cdimascio.dotenv.internal
+    java.lang
+    java.util
+    kotlin
+    kotlin.collections
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+    kotlin.ranges
+
+Used By:
+    com.yonasadiel
+    com.yonasadiel.openweatherapi
+    io.github.cdimascio.dotenv.internal
+
+--------------------------------------------------
+- Package: io.github.cdimascio.dotenv.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 6
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 12
+
+    A: 0
+    I: 0.92
+    D: 0.08
+
+Abstract Classes:
+
+Concrete Classes:
+    io.github.cdimascio.dotenv.internal.ClasspathHelper
+    io.github.cdimascio.dotenv.internal.DotenvParser
+    io.github.cdimascio.dotenv.internal.DotenvParser$isComment$1
+    io.github.cdimascio.dotenv.internal.DotenvParser$isWhiteSpace$1
+    io.github.cdimascio.dotenv.internal.DotenvParser$parseLine$1
+    io.github.cdimascio.dotenv.internal.DotenvReader
+
+Depends Upon:
+    io.github.cdimascio.dotenv
+    java.io
+    java.lang
+    java.net
+    java.nio.file
+    java.util
+    java.util.stream
+    kotlin
+    kotlin.collections
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+    kotlin.text
+
+Used By:
+    io.github.cdimascio.dotenv
+
+--------------------------------------------------
+- Package: java.awt
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.awt.event
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.awt.font
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.awt.geom
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.awt.image
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.beans
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.io
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.annotation
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.ref
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.reflect
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.math
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.net
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.nio
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.nio.charset
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.nio.file
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.security
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.sql
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.text
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.concurrent
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.concurrent.atomic
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.concurrent.locks
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.logging
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.regex
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.stream
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.imageio
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.servlet
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.swing
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.swing.border
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.swing.plaf
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.swing.plaf.basic
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.swing.table
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.swing.text
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.swing.tree
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.xml.datatype
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: kotlin
+--------------------------------------------------
+
+Stats:
+    Total Classes: 49
+    Concrete Classes: 37
+    Abstract Classes: 12
+
+    Ca: 16
+    Ce: 11
+
+    A: 0.24
+    I: 0.41
+    D: 0.35
+
+Abstract Classes:
+    kotlin.Deprecated
+    kotlin.DslMarker
+    kotlin.ExtensionFunctionType
+    kotlin.Function
+    kotlin.Lazy
+    kotlin.Metadata
+    kotlin.ParameterName
+    kotlin.PublishedApi
+    kotlin.ReplaceWith
+    kotlin.SinceKotlin
+    kotlin.Suppress
+    kotlin.UnsafeVariance
+
+Concrete Classes:
+    kotlin.ArrayIntrinsicsKt
+    kotlin.DeprecationLevel
+    kotlin.ExceptionsKt
+    kotlin.ExceptionsKt__ExceptionsKt
+    kotlin.InitializedLazyImpl
+    kotlin.KotlinNullPointerException
+    kotlin.KotlinVersion
+    kotlin.KotlinVersion$Companion
+    kotlin.LateinitKt
+    kotlin.LazyKt
+    kotlin.LazyKt$WhenMappings
+    kotlin.LazyThreadSafetyMode
+    kotlin.MathKt
+    kotlin.MathKt__BigDecimalsKt
+    kotlin.MathKt__BigIntegersKt
+    kotlin.MathKt__NumbersKt
+    kotlin.NoWhenBranchMatchedException
+    kotlin.NotImplementedError
+    kotlin.Pair
+    kotlin.PreconditionsKt
+    kotlin.PreconditionsKt__AssertionsJVMKt
+    kotlin.PreconditionsKt__PreconditionsKt
+    kotlin.SafePublicationLazyImpl
+    kotlin.SafePublicationLazyImpl$Companion
+    kotlin.StandardKt
+    kotlin.StandardKt__StandardKt
+    kotlin.StandardKt__SynchronizedKt
+    kotlin.SynchronizedLazyImpl
+    kotlin.Triple
+    kotlin.TuplesKt
+    kotlin.TypeAliasesKt
+    kotlin.TypeCastException
+    kotlin.UNINITIALIZED_VALUE
+    kotlin.UninitializedPropertyAccessException
+    kotlin.Unit
+    kotlin.UnsafeLazyImpl
+    kotlin._Assertions
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.annotation
+    java.math
+    java.util
+    java.util.concurrent.atomic
+    kotlin.collections
+    kotlin.internal
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+    kotlin.reflect
+
+Used By:
+    io.github.cdimascio.dotenv
+    io.github.cdimascio.dotenv.internal
+    kotlin.collections
+    kotlin.comparisons
+    kotlin.coroutines.experimental
+    kotlin.coroutines.experimental.intrinsics
+    kotlin.coroutines.experimental.jvm.internal
+    kotlin.internal
+    kotlin.internal.contracts
+    kotlin.io
+    kotlin.jvm
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+    kotlin.reflect
+    kotlin.sequences
+    kotlin.text
+
+--------------------------------------------------
+- Package: kotlin.annotation
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 2
+    Abstract Classes: 4
+
+    Ca: 0
+    Ce: 2
+
+    A: 0.67
+    I: 1
+    D: 0.67
+
+Abstract Classes:
+    kotlin.annotation.MustBeDocumented
+    kotlin.annotation.Repeatable
+    kotlin.annotation.Retention
+    kotlin.annotation.Target
+
+Concrete Classes:
+    kotlin.annotation.AnnotationRetention
+    kotlin.annotation.AnnotationTarget
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: kotlin.collections
+--------------------------------------------------
+
+Stats:
+    Total Classes: 118
+    Concrete Classes: 98
+    Abstract Classes: 20
+
+    Ca: 8
+    Ce: 18
+
+    A: 0.17
+    I: 0.69
+    D: 0.14
+
+Abstract Classes:
+    kotlin.collections.AbstractCollection
+    kotlin.collections.AbstractIterator
+    kotlin.collections.AbstractList
+    kotlin.collections.AbstractMap
+    kotlin.collections.AbstractMutableCollection
+    kotlin.collections.AbstractMutableList
+    kotlin.collections.AbstractMutableMap
+    kotlin.collections.AbstractMutableSet
+    kotlin.collections.AbstractSet
+    kotlin.collections.BooleanIterator
+    kotlin.collections.ByteIterator
+    kotlin.collections.CharIterator
+    kotlin.collections.DoubleIterator
+    kotlin.collections.FloatIterator
+    kotlin.collections.Grouping
+    kotlin.collections.IntIterator
+    kotlin.collections.LongIterator
+    kotlin.collections.MapWithDefault
+    kotlin.collections.MutableMapWithDefault
+    kotlin.collections.ShortIterator
+
+Concrete Classes:
+    kotlin.collections.AbstractCollection$toString$1
+    kotlin.collections.AbstractIterator$WhenMappings
+    kotlin.collections.AbstractList$Companion
+    kotlin.collections.AbstractList$IteratorImpl
+    kotlin.collections.AbstractList$ListIteratorImpl
+    kotlin.collections.AbstractList$SubList
+    kotlin.collections.AbstractMap$Companion
+    kotlin.collections.AbstractMap$keys$1
+    kotlin.collections.AbstractMap$keys$1$iterator$1
+    kotlin.collections.AbstractMap$toString$1
+    kotlin.collections.AbstractMap$values$1
+    kotlin.collections.AbstractMap$values$1$iterator$1
+    kotlin.collections.AbstractSet$Companion
+    kotlin.collections.ArrayAsCollection
+    kotlin.collections.ArraysKt
+    kotlin.collections.ArraysKt__ArraysJVMKt
+    kotlin.collections.ArraysKt__ArraysKt
+    kotlin.collections.ArraysKt___ArraysKt
+    kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$1
+    kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$2
+    kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$3
+    kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$4
+    kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$5
+    kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$6
+    kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$7
+    kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$8
+    kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$9
+    kotlin.collections.ArraysKt___ArraysKt$asList$1
+    kotlin.collections.ArraysKt___ArraysKt$asList$2
+    kotlin.collections.ArraysKt___ArraysKt$asList$3
+    kotlin.collections.ArraysKt___ArraysKt$asList$4
+    kotlin.collections.ArraysKt___ArraysKt$asList$5
+    kotlin.collections.ArraysKt___ArraysKt$asList$6
+    kotlin.collections.ArraysKt___ArraysKt$asList$7
+    kotlin.collections.ArraysKt___ArraysKt$asList$8
+    kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$1
+    kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$2
+    kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$3
+    kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$4
+    kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$5
+    kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$6
+    kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$7
+    kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$8
+    kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$9
+    kotlin.collections.ArraysKt___ArraysKt$groupingBy$1
+    kotlin.collections.ArraysKt___ArraysKt$withIndex$1
+    kotlin.collections.ArraysKt___ArraysKt$withIndex$2
+    kotlin.collections.ArraysKt___ArraysKt$withIndex$3
+    kotlin.collections.ArraysKt___ArraysKt$withIndex$4
+    kotlin.collections.ArraysKt___ArraysKt$withIndex$5
+    kotlin.collections.ArraysKt___ArraysKt$withIndex$6
+    kotlin.collections.ArraysKt___ArraysKt$withIndex$7
+    kotlin.collections.ArraysKt___ArraysKt$withIndex$8
+    kotlin.collections.ArraysKt___ArraysKt$withIndex$9
+    kotlin.collections.ArraysUtilJVM
+    kotlin.collections.CollectionsKt
+    kotlin.collections.CollectionsKt__CollectionsKt
+    kotlin.collections.CollectionsKt__CollectionsKt$binarySearchBy$1
+    kotlin.collections.CollectionsKt__IterablesKt
+    kotlin.collections.CollectionsKt__IterablesKt$Iterable$1
+    kotlin.collections.CollectionsKt__IteratorsKt
+    kotlin.collections.CollectionsKt__IteratorsKt$iterator$1
+    kotlin.collections.CollectionsKt__MutableCollectionsKt
+    kotlin.collections.CollectionsKt__ReversedViewsKt
+    kotlin.collections.CollectionsKt___CollectionsKt
+    kotlin.collections.CollectionsKt___CollectionsKt$asSequence$$inlined$Sequence$1
+    kotlin.collections.CollectionsKt___CollectionsKt$elementAt$1
+    kotlin.collections.CollectionsKt___CollectionsKt$groupingBy$1
+    kotlin.collections.CollectionsKt___CollectionsKt$withIndex$1
+    kotlin.collections.EmptyIterator
+    kotlin.collections.EmptyList
+    kotlin.collections.EmptyMap
+    kotlin.collections.EmptySet
+    kotlin.collections.GroupingKt
+    kotlin.collections.IndexedValue
+    kotlin.collections.IndexingIterable
+    kotlin.collections.IndexingIterator
+    kotlin.collections.MapAccessorsKt
+    kotlin.collections.MapWithDefaultImpl
+    kotlin.collections.MapsKt
+    kotlin.collections.MapsKt__MapWithDefaultKt
+    kotlin.collections.MapsKt__MapsJVMKt
+    kotlin.collections.MapsKt__MapsKt
+    kotlin.collections.MapsKt___MapsKt
+    kotlin.collections.MovingSubList
+    kotlin.collections.MutableMapWithDefaultImpl
+    kotlin.collections.ReversedList
+    kotlin.collections.ReversedListReadOnly
+    kotlin.collections.RingBuffer
+    kotlin.collections.RingBuffer$iterator$1
+    kotlin.collections.SetsKt
+    kotlin.collections.SetsKt__SetsKt
+    kotlin.collections.SetsKt___SetsKt
+    kotlin.collections.SlidingWindowKt
+    kotlin.collections.SlidingWindowKt$windowedIterator$1
+    kotlin.collections.SlidingWindowKt$windowedSequence$$inlined$Sequence$1
+    kotlin.collections.State
+    kotlin.collections.TypeAliasesKt
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.nio.charset
+    java.util
+    java.util.concurrent
+    kotlin
+    kotlin.comparisons
+    kotlin.coroutines.experimental
+    kotlin.coroutines.experimental.intrinsics
+    kotlin.coroutines.experimental.jvm.internal
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+    kotlin.jvm.internal.markers
+    kotlin.ranges
+    kotlin.reflect
+    kotlin.sequences
+    kotlin.text
+
+Used By:
+    io.github.cdimascio.dotenv
+    io.github.cdimascio.dotenv.internal
+    kotlin
+    kotlin.io
+    kotlin.jvm.internal
+    kotlin.ranges
+    kotlin.sequences
+    kotlin.text
+
+--------------------------------------------------
+- Package: kotlin.comparisons
+--------------------------------------------------
+
+Stats:
+    Total Classes: 20
+    Concrete Classes: 20
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 5
+
+    A: 0
+    I: 0.71
+    D: 0.29
+
+Abstract Classes:
+
+Concrete Classes:
+    kotlin.comparisons.ComparisonsKt
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$1
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$2
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareBy$3
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareByDescending$1
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$compareByDescending$2
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$nullsFirst$1
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$nullsLast$1
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$then$1
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenBy$1
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenBy$2
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenByDescending$1
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenByDescending$2
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenComparator$1
+    kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenDescending$1
+    kotlin.comparisons.ComparisonsKt___ComparisonsKt
+    kotlin.comparisons.NaturalOrderComparator
+    kotlin.comparisons.ReverseOrderComparator
+    kotlin.comparisons.ReversedComparator
+
+Depends Upon:
+    java.lang
+    java.util
+    kotlin
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+
+Used By:
+    kotlin.collections
+    kotlin.sequences
+
+--------------------------------------------------
+- Package: kotlin.concurrent
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 5
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 5
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    kotlin.concurrent.LocksKt
+    kotlin.concurrent.ThreadsKt
+    kotlin.concurrent.ThreadsKt$thread$thread$1
+    kotlin.concurrent.TimersKt
+    kotlin.concurrent.TimersKt$timerTask$1
+
+Depends Upon:
+    java.lang
+    java.util
+    java.util.concurrent.locks
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: kotlin.coroutines.experimental
+--------------------------------------------------
+
+Stats:
+    Total Classes: 24
+    Concrete Classes: 16
+    Abstract Classes: 8
+
+    Ca: 4
+    Ce: 11
+
+    A: 0.33
+    I: 0.73
+    D: 0.07
+
+Abstract Classes:
+    kotlin.coroutines.experimental.AbstractCoroutineContextElement
+    kotlin.coroutines.experimental.Continuation
+    kotlin.coroutines.experimental.ContinuationInterceptor
+    kotlin.coroutines.experimental.CoroutineContext
+    kotlin.coroutines.experimental.CoroutineContext$Element
+    kotlin.coroutines.experimental.CoroutineContext$Key
+    kotlin.coroutines.experimental.RestrictsSuspension
+    kotlin.coroutines.experimental.SequenceBuilder
+
+Concrete Classes:
+    kotlin.coroutines.experimental.CombinedContext
+    kotlin.coroutines.experimental.CombinedContext$toString$1
+    kotlin.coroutines.experimental.ContinuationInterceptor$DefaultImpls
+    kotlin.coroutines.experimental.ContinuationInterceptor$Key
+    kotlin.coroutines.experimental.CoroutineContext$DefaultImpls
+    kotlin.coroutines.experimental.CoroutineContext$Element$DefaultImpls
+    kotlin.coroutines.experimental.CoroutineContext$plus$1
+    kotlin.coroutines.experimental.CoroutinesKt
+    kotlin.coroutines.experimental.EmptyCoroutineContext
+    kotlin.coroutines.experimental.SafeContinuation
+    kotlin.coroutines.experimental.SafeContinuation$Companion
+    kotlin.coroutines.experimental.SafeContinuation$Fail
+    kotlin.coroutines.experimental.SequenceBuilderIterator
+    kotlin.coroutines.experimental.SequenceBuilderKt
+    kotlin.coroutines.experimental.SequenceBuilderKt__SequenceBuilderKt
+    kotlin.coroutines.experimental.SequenceBuilderKt__SequenceBuilderKt$buildSequence$$inlined$Sequence$1
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.util
+    java.util.concurrent.atomic
+    kotlin
+    kotlin.coroutines.experimental.intrinsics
+    kotlin.coroutines.experimental.jvm.internal
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+    kotlin.jvm.internal.markers
+    kotlin.sequences
+
+Used By:
+    kotlin.collections
+    kotlin.coroutines.experimental.intrinsics
+    kotlin.coroutines.experimental.jvm.internal
+    kotlin.sequences
+
+--------------------------------------------------
+- Package: kotlin.coroutines.experimental.intrinsics
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 5
+    Abstract Classes: 0
+
+    Ca: 4
+    Ce: 6
+
+    A: 0
+    I: 0.6
+    D: 0.4
+
+Abstract Classes:
+
+Concrete Classes:
+    kotlin.coroutines.experimental.intrinsics.IntrinsicsJvmKt
+    kotlin.coroutines.experimental.intrinsics.IntrinsicsKt
+    kotlin.coroutines.experimental.intrinsics.IntrinsicsKt$buildContinuationByInvokeCall$continuation$1
+    kotlin.coroutines.experimental.intrinsics.IntrinsicsKt$createCoroutineUnchecked$$inlined$buildContinuationByInvokeCall$1
+    kotlin.coroutines.experimental.intrinsics.IntrinsicsKt$createCoroutineUnchecked$$inlined$buildContinuationByInvokeCall$2
+
+Depends Upon:
+    java.lang
+    kotlin
+    kotlin.coroutines.experimental
+    kotlin.coroutines.experimental.jvm.internal
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+
+Used By:
+    kotlin.collections
+    kotlin.coroutines.experimental
+    kotlin.coroutines.experimental.jvm.internal
+    kotlin.sequences
+
+--------------------------------------------------
+- Package: kotlin.coroutines.experimental.jvm.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 1
+    Abstract Classes: 1
+
+    Ca: 4
+    Ce: 5
+
+    A: 0.5
+    I: 0.56
+    D: 0.06
+
+Abstract Classes:
+    kotlin.coroutines.experimental.jvm.internal.CoroutineImpl
+
+Concrete Classes:
+    kotlin.coroutines.experimental.jvm.internal.CoroutineIntrinsics
+
+Depends Upon:
+    java.lang
+    kotlin
+    kotlin.coroutines.experimental
+    kotlin.coroutines.experimental.intrinsics
+    kotlin.jvm.internal
+
+Used By:
+    kotlin.collections
+    kotlin.coroutines.experimental
+    kotlin.coroutines.experimental.intrinsics
+    kotlin.sequences
+
+--------------------------------------------------
+- Package: kotlin.experimental
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 1
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    kotlin.experimental.BitwiseOperationsKt
+
+Depends Upon:
+    java.lang
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: kotlin.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 16
+    Concrete Classes: 4
+    Abstract Classes: 12
+
+    Ca: 4
+    Ce: 6
+
+    A: 0.75
+    I: 0.6
+    D: 0.35
+
+Abstract Classes:
+    kotlin.internal.AccessibleLateinitPropertyLiteral
+    kotlin.internal.ContractsDsl
+    kotlin.internal.DynamicExtension
+    kotlin.internal.Exact
+    kotlin.internal.HidesMembers
+    kotlin.internal.InlineOnly
+    kotlin.internal.LowPriorityInOverloadResolution
+    kotlin.internal.NoInfer
+    kotlin.internal.OnlyInputTypes
+    kotlin.internal.PlatformDependent
+    kotlin.internal.PureReifiable
+    kotlin.internal.RequireKotlin
+
+Concrete Classes:
+    kotlin.internal.PlatformImplementations
+    kotlin.internal.PlatformImplementationsKt
+    kotlin.internal.ProgressionUtilKt
+    kotlin.internal.RequireKotlinVersionKind
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.util.regex
+    kotlin
+    kotlin.jvm.internal
+    kotlin.text
+
+Used By:
+    kotlin
+    kotlin.io
+    kotlin.ranges
+    kotlin.text
+
+--------------------------------------------------
+- Package: kotlin.internal.contracts
+--------------------------------------------------
+
+Stats:
+    Total Classes: 10
+    Concrete Classes: 3
+    Abstract Classes: 7
+
+    Ca: 0
+    Ce: 3
+
+    A: 0.7
+    I: 1
+    D: 0.7
+
+Abstract Classes:
+    kotlin.internal.contracts.CallsInPlace
+    kotlin.internal.contracts.ConditionalEffect
+    kotlin.internal.contracts.ContractBuilder
+    kotlin.internal.contracts.Effect
+    kotlin.internal.contracts.Returns
+    kotlin.internal.contracts.ReturnsNotNull
+    kotlin.internal.contracts.SimpleEffect
+
+Concrete Classes:
+    kotlin.internal.contracts.ContractBuilder$DefaultImpls
+    kotlin.internal.contracts.ContractBuilderKt
+    kotlin.internal.contracts.InvocationKind
+
+Depends Upon:
+    java.lang
+    kotlin
+    kotlin.jvm.functions
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: kotlin.io
+--------------------------------------------------
+
+Stats:
+    Total Classes: 37
+    Concrete Classes: 35
+    Abstract Classes: 2
+
+    Ca: 0
+    Ce: 15
+
+    A: 0.05
+    I: 1
+    D: 0.05
+
+Abstract Classes:
+    kotlin.io.FileTreeWalk$DirectoryState
+    kotlin.io.FileTreeWalk$WalkState
+
+Concrete Classes:
+    kotlin.io.AccessDeniedException
+    kotlin.io.ByteStreamsKt
+    kotlin.io.ByteStreamsKt$iterator$1
+    kotlin.io.CloseableKt
+    kotlin.io.ConsoleKt
+    kotlin.io.ConsoleKt$stdin$2
+    kotlin.io.ConsoleKt$stdin$2$1
+    kotlin.io.ConstantsKt
+    kotlin.io.ExceptionsKt
+    kotlin.io.FileAlreadyExistsException
+    kotlin.io.FilePathComponents
+    kotlin.io.FileSystemException
+    kotlin.io.FileTreeWalk
+    kotlin.io.FileTreeWalk$FileTreeWalkIterator
+    kotlin.io.FileTreeWalk$FileTreeWalkIterator$BottomUpDirectoryState
+    kotlin.io.FileTreeWalk$FileTreeWalkIterator$SingleFileState
+    kotlin.io.FileTreeWalk$FileTreeWalkIterator$TopDownDirectoryState
+    kotlin.io.FileTreeWalk$FileTreeWalkIterator$WhenMappings
+    kotlin.io.FileWalkDirection
+    kotlin.io.FilesKt
+    kotlin.io.FilesKt__FilePathComponentsKt
+    kotlin.io.FilesKt__FileReadWriteKt
+    kotlin.io.FilesKt__FileReadWriteKt$readLines$1
+    kotlin.io.FilesKt__FileTreeWalkKt
+    kotlin.io.FilesKt__UtilsKt
+    kotlin.io.FilesKt__UtilsKt$copyRecursively$1
+    kotlin.io.FilesKt__UtilsKt$copyRecursively$2
+    kotlin.io.LinesSequence
+    kotlin.io.LinesSequence$iterator$1
+    kotlin.io.NoSuchFileException
+    kotlin.io.OnErrorAction
+    kotlin.io.SerializableKt
+    kotlin.io.TerminateException
+    kotlin.io.TextStreamsKt
+    kotlin.io.TextStreamsKt$readLines$1
+
+Depends Upon:
+    java.io
+    java.lang
+    java.net
+    java.nio.charset
+    java.util
+    kotlin
+    kotlin.collections
+    kotlin.internal
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+    kotlin.jvm.internal.markers
+    kotlin.ranges
+    kotlin.reflect
+    kotlin.sequences
+    kotlin.text
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: kotlin.jvm
+--------------------------------------------------
+
+Stats:
+    Total Classes: 18
+    Concrete Classes: 2
+    Abstract Classes: 16
+
+    Ca: 1
+    Ce: 5
+
+    A: 0.89
+    I: 0.83
+    D: 0.72
+
+Abstract Classes:
+    kotlin.jvm.JvmField
+    kotlin.jvm.JvmMultifileClass
+    kotlin.jvm.JvmName
+    kotlin.jvm.JvmOverloads
+    kotlin.jvm.JvmPackageName
+    kotlin.jvm.JvmStatic
+    kotlin.jvm.JvmSuppressWildcards
+    kotlin.jvm.JvmSynthetic
+    kotlin.jvm.JvmVersion
+    kotlin.jvm.JvmWildcard
+    kotlin.jvm.PurelyImplements
+    kotlin.jvm.Strictfp
+    kotlin.jvm.Synchronized
+    kotlin.jvm.Throws
+    kotlin.jvm.Transient
+    kotlin.jvm.Volatile
+
+Concrete Classes:
+    kotlin.jvm.JvmClassMappingKt
+    kotlin.jvm.KotlinReflectionNotSupportedError
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    kotlin
+    kotlin.jvm.internal
+    kotlin.reflect
+
+Used By:
+    kotlin.jvm.internal
+
+--------------------------------------------------
+- Package: kotlin.jvm.functions
+--------------------------------------------------
+
+Stats:
+    Total Classes: 23
+    Concrete Classes: 0
+    Abstract Classes: 23
+
+    Ca: 16
+    Ce: 2
+
+    A: 1
+    I: 0.11
+    D: 0.11
+
+Abstract Classes:
+    kotlin.jvm.functions.Function0
+    kotlin.jvm.functions.Function1
+    kotlin.jvm.functions.Function10
+    kotlin.jvm.functions.Function11
+    kotlin.jvm.functions.Function12
+    kotlin.jvm.functions.Function13
+    kotlin.jvm.functions.Function14
+    kotlin.jvm.functions.Function15
+    kotlin.jvm.functions.Function16
+    kotlin.jvm.functions.Function17
+    kotlin.jvm.functions.Function18
+    kotlin.jvm.functions.Function19
+    kotlin.jvm.functions.Function2
+    kotlin.jvm.functions.Function20
+    kotlin.jvm.functions.Function21
+    kotlin.jvm.functions.Function22
+    kotlin.jvm.functions.Function3
+    kotlin.jvm.functions.Function4
+    kotlin.jvm.functions.Function5
+    kotlin.jvm.functions.Function6
+    kotlin.jvm.functions.Function7
+    kotlin.jvm.functions.Function8
+    kotlin.jvm.functions.Function9
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+    kotlin
+
+Used By:
+    io.github.cdimascio.dotenv
+    io.github.cdimascio.dotenv.internal
+    kotlin
+    kotlin.collections
+    kotlin.comparisons
+    kotlin.concurrent
+    kotlin.coroutines.experimental
+    kotlin.coroutines.experimental.intrinsics
+    kotlin.internal.contracts
+    kotlin.io
+    kotlin.jvm.internal
+    kotlin.properties
+    kotlin.reflect
+    kotlin.sequences
+    kotlin.system
+    kotlin.text
+
+--------------------------------------------------
+- Package: kotlin.jvm.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 75
+    Concrete Classes: 61
+    Abstract Classes: 14
+
+    Ca: 19
+    Ce: 10
+
+    A: 0.19
+    I: 0.34
+    D: 0.47
+
+Abstract Classes:
+    kotlin.jvm.internal.CallableReference
+    kotlin.jvm.internal.ClassBasedDeclarationContainer
+    kotlin.jvm.internal.FunctionBase
+    kotlin.jvm.internal.FunctionImpl
+    kotlin.jvm.internal.Lambda
+    kotlin.jvm.internal.MutablePropertyReference
+    kotlin.jvm.internal.MutablePropertyReference0
+    kotlin.jvm.internal.MutablePropertyReference1
+    kotlin.jvm.internal.MutablePropertyReference2
+    kotlin.jvm.internal.PrimitiveSpreadBuilder
+    kotlin.jvm.internal.PropertyReference
+    kotlin.jvm.internal.PropertyReference0
+    kotlin.jvm.internal.PropertyReference1
+    kotlin.jvm.internal.PropertyReference2
+
+Concrete Classes:
+    kotlin.jvm.internal.ArrayBooleanIterator
+    kotlin.jvm.internal.ArrayByteIterator
+    kotlin.jvm.internal.ArrayCharIterator
+    kotlin.jvm.internal.ArrayDoubleIterator
+    kotlin.jvm.internal.ArrayFloatIterator
+    kotlin.jvm.internal.ArrayIntIterator
+    kotlin.jvm.internal.ArrayIterator
+    kotlin.jvm.internal.ArrayIteratorKt
+    kotlin.jvm.internal.ArrayIteratorsKt
+    kotlin.jvm.internal.ArrayLongIterator
+    kotlin.jvm.internal.ArrayShortIterator
+    kotlin.jvm.internal.BooleanSpreadBuilder
+    kotlin.jvm.internal.ByteCompanionObject
+    kotlin.jvm.internal.ByteSpreadBuilder
+    kotlin.jvm.internal.CallableReference$NoReceiver
+    kotlin.jvm.internal.CharCompanionObject
+    kotlin.jvm.internal.CharSpreadBuilder
+    kotlin.jvm.internal.ClassReference
+    kotlin.jvm.internal.CollectionToArray
+    kotlin.jvm.internal.DefaultConstructorMarker
+    kotlin.jvm.internal.DoubleCompanionObject
+    kotlin.jvm.internal.DoubleSpreadBuilder
+    kotlin.jvm.internal.EnumCompanionObject
+    kotlin.jvm.internal.FloatCompanionObject
+    kotlin.jvm.internal.FloatSpreadBuilder
+    kotlin.jvm.internal.FunctionReference
+    kotlin.jvm.internal.FunctionReferenceImpl
+    kotlin.jvm.internal.InlineMarker
+    kotlin.jvm.internal.IntCompanionObject
+    kotlin.jvm.internal.IntSpreadBuilder
+    kotlin.jvm.internal.Intrinsics
+    kotlin.jvm.internal.LocalVariableReference
+    kotlin.jvm.internal.LocalVariableReferencesKt
+    kotlin.jvm.internal.LongCompanionObject
+    kotlin.jvm.internal.LongSpreadBuilder
+    kotlin.jvm.internal.MagicApiIntrinsics
+    kotlin.jvm.internal.MutableLocalVariableReference
+    kotlin.jvm.internal.MutablePropertyReference0Impl
+    kotlin.jvm.internal.MutablePropertyReference1Impl
+    kotlin.jvm.internal.MutablePropertyReference2Impl
+    kotlin.jvm.internal.PackageReference
+    kotlin.jvm.internal.PropertyReference0Impl
+    kotlin.jvm.internal.PropertyReference1Impl
+    kotlin.jvm.internal.PropertyReference2Impl
+    kotlin.jvm.internal.Ref
+    kotlin.jvm.internal.Ref$BooleanRef
+    kotlin.jvm.internal.Ref$ByteRef
+    kotlin.jvm.internal.Ref$CharRef
+    kotlin.jvm.internal.Ref$DoubleRef
+    kotlin.jvm.internal.Ref$FloatRef
+    kotlin.jvm.internal.Ref$IntRef
+    kotlin.jvm.internal.Ref$LongRef
+    kotlin.jvm.internal.Ref$ObjectRef
+    kotlin.jvm.internal.Ref$ShortRef
+    kotlin.jvm.internal.Reflection
+    kotlin.jvm.internal.ReflectionFactory
+    kotlin.jvm.internal.ShortCompanionObject
+    kotlin.jvm.internal.ShortSpreadBuilder
+    kotlin.jvm.internal.SpreadBuilder
+    kotlin.jvm.internal.StringCompanionObject
+    kotlin.jvm.internal.TypeIntrinsics
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.util
+    kotlin
+    kotlin.collections
+    kotlin.jvm
+    kotlin.jvm.functions
+    kotlin.jvm.internal.markers
+    kotlin.reflect
+
+Used By:
+    io.github.cdimascio.dotenv
+    io.github.cdimascio.dotenv.internal
+    kotlin
+    kotlin.collections
+    kotlin.comparisons
+    kotlin.concurrent
+    kotlin.coroutines.experimental
+    kotlin.coroutines.experimental.intrinsics
+    kotlin.coroutines.experimental.jvm.internal
+    kotlin.internal
+    kotlin.io
+    kotlin.jvm
+    kotlin.math
+    kotlin.properties
+    kotlin.ranges
+    kotlin.reflect
+    kotlin.sequences
+    kotlin.system
+    kotlin.text
+
+--------------------------------------------------
+- Package: kotlin.jvm.internal.markers
+--------------------------------------------------
+
+Stats:
+    Total Classes: 9
+    Concrete Classes: 0
+    Abstract Classes: 9
+
+    Ca: 7
+    Ce: 1
+
+    A: 1
+    I: 0.12
+    D: 0.12
+
+Abstract Classes:
+    kotlin.jvm.internal.markers.KMappedMarker
+    kotlin.jvm.internal.markers.KMutableCollection
+    kotlin.jvm.internal.markers.KMutableIterable
+    kotlin.jvm.internal.markers.KMutableIterator
+    kotlin.jvm.internal.markers.KMutableList
+    kotlin.jvm.internal.markers.KMutableListIterator
+    kotlin.jvm.internal.markers.KMutableMap
+    kotlin.jvm.internal.markers.KMutableMap$Entry
+    kotlin.jvm.internal.markers.KMutableSet
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+
+Used By:
+    kotlin.collections
+    kotlin.coroutines.experimental
+    kotlin.io
+    kotlin.jvm.internal
+    kotlin.ranges
+    kotlin.sequences
+    kotlin.text
+
+--------------------------------------------------
+- Package: kotlin.jvm.internal.unsafe
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 1
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    kotlin.jvm.internal.unsafe.MonitorKt
+
+Depends Upon:
+    java.lang
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: kotlin.math
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 2
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    kotlin.math.MathKt
+
+Depends Upon:
+    java.lang
+    kotlin.jvm.internal
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: kotlin.properties
+--------------------------------------------------
+
+Stats:
+    Total Classes: 7
+    Concrete Classes: 4
+    Abstract Classes: 3
+
+    Ca: 0
+    Ce: 4
+
+    A: 0.43
+    I: 1
+    D: 0.43
+
+Abstract Classes:
+    kotlin.properties.ObservableProperty
+    kotlin.properties.ReadOnlyProperty
+    kotlin.properties.ReadWriteProperty
+
+Concrete Classes:
+    kotlin.properties.Delegates
+    kotlin.properties.Delegates$observable$1
+    kotlin.properties.Delegates$vetoable$1
+    kotlin.properties.NotNullVar
+
+Depends Upon:
+    java.lang
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+    kotlin.reflect
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: kotlin.ranges
+--------------------------------------------------
+
+Stats:
+    Total Classes: 25
+    Concrete Classes: 23
+    Abstract Classes: 2
+
+    Ca: 4
+    Ce: 6
+
+    A: 0.08
+    I: 0.6
+    D: 0.32
+
+Abstract Classes:
+    kotlin.ranges.ClosedFloatingPointRange
+    kotlin.ranges.ClosedRange
+
+Concrete Classes:
+    kotlin.ranges.CharProgression
+    kotlin.ranges.CharProgression$Companion
+    kotlin.ranges.CharProgressionIterator
+    kotlin.ranges.CharRange
+    kotlin.ranges.CharRange$Companion
+    kotlin.ranges.ClosedDoubleRange
+    kotlin.ranges.ClosedFloatRange
+    kotlin.ranges.ClosedFloatingPointRange$DefaultImpls
+    kotlin.ranges.ClosedRange$DefaultImpls
+    kotlin.ranges.ComparableRange
+    kotlin.ranges.IntProgression
+    kotlin.ranges.IntProgression$Companion
+    kotlin.ranges.IntProgressionIterator
+    kotlin.ranges.IntRange
+    kotlin.ranges.IntRange$Companion
+    kotlin.ranges.LongProgression
+    kotlin.ranges.LongProgression$Companion
+    kotlin.ranges.LongProgressionIterator
+    kotlin.ranges.LongRange
+    kotlin.ranges.LongRange$Companion
+    kotlin.ranges.RangesKt
+    kotlin.ranges.RangesKt__RangesKt
+    kotlin.ranges.RangesKt___RangesKt
+
+Depends Upon:
+    java.lang
+    java.util
+    kotlin.collections
+    kotlin.internal
+    kotlin.jvm.internal
+    kotlin.jvm.internal.markers
+
+Used By:
+    io.github.cdimascio.dotenv
+    kotlin.collections
+    kotlin.io
+    kotlin.text
+
+--------------------------------------------------
+- Package: kotlin.reflect
+--------------------------------------------------
+
+Stats:
+    Total Classes: 37
+    Concrete Classes: 11
+    Abstract Classes: 26
+
+    Ca: 7
+    Ce: 5
+
+    A: 0.7
+    I: 0.42
+    D: 0.12
+
+Abstract Classes:
+    kotlin.reflect.KAnnotatedElement
+    kotlin.reflect.KCallable
+    kotlin.reflect.KClass
+    kotlin.reflect.KClassifier
+    kotlin.reflect.KDeclarationContainer
+    kotlin.reflect.KFunction
+    kotlin.reflect.KMutableProperty
+    kotlin.reflect.KMutableProperty$Setter
+    kotlin.reflect.KMutableProperty0
+    kotlin.reflect.KMutableProperty0$Setter
+    kotlin.reflect.KMutableProperty1
+    kotlin.reflect.KMutableProperty1$Setter
+    kotlin.reflect.KMutableProperty2
+    kotlin.reflect.KMutableProperty2$Setter
+    kotlin.reflect.KParameter
+    kotlin.reflect.KProperty
+    kotlin.reflect.KProperty$Accessor
+    kotlin.reflect.KProperty$Getter
+    kotlin.reflect.KProperty0
+    kotlin.reflect.KProperty0$Getter
+    kotlin.reflect.KProperty1
+    kotlin.reflect.KProperty1$Getter
+    kotlin.reflect.KProperty2
+    kotlin.reflect.KProperty2$Getter
+    kotlin.reflect.KType
+    kotlin.reflect.KTypeParameter
+
+Concrete Classes:
+    kotlin.reflect.KCallable$DefaultImpls
+    kotlin.reflect.KClass$DefaultImpls
+    kotlin.reflect.KFunction$DefaultImpls
+    kotlin.reflect.KParameter$DefaultImpls
+    kotlin.reflect.KParameter$Kind
+    kotlin.reflect.KProperty$DefaultImpls
+    kotlin.reflect.KType$DefaultImpls
+    kotlin.reflect.KTypeProjection
+    kotlin.reflect.KTypeProjection$Companion
+    kotlin.reflect.KVariance
+    kotlin.reflect.KVisibility
+
+Depends Upon:
+    java.lang
+    java.util
+    kotlin
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+
+Used By:
+    kotlin
+    kotlin.collections
+    kotlin.io
+    kotlin.jvm
+    kotlin.jvm.internal
+    kotlin.properties
+    kotlin.text
+
+--------------------------------------------------
+- Package: kotlin.sequences
+--------------------------------------------------
+
+Stats:
+    Total Classes: 65
+    Concrete Classes: 63
+    Abstract Classes: 2
+
+    Ca: 4
+    Ce: 13
+
+    A: 0.03
+    I: 0.76
+    D: 0.2
+
+Abstract Classes:
+    kotlin.sequences.DropTakeSequence
+    kotlin.sequences.Sequence
+
+Concrete Classes:
+    kotlin.sequences.ConstrainedOnceSequence
+    kotlin.sequences.DistinctIterator
+    kotlin.sequences.DistinctSequence
+    kotlin.sequences.DropSequence
+    kotlin.sequences.DropSequence$iterator$1
+    kotlin.sequences.DropWhileSequence
+    kotlin.sequences.DropWhileSequence$iterator$1
+    kotlin.sequences.EmptySequence
+    kotlin.sequences.FilteringSequence
+    kotlin.sequences.FilteringSequence$iterator$1
+    kotlin.sequences.FlatteningSequence
+    kotlin.sequences.FlatteningSequence$iterator$1
+    kotlin.sequences.GeneratorSequence
+    kotlin.sequences.GeneratorSequence$iterator$1
+    kotlin.sequences.IndexingSequence
+    kotlin.sequences.IndexingSequence$iterator$1
+    kotlin.sequences.MergingSequence
+    kotlin.sequences.MergingSequence$iterator$1
+    kotlin.sequences.SequencesKt
+    kotlin.sequences.SequencesKt__SequencesKt
+    kotlin.sequences.SequencesKt__SequencesKt$Sequence$1
+    kotlin.sequences.SequencesKt__SequencesKt$asSequence$$inlined$Sequence$1
+    kotlin.sequences.SequencesKt__SequencesKt$flatten$1
+    kotlin.sequences.SequencesKt__SequencesKt$flatten$2
+    kotlin.sequences.SequencesKt__SequencesKt$flatten$3
+    kotlin.sequences.SequencesKt__SequencesKt$generateSequence$1
+    kotlin.sequences.SequencesKt__SequencesKt$generateSequence$2
+    kotlin.sequences.SequencesKt___SequencesKt
+    kotlin.sequences.SequencesKt___SequencesKt$asIterable$$inlined$Iterable$1
+    kotlin.sequences.SequencesKt___SequencesKt$distinct$1
+    kotlin.sequences.SequencesKt___SequencesKt$elementAt$1
+    kotlin.sequences.SequencesKt___SequencesKt$filterIndexed$1
+    kotlin.sequences.SequencesKt___SequencesKt$filterIndexed$2
+    kotlin.sequences.SequencesKt___SequencesKt$filterIsInstance$1
+    kotlin.sequences.SequencesKt___SequencesKt$filterIsInstance$2
+    kotlin.sequences.SequencesKt___SequencesKt$filterNotNull$1
+    kotlin.sequences.SequencesKt___SequencesKt$flatMap$1
+    kotlin.sequences.SequencesKt___SequencesKt$groupingBy$1
+    kotlin.sequences.SequencesKt___SequencesKt$minus$1
+    kotlin.sequences.SequencesKt___SequencesKt$minus$1$iterator$1
+    kotlin.sequences.SequencesKt___SequencesKt$minus$2
+    kotlin.sequences.SequencesKt___SequencesKt$minus$2$iterator$1
+    kotlin.sequences.SequencesKt___SequencesKt$minus$3
+    kotlin.sequences.SequencesKt___SequencesKt$minus$3$iterator$1
+    kotlin.sequences.SequencesKt___SequencesKt$minus$4
+    kotlin.sequences.SequencesKt___SequencesKt$minus$4$iterator$1
+    kotlin.sequences.SequencesKt___SequencesKt$onEach$1
+    kotlin.sequences.SequencesKt___SequencesKt$requireNoNulls$1
+    kotlin.sequences.SequencesKt___SequencesKt$sorted$1
+    kotlin.sequences.SequencesKt___SequencesKt$sortedWith$1
+    kotlin.sequences.SequencesKt___SequencesKt$zip$1
+    kotlin.sequences.SequencesKt___SequencesKt$zipWithNext$1
+    kotlin.sequences.SequencesKt___SequencesKt$zipWithNext$2
+    kotlin.sequences.SubSequence
+    kotlin.sequences.SubSequence$iterator$1
+    kotlin.sequences.TakeSequence
+    kotlin.sequences.TakeSequence$iterator$1
+    kotlin.sequences.TakeWhileSequence
+    kotlin.sequences.TakeWhileSequence$iterator$1
+    kotlin.sequences.TransformingIndexedSequence
+    kotlin.sequences.TransformingIndexedSequence$iterator$1
+    kotlin.sequences.TransformingSequence
+    kotlin.sequences.TransformingSequence$iterator$1
+
+Depends Upon:
+    java.lang
+    java.util
+    java.util.concurrent.atomic
+    kotlin
+    kotlin.collections
+    kotlin.comparisons
+    kotlin.coroutines.experimental
+    kotlin.coroutines.experimental.intrinsics
+    kotlin.coroutines.experimental.jvm.internal
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+    kotlin.jvm.internal.markers
+    kotlin.text
+
+Used By:
+    kotlin.collections
+    kotlin.coroutines.experimental
+    kotlin.io
+    kotlin.text
+
+--------------------------------------------------
+- Package: kotlin.system
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 2
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 3
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    kotlin.system.ProcessKt
+    kotlin.system.TimingKt
+
+Depends Upon:
+    java.lang
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: kotlin.text
+--------------------------------------------------
+
+Stats:
+    Total Classes: 63
+    Concrete Classes: 59
+    Abstract Classes: 4
+
+    Ca: 5
+    Ce: 15
+
+    A: 0.06
+    I: 0.75
+    D: 0.19
+
+Abstract Classes:
+    kotlin.text.FlagEnum
+    kotlin.text.MatchGroupCollection
+    kotlin.text.MatchNamedGroupCollection
+    kotlin.text.MatchResult
+
+Concrete Classes:
+    kotlin.text.CharCategory
+    kotlin.text.CharCategory$Companion
+    kotlin.text.CharCategory$Companion$categoryMap$2
+    kotlin.text.CharDirectionality
+    kotlin.text.CharDirectionality$Companion
+    kotlin.text.CharDirectionality$Companion$directionalityMap$2
+    kotlin.text.CharsKt
+    kotlin.text.CharsKt__CharJVMKt
+    kotlin.text.CharsKt__CharKt
+    kotlin.text.Charsets
+    kotlin.text.CharsetsKt
+    kotlin.text.DelimitedRangesSequence
+    kotlin.text.DelimitedRangesSequence$iterator$1
+    kotlin.text.MatchGroup
+    kotlin.text.MatchResult$DefaultImpls
+    kotlin.text.MatchResult$Destructured
+    kotlin.text.MatcherMatchResult
+    kotlin.text.MatcherMatchResult$groupValues$1
+    kotlin.text.MatcherMatchResult$groups$1
+    kotlin.text.MatcherMatchResult$groups$1$iterator$1
+    kotlin.text.Regex
+    kotlin.text.Regex$Companion
+    kotlin.text.Regex$Serialized
+    kotlin.text.Regex$Serialized$Companion
+    kotlin.text.Regex$findAll$1
+    kotlin.text.Regex$findAll$2
+    kotlin.text.Regex$fromInt$$inlined$apply$lambda$1
+    kotlin.text.RegexKt
+    kotlin.text.RegexKt$fromInt$$inlined$apply$lambda$1
+    kotlin.text.RegexOption
+    kotlin.text.ScreenFloatValueRegEx
+    kotlin.text.StringsKt
+    kotlin.text.StringsKt__IndentKt
+    kotlin.text.StringsKt__IndentKt$getIndentFunction$1
+    kotlin.text.StringsKt__IndentKt$getIndentFunction$2
+    kotlin.text.StringsKt__IndentKt$prependIndent$1
+    kotlin.text.StringsKt__RegexExtensionsKt
+    kotlin.text.StringsKt__StringBuilderJVMKt
+    kotlin.text.StringsKt__StringBuilderKt
+    kotlin.text.StringsKt__StringNumberConversionsKt
+    kotlin.text.StringsKt__StringsJVMKt
+    kotlin.text.StringsKt__StringsKt
+    kotlin.text.StringsKt__StringsKt$iterator$1
+    kotlin.text.StringsKt__StringsKt$rangesDelimitedBy$2
+    kotlin.text.StringsKt__StringsKt$rangesDelimitedBy$4
+    kotlin.text.StringsKt__StringsKt$splitToSequence$1
+    kotlin.text.StringsKt__StringsKt$splitToSequence$2
+    kotlin.text.StringsKt___StringsKt
+    kotlin.text.StringsKt___StringsKt$asIterable$$inlined$Iterable$1
+    kotlin.text.StringsKt___StringsKt$asSequence$$inlined$Sequence$1
+    kotlin.text.StringsKt___StringsKt$chunkedSequence$1
+    kotlin.text.StringsKt___StringsKt$groupingBy$1
+    kotlin.text.StringsKt___StringsKt$windowed$1
+    kotlin.text.StringsKt___StringsKt$windowedSequence$1
+    kotlin.text.StringsKt___StringsKt$windowedSequence$2
+    kotlin.text.StringsKt___StringsKt$withIndex$1
+    kotlin.text.SystemProperties
+    kotlin.text.TypeAliasesKt
+    kotlin.text.Typography
+
+Depends Upon:
+    java.io
+    java.lang
+    java.math
+    java.nio.charset
+    java.util
+    java.util.regex
+    kotlin
+    kotlin.collections
+    kotlin.internal
+    kotlin.jvm.functions
+    kotlin.jvm.internal
+    kotlin.jvm.internal.markers
+    kotlin.ranges
+    kotlin.reflect
+    kotlin.sequences
+
+Used By:
+    io.github.cdimascio.dotenv.internal
+    kotlin.collections
+    kotlin.internal
+    kotlin.io
+    kotlin.sequences
+
+--------------------------------------------------
+- Package: mdlaf
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 17
+
+    A: 0
+    I: 0.89
+    D: 0.11
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.MaterialLookAndFeel
+
+Depends Upon:
+    java.awt
+    java.lang
+    javax.swing
+    javax.swing.plaf.basic
+    mdlaf.components.button
+    mdlaf.components.checkbox
+    mdlaf.components.label
+    mdlaf.components.menu
+    mdlaf.components.menubar
+    mdlaf.components.menuitem
+    mdlaf.components.panel
+    mdlaf.components.password
+    mdlaf.components.spinner
+    mdlaf.components.table
+    mdlaf.components.textfield
+    mdlaf.components.tree
+    mdlaf.resources
+
+Used By:
+    Default
+    com.yonasadiel
+
+--------------------------------------------------
+- Package: mdlaf.animation
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 2
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.animation.MaterialUIMovement
+    mdlaf.animation.MaterialUITimer
+
+Depends Upon:
+    java.awt
+    java.awt.event
+    java.io
+    java.lang
+    javax.swing
+
+Used By:
+    Default
+
+--------------------------------------------------
+- Package: mdlaf.components.button
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.button.MaterialButtonUI
+
+Depends Upon:
+    java.awt
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.components.checkbox
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.checkbox.MaterialCheckBoxUI
+
+Depends Upon:
+    java.awt
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.components.label
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.label.MaterialLabelUI
+
+Depends Upon:
+    java.awt
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.components.menu
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.menu.MaterialMenuUI
+
+Depends Upon:
+    java.awt
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.components.menubar
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.menubar.MaterialMenuBarUI
+
+Depends Upon:
+    java.awt
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.components.menuitem
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.menuitem.MaterialMenuItemUI
+
+Depends Upon:
+    java.awt
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.components.panel
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.panel.MaterialPanelUI
+
+Depends Upon:
+    java.awt
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.components.password
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 6
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 9
+
+    A: 0
+    I: 0.9
+    D: 0.1
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.password.MaterialPasswordFieldUI
+    mdlaf.components.password.MaterialPasswordFieldUI$1
+    mdlaf.components.password.MaterialPasswordFieldUI$2
+    mdlaf.components.password.MaterialPasswordFieldUI$3
+    mdlaf.components.password.MaterialPasswordFieldUI$4
+    mdlaf.components.password.MaterialPasswordFieldUI$MaterialPasswordView
+
+Depends Upon:
+    java.awt
+    java.awt.event
+    java.beans
+    java.lang
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    javax.swing.text
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.components.spinner
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 6
+
+    A: 0
+    I: 0.86
+    D: 0.14
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.spinner.MaterialSpinnerUI
+
+Depends Upon:
+    java.awt
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    mdlaf.components.textfield
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.components.table
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 5
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 8
+
+    A: 0
+    I: 0.89
+    D: 0.11
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.table.MaterialTableCellEditor
+    mdlaf.components.table.MaterialTableCellRenderer
+    mdlaf.components.table.MaterialTableHeaderCellRenderer
+    mdlaf.components.table.MaterialTableHeaderUI
+    mdlaf.components.table.MaterialTableUI
+
+Depends Upon:
+    java.awt
+    java.lang
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    javax.swing.table
+    mdlaf.components.textfield
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.components.textfield
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 5
+    Abstract Classes: 0
+
+    Ca: 4
+    Ce: 9
+
+    A: 0
+    I: 0.69
+    D: 0.31
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.textfield.MaterialTextFieldUI
+    mdlaf.components.textfield.MaterialTextFieldUI$1
+    mdlaf.components.textfield.MaterialTextFieldUI$2
+    mdlaf.components.textfield.MaterialTextFieldUI$3
+    mdlaf.components.textfield.MaterialTextFieldUI$4
+
+Depends Upon:
+    java.awt
+    java.awt.event
+    java.beans
+    java.lang
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    javax.swing.text
+    mdlaf.resources
+
+Used By:
+    mdlaf
+    mdlaf.components.spinner
+    mdlaf.components.table
+    mdlaf.components.tree
+
+--------------------------------------------------
+- Package: mdlaf.components.tree
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 4
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 9
+
+    A: 0
+    I: 0.9
+    D: 0.1
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.components.tree.MaterialTreeCellEditor
+    mdlaf.components.tree.MaterialTreeCellEditor$1
+    mdlaf.components.tree.MaterialTreeCellRenderer
+    mdlaf.components.tree.MaterialTreeUI
+
+Depends Upon:
+    java.awt
+    java.awt.event
+    java.lang
+    javax.swing
+    javax.swing.plaf
+    javax.swing.plaf.basic
+    javax.swing.tree
+    mdlaf.components.textfield
+    mdlaf.resources
+
+Used By:
+    mdlaf
+
+--------------------------------------------------
+- Package: mdlaf.resources
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 5
+    Abstract Classes: 0
+
+    Ca: 13
+    Ce: 10
+
+    A: 0
+    I: 0.43
+    D: 0.57
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.resources.MaterialBorders
+    mdlaf.resources.MaterialColors
+    mdlaf.resources.MaterialDrawingUtils
+    mdlaf.resources.MaterialFonts
+    mdlaf.resources.MaterialImages
+
+Depends Upon:
+    java.awt
+    java.awt.font
+    java.awt.image
+    java.io
+    java.lang
+    java.util
+    javax.imageio
+    javax.swing
+    javax.swing.border
+    mdlaf.shadows
+
+Used By:
+    mdlaf
+    mdlaf.components.button
+    mdlaf.components.checkbox
+    mdlaf.components.label
+    mdlaf.components.menu
+    mdlaf.components.menubar
+    mdlaf.components.menuitem
+    mdlaf.components.panel
+    mdlaf.components.password
+    mdlaf.components.spinner
+    mdlaf.components.table
+    mdlaf.components.textfield
+    mdlaf.components.tree
+
+--------------------------------------------------
+- Package: mdlaf.shadows
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 2
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 7
+
+    A: 0
+    I: 0.88
+    D: 0.12
+
+Abstract Classes:
+
+Concrete Classes:
+    mdlaf.shadows.DropShadowBorder
+    mdlaf.shadows.DropShadowBorder$Position
+
+Depends Upon:
+    java.awt
+    java.awt.geom
+    java.awt.image
+    java.lang
+    java.util
+    javax.swing
+    javax.swing.border
+
+Used By:
+    mdlaf.resources
+
+--------------------------------------------------
+- Package: org.apache.avalon.framework.logger
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.apache.commons.beanutils
+--------------------------------------------------
+
+Stats:
+    Total Classes: 76
+    Concrete Classes: 67
+    Abstract Classes: 9
+
+    Ca: 5
+    Ce: 16
+
+    A: 0.12
+    I: 0.76
+    D: 0.12
+
+Abstract Classes:
+    org.apache.commons.beanutils.BaseDynaBeanMapDecorator
+    org.apache.commons.beanutils.BeanIntrospector
+    org.apache.commons.beanutils.Converter
+    org.apache.commons.beanutils.DynaBean
+    org.apache.commons.beanutils.DynaClass
+    org.apache.commons.beanutils.IntrospectionContext
+    org.apache.commons.beanutils.JDBCDynaClass
+    org.apache.commons.beanutils.MutableDynaClass
+    org.apache.commons.beanutils.WeakFastHashMap$CollectionView
+
+Concrete Classes:
+    org.apache.commons.beanutils.BaseDynaBeanMapDecorator$MapEntry
+    org.apache.commons.beanutils.BasicDynaBean
+    org.apache.commons.beanutils.BasicDynaClass
+    org.apache.commons.beanutils.BeanAccessLanguageException
+    org.apache.commons.beanutils.BeanComparator
+    org.apache.commons.beanutils.BeanIntrospectionData
+    org.apache.commons.beanutils.BeanMap
+    org.apache.commons.beanutils.BeanMap$1
+    org.apache.commons.beanutils.BeanMap$10
+    org.apache.commons.beanutils.BeanMap$11
+    org.apache.commons.beanutils.BeanMap$12
+    org.apache.commons.beanutils.BeanMap$2
+    org.apache.commons.beanutils.BeanMap$3
+    org.apache.commons.beanutils.BeanMap$4
+    org.apache.commons.beanutils.BeanMap$5
+    org.apache.commons.beanutils.BeanMap$6
+    org.apache.commons.beanutils.BeanMap$7
+    org.apache.commons.beanutils.BeanMap$8
+    org.apache.commons.beanutils.BeanMap$9
+    org.apache.commons.beanutils.BeanMap$Entry
+    org.apache.commons.beanutils.BeanPredicate
+    org.apache.commons.beanutils.BeanPropertyValueChangeClosure
+    org.apache.commons.beanutils.BeanPropertyValueEqualsPredicate
+    org.apache.commons.beanutils.BeanToPropertyValueTransformer
+    org.apache.commons.beanutils.BeanUtils
+    org.apache.commons.beanutils.BeanUtilsBean
+    org.apache.commons.beanutils.BeanUtilsBean$1
+    org.apache.commons.beanutils.BeanUtilsBean2
+    org.apache.commons.beanutils.ConstructorUtils
+    org.apache.commons.beanutils.ContextClassLoaderLocal
+    org.apache.commons.beanutils.ConversionException
+    org.apache.commons.beanutils.ConvertUtils
+    org.apache.commons.beanutils.ConvertUtilsBean
+    org.apache.commons.beanutils.ConvertUtilsBean2
+    org.apache.commons.beanutils.ConvertingWrapDynaBean
+    org.apache.commons.beanutils.DefaultBeanIntrospector
+    org.apache.commons.beanutils.DefaultIntrospectionContext
+    org.apache.commons.beanutils.DynaBeanMapDecorator
+    org.apache.commons.beanutils.DynaBeanPropertyMapDecorator
+    org.apache.commons.beanutils.DynaProperty
+    org.apache.commons.beanutils.FluentPropertyBeanIntrospector
+    org.apache.commons.beanutils.LazyDynaBean
+    org.apache.commons.beanutils.LazyDynaClass
+    org.apache.commons.beanutils.LazyDynaList
+    org.apache.commons.beanutils.LazyDynaMap
+    org.apache.commons.beanutils.MappedPropertyDescriptor
+    org.apache.commons.beanutils.MappedPropertyDescriptor$MappedMethodReference
+    org.apache.commons.beanutils.MethodUtils
+    org.apache.commons.beanutils.MethodUtils$MethodDescriptor
+    org.apache.commons.beanutils.NestedNullException
+    org.apache.commons.beanutils.PropertyUtils
+    org.apache.commons.beanutils.PropertyUtilsBean
+    org.apache.commons.beanutils.ResultSetDynaClass
+    org.apache.commons.beanutils.ResultSetIterator
+    org.apache.commons.beanutils.RowSetDynaClass
+    org.apache.commons.beanutils.SuppressPropertiesBeanIntrospector
+    org.apache.commons.beanutils.WeakFastHashMap
+    org.apache.commons.beanutils.WeakFastHashMap$1
+    org.apache.commons.beanutils.WeakFastHashMap$CollectionView$CollectionViewIterator
+    org.apache.commons.beanutils.WeakFastHashMap$EntrySet
+    org.apache.commons.beanutils.WeakFastHashMap$KeySet
+    org.apache.commons.beanutils.WeakFastHashMap$Values
+    org.apache.commons.beanutils.WrapDynaBean
+    org.apache.commons.beanutils.WrapDynaClass
+    org.apache.commons.beanutils.WrapDynaClass$1
+    org.apache.commons.beanutils.WrapDynaClass$2
+    org.apache.commons.beanutils.WrapDynaClass$CacheKey
+
+Depends Upon:
+    java.beans
+    java.io
+    java.lang
+    java.lang.ref
+    java.lang.reflect
+    java.math
+    java.net
+    java.sql
+    java.util
+    java.util.concurrent
+    org.apache.commons.beanutils.converters
+    org.apache.commons.beanutils.expression
+    org.apache.commons.collections
+    org.apache.commons.collections.comparators
+    org.apache.commons.collections.keyvalue
+    org.apache.commons.logging
+
+Used By:
+    com.opencsv.bean
+    com.opencsv.bean.customconverter
+    org.apache.commons.beanutils.converters
+    org.apache.commons.beanutils.locale
+    org.apache.commons.beanutils.locale.converters
+
+--------------------------------------------------
+- Package: org.apache.commons.beanutils.converters
+--------------------------------------------------
+
+Stats:
+    Total Classes: 34
+    Concrete Classes: 30
+    Abstract Classes: 4
+
+    Ca: 2
+    Ce: 10
+
+    A: 0.12
+    I: 0.83
+    D: 0.05
+
+Abstract Classes:
+    org.apache.commons.beanutils.converters.AbstractArrayConverter
+    org.apache.commons.beanutils.converters.AbstractConverter
+    org.apache.commons.beanutils.converters.DateTimeConverter
+    org.apache.commons.beanutils.converters.NumberConverter
+
+Concrete Classes:
+    org.apache.commons.beanutils.converters.ArrayConverter
+    org.apache.commons.beanutils.converters.BigDecimalConverter
+    org.apache.commons.beanutils.converters.BigIntegerConverter
+    org.apache.commons.beanutils.converters.BooleanArrayConverter
+    org.apache.commons.beanutils.converters.BooleanConverter
+    org.apache.commons.beanutils.converters.ByteArrayConverter
+    org.apache.commons.beanutils.converters.ByteConverter
+    org.apache.commons.beanutils.converters.CalendarConverter
+    org.apache.commons.beanutils.converters.CharacterArrayConverter
+    org.apache.commons.beanutils.converters.CharacterConverter
+    org.apache.commons.beanutils.converters.ClassConverter
+    org.apache.commons.beanutils.converters.ConverterFacade
+    org.apache.commons.beanutils.converters.DateConverter
+    org.apache.commons.beanutils.converters.DoubleArrayConverter
+    org.apache.commons.beanutils.converters.DoubleConverter
+    org.apache.commons.beanutils.converters.FileConverter
+    org.apache.commons.beanutils.converters.FloatArrayConverter
+    org.apache.commons.beanutils.converters.FloatConverter
+    org.apache.commons.beanutils.converters.IntegerArrayConverter
+    org.apache.commons.beanutils.converters.IntegerConverter
+    org.apache.commons.beanutils.converters.LongArrayConverter
+    org.apache.commons.beanutils.converters.LongConverter
+    org.apache.commons.beanutils.converters.ShortArrayConverter
+    org.apache.commons.beanutils.converters.ShortConverter
+    org.apache.commons.beanutils.converters.SqlDateConverter
+    org.apache.commons.beanutils.converters.SqlTimeConverter
+    org.apache.commons.beanutils.converters.SqlTimestampConverter
+    org.apache.commons.beanutils.converters.StringArrayConverter
+    org.apache.commons.beanutils.converters.StringConverter
+    org.apache.commons.beanutils.converters.URLConverter
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.math
+    java.net
+    java.sql
+    java.text
+    java.util
+    org.apache.commons.beanutils
+    org.apache.commons.logging
+
+Used By:
+    com.opencsv.bean.customconverter
+    org.apache.commons.beanutils
+
+--------------------------------------------------
+- Package: org.apache.commons.beanutils.expression
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 1
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 1
+
+    A: 0.5
+    I: 0.33
+    D: 0.17
+
+Abstract Classes:
+    org.apache.commons.beanutils.expression.Resolver
+
+Concrete Classes:
+    org.apache.commons.beanutils.expression.DefaultResolver
+
+Depends Upon:
+    java.lang
+
+Used By:
+    org.apache.commons.beanutils
+    org.apache.commons.beanutils.locale
+
+--------------------------------------------------
+- Package: org.apache.commons.beanutils.locale
+--------------------------------------------------
+
+Stats:
+    Total Classes: 11
+    Concrete Classes: 9
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 12
+
+    A: 0.18
+    I: 0.86
+    D: 0.04
+
+Abstract Classes:
+    org.apache.commons.beanutils.locale.BaseLocaleConverter
+    org.apache.commons.beanutils.locale.LocaleConverter
+
+Concrete Classes:
+    org.apache.commons.beanutils.locale.LocaleBeanUtils
+    org.apache.commons.beanutils.locale.LocaleBeanUtils$Descriptor
+    org.apache.commons.beanutils.locale.LocaleBeanUtilsBean
+    org.apache.commons.beanutils.locale.LocaleBeanUtilsBean$1
+    org.apache.commons.beanutils.locale.LocaleBeanUtilsBean$Descriptor
+    org.apache.commons.beanutils.locale.LocaleConvertUtils
+    org.apache.commons.beanutils.locale.LocaleConvertUtilsBean
+    org.apache.commons.beanutils.locale.LocaleConvertUtilsBean$1
+    org.apache.commons.beanutils.locale.LocaleConvertUtilsBean$DelegateFastHashMap
+
+Depends Upon:
+    java.beans
+    java.lang
+    java.lang.reflect
+    java.math
+    java.sql
+    java.text
+    java.util
+    org.apache.commons.beanutils
+    org.apache.commons.beanutils.expression
+    org.apache.commons.beanutils.locale.converters
+    org.apache.commons.collections
+    org.apache.commons.logging
+
+Used By:
+    com.opencsv.bean
+    org.apache.commons.beanutils.locale.converters
+
+--------------------------------------------------
+- Package: org.apache.commons.beanutils.locale.converters
+--------------------------------------------------
+
+Stats:
+    Total Classes: 14
+    Concrete Classes: 14
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 8
+
+    A: 0
+    I: 0.89
+    D: 0.11
+
+Abstract Classes:
+
+Concrete Classes:
+    org.apache.commons.beanutils.locale.converters.BigDecimalLocaleConverter
+    org.apache.commons.beanutils.locale.converters.BigIntegerLocaleConverter
+    org.apache.commons.beanutils.locale.converters.ByteLocaleConverter
+    org.apache.commons.beanutils.locale.converters.DateLocaleConverter
+    org.apache.commons.beanutils.locale.converters.DecimalLocaleConverter
+    org.apache.commons.beanutils.locale.converters.DoubleLocaleConverter
+    org.apache.commons.beanutils.locale.converters.FloatLocaleConverter
+    org.apache.commons.beanutils.locale.converters.IntegerLocaleConverter
+    org.apache.commons.beanutils.locale.converters.LongLocaleConverter
+    org.apache.commons.beanutils.locale.converters.ShortLocaleConverter
+    org.apache.commons.beanutils.locale.converters.SqlDateLocaleConverter
+    org.apache.commons.beanutils.locale.converters.SqlTimeLocaleConverter
+    org.apache.commons.beanutils.locale.converters.SqlTimestampLocaleConverter
+    org.apache.commons.beanutils.locale.converters.StringLocaleConverter
+
+Depends Upon:
+    java.lang
+    java.math
+    java.sql
+    java.text
+    java.util
+    org.apache.commons.beanutils
+    org.apache.commons.beanutils.locale
+    org.apache.commons.logging
+
+Used By:
+    org.apache.commons.beanutils.locale
+
+--------------------------------------------------
+- Package: org.apache.commons.collections
+--------------------------------------------------
+
+Stats:
+    Total Classes: 139
+    Concrete Classes: 111
+    Abstract Classes: 28
+
+    Ca: 14
+    Ce: 18
+
+    A: 0.2
+    I: 0.56
+    D: 0.24
+
+Abstract Classes:
+    org.apache.commons.collections.Bag
+    org.apache.commons.collections.BidiMap
+    org.apache.commons.collections.BoundedCollection
+    org.apache.commons.collections.BoundedMap
+    org.apache.commons.collections.Buffer
+    org.apache.commons.collections.Closure
+    org.apache.commons.collections.DefaultMapBag
+    org.apache.commons.collections.DoubleOrderedMap$DoubleOrderedMapIterator
+    org.apache.commons.collections.Factory
+    org.apache.commons.collections.FastHashMap$CollectionView
+    org.apache.commons.collections.FastTreeMap$CollectionView
+    org.apache.commons.collections.IterableMap
+    org.apache.commons.collections.KeyValue
+    org.apache.commons.collections.MapIterator
+    org.apache.commons.collections.MultiMap
+    org.apache.commons.collections.OrderedBidiMap
+    org.apache.commons.collections.OrderedIterator
+    org.apache.commons.collections.OrderedMap
+    org.apache.commons.collections.OrderedMapIterator
+    org.apache.commons.collections.Predicate
+    org.apache.commons.collections.PriorityQueue
+    org.apache.commons.collections.ProxyMap
+    org.apache.commons.collections.ResettableIterator
+    org.apache.commons.collections.ResettableListIterator
+    org.apache.commons.collections.SortedBag
+    org.apache.commons.collections.SortedBidiMap
+    org.apache.commons.collections.Transformer
+    org.apache.commons.collections.Unmodifiable
+
+Concrete Classes:
+    org.apache.commons.collections.ArrayStack
+    org.apache.commons.collections.BagUtils
+    org.apache.commons.collections.BeanMap
+    org.apache.commons.collections.BeanMap$1
+    org.apache.commons.collections.BeanMap$10
+    org.apache.commons.collections.BeanMap$11
+    org.apache.commons.collections.BeanMap$2
+    org.apache.commons.collections.BeanMap$3
+    org.apache.commons.collections.BeanMap$4
+    org.apache.commons.collections.BeanMap$5
+    org.apache.commons.collections.BeanMap$6
+    org.apache.commons.collections.BeanMap$7
+    org.apache.commons.collections.BeanMap$8
+    org.apache.commons.collections.BeanMap$9
+    org.apache.commons.collections.BeanMap$MyMapEntry
+    org.apache.commons.collections.BinaryHeap
+    org.apache.commons.collections.BinaryHeap$1
+    org.apache.commons.collections.BoundedFifoBuffer
+    org.apache.commons.collections.BoundedFifoBuffer$1
+    org.apache.commons.collections.BufferOverflowException
+    org.apache.commons.collections.BufferUnderflowException
+    org.apache.commons.collections.BufferUtils
+    org.apache.commons.collections.ClosureUtils
+    org.apache.commons.collections.CollectionUtils
+    org.apache.commons.collections.ComparatorUtils
+    org.apache.commons.collections.CursorableLinkedList
+    org.apache.commons.collections.CursorableLinkedList$Cursor
+    org.apache.commons.collections.CursorableLinkedList$ListIter
+    org.apache.commons.collections.CursorableLinkedList$Listable
+    org.apache.commons.collections.CursorableSubList
+    org.apache.commons.collections.DefaultMapBag$BagIterator
+    org.apache.commons.collections.DefaultMapEntry
+    org.apache.commons.collections.DoubleOrderedMap
+    org.apache.commons.collections.DoubleOrderedMap$1
+    org.apache.commons.collections.DoubleOrderedMap$1$1
+    org.apache.commons.collections.DoubleOrderedMap$2
+    org.apache.commons.collections.DoubleOrderedMap$2$1
+    org.apache.commons.collections.DoubleOrderedMap$3
+    org.apache.commons.collections.DoubleOrderedMap$3$1
+    org.apache.commons.collections.DoubleOrderedMap$4
+    org.apache.commons.collections.DoubleOrderedMap$4$1
+    org.apache.commons.collections.DoubleOrderedMap$5
+    org.apache.commons.collections.DoubleOrderedMap$5$1
+    org.apache.commons.collections.DoubleOrderedMap$6
+    org.apache.commons.collections.DoubleOrderedMap$6$1
+    org.apache.commons.collections.DoubleOrderedMap$Node
+    org.apache.commons.collections.EnumerationUtils
+    org.apache.commons.collections.ExtendedProperties
+    org.apache.commons.collections.ExtendedProperties$1
+    org.apache.commons.collections.ExtendedProperties$PropertiesReader
+    org.apache.commons.collections.ExtendedProperties$PropertiesTokenizer
+    org.apache.commons.collections.FactoryUtils
+    org.apache.commons.collections.FastArrayList
+    org.apache.commons.collections.FastArrayList$ListIter
+    org.apache.commons.collections.FastArrayList$SubList
+    org.apache.commons.collections.FastArrayList$SubList$SubListIter
+    org.apache.commons.collections.FastHashMap
+    org.apache.commons.collections.FastHashMap$1
+    org.apache.commons.collections.FastHashMap$CollectionView$CollectionViewIterator
+    org.apache.commons.collections.FastHashMap$EntrySet
+    org.apache.commons.collections.FastHashMap$KeySet
+    org.apache.commons.collections.FastHashMap$Values
+    org.apache.commons.collections.FastTreeMap
+    org.apache.commons.collections.FastTreeMap$1
+    org.apache.commons.collections.FastTreeMap$CollectionView$CollectionViewIterator
+    org.apache.commons.collections.FastTreeMap$EntrySet
+    org.apache.commons.collections.FastTreeMap$KeySet
+    org.apache.commons.collections.FastTreeMap$Values
+    org.apache.commons.collections.FunctorException
+    org.apache.commons.collections.HashBag
+    org.apache.commons.collections.IteratorUtils
+    org.apache.commons.collections.LRUMap
+    org.apache.commons.collections.ListUtils
+    org.apache.commons.collections.MapUtils
+    org.apache.commons.collections.MultiHashMap
+    org.apache.commons.collections.MultiHashMap$1
+    org.apache.commons.collections.MultiHashMap$ValueIterator
+    org.apache.commons.collections.MultiHashMap$Values
+    org.apache.commons.collections.PredicateUtils
+    org.apache.commons.collections.ReferenceMap
+    org.apache.commons.collections.ReferenceMap$1
+    org.apache.commons.collections.ReferenceMap$2
+    org.apache.commons.collections.ReferenceMap$3
+    org.apache.commons.collections.ReferenceMap$Entry
+    org.apache.commons.collections.ReferenceMap$EntryIterator
+    org.apache.commons.collections.ReferenceMap$KeyIterator
+    org.apache.commons.collections.ReferenceMap$SoftRef
+    org.apache.commons.collections.ReferenceMap$ValueIterator
+    org.apache.commons.collections.ReferenceMap$WeakRef
+    org.apache.commons.collections.SequencedHashMap
+    org.apache.commons.collections.SequencedHashMap$1
+    org.apache.commons.collections.SequencedHashMap$2
+    org.apache.commons.collections.SequencedHashMap$3
+    org.apache.commons.collections.SequencedHashMap$Entry
+    org.apache.commons.collections.SequencedHashMap$OrderedIterator
+    org.apache.commons.collections.SetUtils
+    org.apache.commons.collections.StaticBucketMap
+    org.apache.commons.collections.StaticBucketMap$1
+    org.apache.commons.collections.StaticBucketMap$EntryIterator
+    org.apache.commons.collections.StaticBucketMap$EntrySet
+    org.apache.commons.collections.StaticBucketMap$KeyIterator
+    org.apache.commons.collections.StaticBucketMap$KeySet
+    org.apache.commons.collections.StaticBucketMap$Lock
+    org.apache.commons.collections.StaticBucketMap$Node
+    org.apache.commons.collections.StaticBucketMap$ValueIterator
+    org.apache.commons.collections.StaticBucketMap$Values
+    org.apache.commons.collections.SynchronizedPriorityQueue
+    org.apache.commons.collections.TransformerUtils
+    org.apache.commons.collections.TreeBag
+    org.apache.commons.collections.UnboundedFifoBuffer
+    org.apache.commons.collections.UnboundedFifoBuffer$1
+
+Depends Upon:
+    java.beans
+    java.io
+    java.lang
+    java.lang.ref
+    java.lang.reflect
+    java.security
+    java.text
+    java.util
+    org.apache.commons.collections.bag
+    org.apache.commons.collections.buffer
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.comparators
+    org.apache.commons.collections.functors
+    org.apache.commons.collections.iterators
+    org.apache.commons.collections.keyvalue
+    org.apache.commons.collections.list
+    org.apache.commons.collections.map
+    org.apache.commons.collections.set
+
+Used By:
+    com.opencsv.bean
+    org.apache.commons.beanutils
+    org.apache.commons.beanutils.locale
+    org.apache.commons.collections.bag
+    org.apache.commons.collections.bidimap
+    org.apache.commons.collections.buffer
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.comparators
+    org.apache.commons.collections.functors
+    org.apache.commons.collections.iterators
+    org.apache.commons.collections.keyvalue
+    org.apache.commons.collections.list
+    org.apache.commons.collections.map
+    org.apache.commons.collections.set
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.bag
+--------------------------------------------------
+
+Stats:
+    Total Classes: 18
+    Concrete Classes: 15
+    Abstract Classes: 3
+
+    Ca: 1
+    Ce: 9
+
+    A: 0.17
+    I: 0.9
+    D: 0.07
+
+Abstract Classes:
+    org.apache.commons.collections.bag.AbstractBagDecorator
+    org.apache.commons.collections.bag.AbstractMapBag
+    org.apache.commons.collections.bag.AbstractSortedBagDecorator
+
+Concrete Classes:
+    org.apache.commons.collections.bag.AbstractMapBag$BagIterator
+    org.apache.commons.collections.bag.AbstractMapBag$MutableInteger
+    org.apache.commons.collections.bag.HashBag
+    org.apache.commons.collections.bag.PredicatedBag
+    org.apache.commons.collections.bag.PredicatedSortedBag
+    org.apache.commons.collections.bag.SynchronizedBag
+    org.apache.commons.collections.bag.SynchronizedBag$SynchronizedBagSet
+    org.apache.commons.collections.bag.SynchronizedSortedBag
+    org.apache.commons.collections.bag.TransformedBag
+    org.apache.commons.collections.bag.TransformedSortedBag
+    org.apache.commons.collections.bag.TreeBag
+    org.apache.commons.collections.bag.TypedBag
+    org.apache.commons.collections.bag.TypedSortedBag
+    org.apache.commons.collections.bag.UnmodifiableBag
+    org.apache.commons.collections.bag.UnmodifiableSortedBag
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.util
+    org.apache.commons.collections
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.functors
+    org.apache.commons.collections.iterators
+    org.apache.commons.collections.set
+
+Used By:
+    org.apache.commons.collections
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.bidimap
+--------------------------------------------------
+
+Stats:
+    Total Classes: 27
+    Concrete Classes: 22
+    Abstract Classes: 5
+
+    Ca: 0
+    Ce: 9
+
+    A: 0.19
+    I: 1
+    D: 0.19
+
+Abstract Classes:
+    org.apache.commons.collections.bidimap.AbstractBidiMapDecorator
+    org.apache.commons.collections.bidimap.AbstractDualBidiMap
+    org.apache.commons.collections.bidimap.AbstractDualBidiMap$View
+    org.apache.commons.collections.bidimap.AbstractOrderedBidiMapDecorator
+    org.apache.commons.collections.bidimap.AbstractSortedBidiMapDecorator
+
+Concrete Classes:
+    org.apache.commons.collections.bidimap.AbstractDualBidiMap$BidiMapIterator
+    org.apache.commons.collections.bidimap.AbstractDualBidiMap$EntrySet
+    org.apache.commons.collections.bidimap.AbstractDualBidiMap$EntrySetIterator
+    org.apache.commons.collections.bidimap.AbstractDualBidiMap$KeySet
+    org.apache.commons.collections.bidimap.AbstractDualBidiMap$KeySetIterator
+    org.apache.commons.collections.bidimap.AbstractDualBidiMap$MapEntry
+    org.apache.commons.collections.bidimap.AbstractDualBidiMap$Values
+    org.apache.commons.collections.bidimap.AbstractDualBidiMap$ValuesIterator
+    org.apache.commons.collections.bidimap.DualHashBidiMap
+    org.apache.commons.collections.bidimap.DualTreeBidiMap
+    org.apache.commons.collections.bidimap.DualTreeBidiMap$BidiOrderedMapIterator
+    org.apache.commons.collections.bidimap.DualTreeBidiMap$ViewMap
+    org.apache.commons.collections.bidimap.TreeBidiMap
+    org.apache.commons.collections.bidimap.TreeBidiMap$EntryView
+    org.apache.commons.collections.bidimap.TreeBidiMap$Inverse
+    org.apache.commons.collections.bidimap.TreeBidiMap$Node
+    org.apache.commons.collections.bidimap.TreeBidiMap$View
+    org.apache.commons.collections.bidimap.TreeBidiMap$ViewIterator
+    org.apache.commons.collections.bidimap.TreeBidiMap$ViewMapIterator
+    org.apache.commons.collections.bidimap.UnmodifiableBidiMap
+    org.apache.commons.collections.bidimap.UnmodifiableOrderedBidiMap
+    org.apache.commons.collections.bidimap.UnmodifiableSortedBidiMap
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    org.apache.commons.collections
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.iterators
+    org.apache.commons.collections.keyvalue
+    org.apache.commons.collections.map
+    org.apache.commons.collections.set
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.buffer
+--------------------------------------------------
+
+Stats:
+    Total Classes: 16
+    Concrete Classes: 15
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 7
+
+    A: 0.06
+    I: 0.88
+    D: 0.06
+
+Abstract Classes:
+    org.apache.commons.collections.buffer.AbstractBufferDecorator
+
+Concrete Classes:
+    org.apache.commons.collections.buffer.BlockingBuffer
+    org.apache.commons.collections.buffer.BoundedBuffer
+    org.apache.commons.collections.buffer.BoundedBuffer$NotifyingIterator
+    org.apache.commons.collections.buffer.BoundedFifoBuffer
+    org.apache.commons.collections.buffer.BoundedFifoBuffer$1
+    org.apache.commons.collections.buffer.CircularFifoBuffer
+    org.apache.commons.collections.buffer.PredicatedBuffer
+    org.apache.commons.collections.buffer.PriorityBuffer
+    org.apache.commons.collections.buffer.PriorityBuffer$1
+    org.apache.commons.collections.buffer.SynchronizedBuffer
+    org.apache.commons.collections.buffer.TransformedBuffer
+    org.apache.commons.collections.buffer.TypedBuffer
+    org.apache.commons.collections.buffer.UnboundedFifoBuffer
+    org.apache.commons.collections.buffer.UnboundedFifoBuffer$1
+    org.apache.commons.collections.buffer.UnmodifiableBuffer
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    org.apache.commons.collections
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.functors
+    org.apache.commons.collections.iterators
+
+Used By:
+    org.apache.commons.collections
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.collection
+--------------------------------------------------
+
+Stats:
+    Total Classes: 10
+    Concrete Classes: 7
+    Abstract Classes: 3
+
+    Ca: 7
+    Ce: 8
+
+    A: 0.3
+    I: 0.53
+    D: 0.17
+
+Abstract Classes:
+    org.apache.commons.collections.collection.AbstractCollectionDecorator
+    org.apache.commons.collections.collection.AbstractSerializableCollectionDecorator
+    org.apache.commons.collections.collection.CompositeCollection$CollectionMutator
+
+Concrete Classes:
+    org.apache.commons.collections.collection.CompositeCollection
+    org.apache.commons.collections.collection.PredicatedCollection
+    org.apache.commons.collections.collection.SynchronizedCollection
+    org.apache.commons.collections.collection.TransformedCollection
+    org.apache.commons.collections.collection.TypedCollection
+    org.apache.commons.collections.collection.UnmodifiableBoundedCollection
+    org.apache.commons.collections.collection.UnmodifiableCollection
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.util
+    org.apache.commons.collections
+    org.apache.commons.collections.functors
+    org.apache.commons.collections.iterators
+    org.apache.commons.collections.list
+
+Used By:
+    org.apache.commons.collections
+    org.apache.commons.collections.bag
+    org.apache.commons.collections.bidimap
+    org.apache.commons.collections.buffer
+    org.apache.commons.collections.list
+    org.apache.commons.collections.map
+    org.apache.commons.collections.set
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.comparators
+--------------------------------------------------
+
+Stats:
+    Total Classes: 7
+    Concrete Classes: 7
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 4
+
+    A: 0
+    I: 0.67
+    D: 0.33
+
+Abstract Classes:
+
+Concrete Classes:
+    org.apache.commons.collections.comparators.BooleanComparator
+    org.apache.commons.collections.comparators.ComparableComparator
+    org.apache.commons.collections.comparators.ComparatorChain
+    org.apache.commons.collections.comparators.FixedOrderComparator
+    org.apache.commons.collections.comparators.NullComparator
+    org.apache.commons.collections.comparators.ReverseComparator
+    org.apache.commons.collections.comparators.TransformingComparator
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    org.apache.commons.collections
+
+Used By:
+    org.apache.commons.beanutils
+    org.apache.commons.collections
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.functors
+--------------------------------------------------
+
+Stats:
+    Total Classes: 52
+    Concrete Classes: 51
+    Abstract Classes: 1
+
+    Ca: 8
+    Ce: 6
+
+    A: 0.02
+    I: 0.43
+    D: 0.55
+
+Abstract Classes:
+    org.apache.commons.collections.functors.PredicateDecorator
+
+Concrete Classes:
+    org.apache.commons.collections.functors.AllPredicate
+    org.apache.commons.collections.functors.AndPredicate
+    org.apache.commons.collections.functors.AnyPredicate
+    org.apache.commons.collections.functors.ChainedClosure
+    org.apache.commons.collections.functors.ChainedTransformer
+    org.apache.commons.collections.functors.CloneTransformer
+    org.apache.commons.collections.functors.ClosureTransformer
+    org.apache.commons.collections.functors.ConstantFactory
+    org.apache.commons.collections.functors.ConstantTransformer
+    org.apache.commons.collections.functors.EqualPredicate
+    org.apache.commons.collections.functors.ExceptionClosure
+    org.apache.commons.collections.functors.ExceptionFactory
+    org.apache.commons.collections.functors.ExceptionPredicate
+    org.apache.commons.collections.functors.ExceptionTransformer
+    org.apache.commons.collections.functors.FactoryTransformer
+    org.apache.commons.collections.functors.FalsePredicate
+    org.apache.commons.collections.functors.ForClosure
+    org.apache.commons.collections.functors.FunctorUtils
+    org.apache.commons.collections.functors.FunctorUtils$1
+    org.apache.commons.collections.functors.IdentityPredicate
+    org.apache.commons.collections.functors.IfClosure
+    org.apache.commons.collections.functors.InstanceofPredicate
+    org.apache.commons.collections.functors.InstantiateFactory
+    org.apache.commons.collections.functors.InstantiateTransformer
+    org.apache.commons.collections.functors.InvokerTransformer
+    org.apache.commons.collections.functors.MapTransformer
+    org.apache.commons.collections.functors.NOPClosure
+    org.apache.commons.collections.functors.NOPTransformer
+    org.apache.commons.collections.functors.NonePredicate
+    org.apache.commons.collections.functors.NotNullPredicate
+    org.apache.commons.collections.functors.NotPredicate
+    org.apache.commons.collections.functors.NullIsExceptionPredicate
+    org.apache.commons.collections.functors.NullIsFalsePredicate
+    org.apache.commons.collections.functors.NullIsTruePredicate
+    org.apache.commons.collections.functors.NullPredicate
+    org.apache.commons.collections.functors.OnePredicate
+    org.apache.commons.collections.functors.OrPredicate
+    org.apache.commons.collections.functors.PredicateTransformer
+    org.apache.commons.collections.functors.PrototypeFactory
+    org.apache.commons.collections.functors.PrototypeFactory$1
+    org.apache.commons.collections.functors.PrototypeFactory$PrototypeCloneFactory
+    org.apache.commons.collections.functors.PrototypeFactory$PrototypeSerializationFactory
+    org.apache.commons.collections.functors.StringValueTransformer
+    org.apache.commons.collections.functors.SwitchClosure
+    org.apache.commons.collections.functors.SwitchTransformer
+    org.apache.commons.collections.functors.TransformedPredicate
+    org.apache.commons.collections.functors.TransformerClosure
+    org.apache.commons.collections.functors.TransformerPredicate
+    org.apache.commons.collections.functors.TruePredicate
+    org.apache.commons.collections.functors.UniquePredicate
+    org.apache.commons.collections.functors.WhileClosure
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.security
+    java.util
+    org.apache.commons.collections
+
+Used By:
+    org.apache.commons.collections
+    org.apache.commons.collections.bag
+    org.apache.commons.collections.buffer
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.iterators
+    org.apache.commons.collections.list
+    org.apache.commons.collections.map
+    org.apache.commons.collections.set
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.iterators
+--------------------------------------------------
+
+Stats:
+    Total Classes: 36
+    Concrete Classes: 35
+    Abstract Classes: 1
+
+    Ca: 8
+    Ce: 6
+
+    A: 0.03
+    I: 0.43
+    D: 0.54
+
+Abstract Classes:
+    org.apache.commons.collections.iterators.AbstractEmptyIterator
+
+Concrete Classes:
+    org.apache.commons.collections.iterators.AbstractIteratorDecorator
+    org.apache.commons.collections.iterators.AbstractListIteratorDecorator
+    org.apache.commons.collections.iterators.AbstractMapIteratorDecorator
+    org.apache.commons.collections.iterators.AbstractOrderedMapIteratorDecorator
+    org.apache.commons.collections.iterators.ArrayIterator
+    org.apache.commons.collections.iterators.ArrayListIterator
+    org.apache.commons.collections.iterators.CollatingIterator
+    org.apache.commons.collections.iterators.EmptyIterator
+    org.apache.commons.collections.iterators.EmptyListIterator
+    org.apache.commons.collections.iterators.EmptyMapIterator
+    org.apache.commons.collections.iterators.EmptyOrderedIterator
+    org.apache.commons.collections.iterators.EmptyOrderedMapIterator
+    org.apache.commons.collections.iterators.EntrySetMapIterator
+    org.apache.commons.collections.iterators.EnumerationIterator
+    org.apache.commons.collections.iterators.FilterIterator
+    org.apache.commons.collections.iterators.FilterListIterator
+    org.apache.commons.collections.iterators.IteratorChain
+    org.apache.commons.collections.iterators.IteratorEnumeration
+    org.apache.commons.collections.iterators.ListIteratorWrapper
+    org.apache.commons.collections.iterators.LoopingIterator
+    org.apache.commons.collections.iterators.LoopingListIterator
+    org.apache.commons.collections.iterators.ObjectArrayIterator
+    org.apache.commons.collections.iterators.ObjectArrayListIterator
+    org.apache.commons.collections.iterators.ObjectGraphIterator
+    org.apache.commons.collections.iterators.ProxyIterator
+    org.apache.commons.collections.iterators.ProxyListIterator
+    org.apache.commons.collections.iterators.ReverseListIterator
+    org.apache.commons.collections.iterators.SingletonIterator
+    org.apache.commons.collections.iterators.SingletonListIterator
+    org.apache.commons.collections.iterators.TransformIterator
+    org.apache.commons.collections.iterators.UniqueFilterIterator
+    org.apache.commons.collections.iterators.UnmodifiableIterator
+    org.apache.commons.collections.iterators.UnmodifiableListIterator
+    org.apache.commons.collections.iterators.UnmodifiableMapIterator
+    org.apache.commons.collections.iterators.UnmodifiableOrderedMapIterator
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    org.apache.commons.collections
+    org.apache.commons.collections.functors
+    org.apache.commons.collections.list
+
+Used By:
+    org.apache.commons.collections
+    org.apache.commons.collections.bag
+    org.apache.commons.collections.bidimap
+    org.apache.commons.collections.buffer
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.list
+    org.apache.commons.collections.map
+    org.apache.commons.collections.set
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.keyvalue
+--------------------------------------------------
+
+Stats:
+    Total Classes: 8
+    Concrete Classes: 5
+    Abstract Classes: 3
+
+    Ca: 4
+    Ce: 4
+
+    A: 0.38
+    I: 0.5
+    D: 0.12
+
+Abstract Classes:
+    org.apache.commons.collections.keyvalue.AbstractKeyValue
+    org.apache.commons.collections.keyvalue.AbstractMapEntry
+    org.apache.commons.collections.keyvalue.AbstractMapEntryDecorator
+
+Concrete Classes:
+    org.apache.commons.collections.keyvalue.DefaultKeyValue
+    org.apache.commons.collections.keyvalue.DefaultMapEntry
+    org.apache.commons.collections.keyvalue.MultiKey
+    org.apache.commons.collections.keyvalue.TiedMapEntry
+    org.apache.commons.collections.keyvalue.UnmodifiableMapEntry
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    org.apache.commons.collections
+
+Used By:
+    org.apache.commons.beanutils
+    org.apache.commons.collections
+    org.apache.commons.collections.bidimap
+    org.apache.commons.collections.map
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.list
+--------------------------------------------------
+
+Stats:
+    Total Classes: 29
+    Concrete Classes: 26
+    Abstract Classes: 3
+
+    Ca: 5
+    Ce: 10
+
+    A: 0.1
+    I: 0.67
+    D: 0.23
+
+Abstract Classes:
+    org.apache.commons.collections.list.AbstractLinkedList
+    org.apache.commons.collections.list.AbstractListDecorator
+    org.apache.commons.collections.list.AbstractSerializableListDecorator
+
+Concrete Classes:
+    org.apache.commons.collections.list.AbstractLinkedList$LinkedListIterator
+    org.apache.commons.collections.list.AbstractLinkedList$LinkedSubList
+    org.apache.commons.collections.list.AbstractLinkedList$LinkedSubListIterator
+    org.apache.commons.collections.list.AbstractLinkedList$Node
+    org.apache.commons.collections.list.CursorableLinkedList
+    org.apache.commons.collections.list.CursorableLinkedList$Cursor
+    org.apache.commons.collections.list.CursorableLinkedList$SubCursor
+    org.apache.commons.collections.list.FixedSizeList
+    org.apache.commons.collections.list.FixedSizeList$FixedSizeListIterator
+    org.apache.commons.collections.list.GrowthList
+    org.apache.commons.collections.list.LazyList
+    org.apache.commons.collections.list.NodeCachingLinkedList
+    org.apache.commons.collections.list.PredicatedList
+    org.apache.commons.collections.list.PredicatedList$PredicatedListIterator
+    org.apache.commons.collections.list.SetUniqueList
+    org.apache.commons.collections.list.SetUniqueList$SetListIterator
+    org.apache.commons.collections.list.SetUniqueList$SetListListIterator
+    org.apache.commons.collections.list.SynchronizedList
+    org.apache.commons.collections.list.TransformedList
+    org.apache.commons.collections.list.TransformedList$TransformedListIterator
+    org.apache.commons.collections.list.TreeList
+    org.apache.commons.collections.list.TreeList$1
+    org.apache.commons.collections.list.TreeList$AVLNode
+    org.apache.commons.collections.list.TreeList$TreeListIterator
+    org.apache.commons.collections.list.TypedList
+    org.apache.commons.collections.list.UnmodifiableList
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.ref
+    java.lang.reflect
+    java.util
+    org.apache.commons.collections
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.functors
+    org.apache.commons.collections.iterators
+    org.apache.commons.collections.set
+
+Used By:
+    org.apache.commons.collections
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.iterators
+    org.apache.commons.collections.map
+    org.apache.commons.collections.set
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.map
+--------------------------------------------------
+
+Stats:
+    Total Classes: 99
+    Concrete Classes: 91
+    Abstract Classes: 8
+
+    Ca: 2
+    Ce: 12
+
+    A: 0.08
+    I: 0.86
+    D: 0.06
+
+Abstract Classes:
+    org.apache.commons.collections.map.AbstractHashedMap$HashIterator
+    org.apache.commons.collections.map.AbstractInputCheckedMapDecorator
+    org.apache.commons.collections.map.AbstractLinkedMap$LinkIterator
+    org.apache.commons.collections.map.AbstractMapDecorator
+    org.apache.commons.collections.map.AbstractOrderedMapDecorator
+    org.apache.commons.collections.map.AbstractReferenceMap
+    org.apache.commons.collections.map.AbstractSortedMapDecorator
+    org.apache.commons.collections.map.CompositeMap$MapMutator
+
+Concrete Classes:
+    org.apache.commons.collections.map.AbstractHashedMap
+    org.apache.commons.collections.map.AbstractHashedMap$EntrySet
+    org.apache.commons.collections.map.AbstractHashedMap$EntrySetIterator
+    org.apache.commons.collections.map.AbstractHashedMap$HashEntry
+    org.apache.commons.collections.map.AbstractHashedMap$HashMapIterator
+    org.apache.commons.collections.map.AbstractHashedMap$KeySet
+    org.apache.commons.collections.map.AbstractHashedMap$KeySetIterator
+    org.apache.commons.collections.map.AbstractHashedMap$Values
+    org.apache.commons.collections.map.AbstractHashedMap$ValuesIterator
+    org.apache.commons.collections.map.AbstractInputCheckedMapDecorator$EntrySet
+    org.apache.commons.collections.map.AbstractInputCheckedMapDecorator$EntrySetIterator
+    org.apache.commons.collections.map.AbstractInputCheckedMapDecorator$MapEntry
+    org.apache.commons.collections.map.AbstractLinkedMap
+    org.apache.commons.collections.map.AbstractLinkedMap$EntrySetIterator
+    org.apache.commons.collections.map.AbstractLinkedMap$KeySetIterator
+    org.apache.commons.collections.map.AbstractLinkedMap$LinkEntry
+    org.apache.commons.collections.map.AbstractLinkedMap$LinkMapIterator
+    org.apache.commons.collections.map.AbstractLinkedMap$ValuesIterator
+    org.apache.commons.collections.map.AbstractReferenceMap$ReferenceEntry
+    org.apache.commons.collections.map.AbstractReferenceMap$ReferenceEntrySet
+    org.apache.commons.collections.map.AbstractReferenceMap$ReferenceEntrySetIterator
+    org.apache.commons.collections.map.AbstractReferenceMap$ReferenceKeySet
+    org.apache.commons.collections.map.AbstractReferenceMap$ReferenceKeySetIterator
+    org.apache.commons.collections.map.AbstractReferenceMap$ReferenceMapIterator
+    org.apache.commons.collections.map.AbstractReferenceMap$ReferenceValues
+    org.apache.commons.collections.map.AbstractReferenceMap$ReferenceValuesIterator
+    org.apache.commons.collections.map.AbstractReferenceMap$SoftRef
+    org.apache.commons.collections.map.AbstractReferenceMap$WeakRef
+    org.apache.commons.collections.map.CaseInsensitiveMap
+    org.apache.commons.collections.map.CompositeMap
+    org.apache.commons.collections.map.DefaultedMap
+    org.apache.commons.collections.map.FixedSizeMap
+    org.apache.commons.collections.map.FixedSizeSortedMap
+    org.apache.commons.collections.map.Flat3Map
+    org.apache.commons.collections.map.Flat3Map$EntrySet
+    org.apache.commons.collections.map.Flat3Map$EntrySetIterator
+    org.apache.commons.collections.map.Flat3Map$FlatMapIterator
+    org.apache.commons.collections.map.Flat3Map$KeySet
+    org.apache.commons.collections.map.Flat3Map$KeySetIterator
+    org.apache.commons.collections.map.Flat3Map$Values
+    org.apache.commons.collections.map.Flat3Map$ValuesIterator
+    org.apache.commons.collections.map.HashedMap
+    org.apache.commons.collections.map.IdentityMap
+    org.apache.commons.collections.map.IdentityMap$IdentityEntry
+    org.apache.commons.collections.map.LRUMap
+    org.apache.commons.collections.map.LazyMap
+    org.apache.commons.collections.map.LazySortedMap
+    org.apache.commons.collections.map.LinkedMap
+    org.apache.commons.collections.map.LinkedMap$LinkedMapList
+    org.apache.commons.collections.map.ListOrderedMap
+    org.apache.commons.collections.map.ListOrderedMap$EntrySetView
+    org.apache.commons.collections.map.ListOrderedMap$KeySetView
+    org.apache.commons.collections.map.ListOrderedMap$KeySetView$1
+    org.apache.commons.collections.map.ListOrderedMap$ListOrderedIterator
+    org.apache.commons.collections.map.ListOrderedMap$ListOrderedMapEntry
+    org.apache.commons.collections.map.ListOrderedMap$ListOrderedMapIterator
+    org.apache.commons.collections.map.ListOrderedMap$ValuesView
+    org.apache.commons.collections.map.ListOrderedMap$ValuesView$1
+    org.apache.commons.collections.map.MultiKeyMap
+    org.apache.commons.collections.map.MultiValueMap
+    org.apache.commons.collections.map.MultiValueMap$1
+    org.apache.commons.collections.map.MultiValueMap$ReflectionFactory
+    org.apache.commons.collections.map.MultiValueMap$Values
+    org.apache.commons.collections.map.MultiValueMap$ValuesIterator
+    org.apache.commons.collections.map.PredicatedMap
+    org.apache.commons.collections.map.PredicatedSortedMap
+    org.apache.commons.collections.map.ReferenceIdentityMap
+    org.apache.commons.collections.map.ReferenceMap
+    org.apache.commons.collections.map.SingletonMap
+    org.apache.commons.collections.map.SingletonMap$SingletonMapIterator
+    org.apache.commons.collections.map.SingletonMap$SingletonValues
+    org.apache.commons.collections.map.StaticBucketMap
+    org.apache.commons.collections.map.StaticBucketMap$1
+    org.apache.commons.collections.map.StaticBucketMap$EntryIterator
+    org.apache.commons.collections.map.StaticBucketMap$EntrySet
+    org.apache.commons.collections.map.StaticBucketMap$KeyIterator
+    org.apache.commons.collections.map.StaticBucketMap$KeySet
+    org.apache.commons.collections.map.StaticBucketMap$Lock
+    org.apache.commons.collections.map.StaticBucketMap$Node
+    org.apache.commons.collections.map.StaticBucketMap$ValueIterator
+    org.apache.commons.collections.map.StaticBucketMap$Values
+    org.apache.commons.collections.map.TransformedMap
+    org.apache.commons.collections.map.TransformedSortedMap
+    org.apache.commons.collections.map.TypedMap
+    org.apache.commons.collections.map.TypedSortedMap
+    org.apache.commons.collections.map.UnmodifiableEntrySet
+    org.apache.commons.collections.map.UnmodifiableEntrySet$UnmodifiableEntry
+    org.apache.commons.collections.map.UnmodifiableEntrySet$UnmodifiableEntrySetIterator
+    org.apache.commons.collections.map.UnmodifiableMap
+    org.apache.commons.collections.map.UnmodifiableOrderedMap
+    org.apache.commons.collections.map.UnmodifiableSortedMap
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.ref
+    java.lang.reflect
+    java.util
+    org.apache.commons.collections
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.functors
+    org.apache.commons.collections.iterators
+    org.apache.commons.collections.keyvalue
+    org.apache.commons.collections.list
+    org.apache.commons.collections.set
+
+Used By:
+    org.apache.commons.collections
+    org.apache.commons.collections.bidimap
+
+--------------------------------------------------
+- Package: org.apache.commons.collections.set
+--------------------------------------------------
+
+Stats:
+    Total Classes: 19
+    Concrete Classes: 15
+    Abstract Classes: 4
+
+    Ca: 5
+    Ce: 8
+
+    A: 0.21
+    I: 0.62
+    D: 0.17
+
+Abstract Classes:
+    org.apache.commons.collections.set.AbstractSerializableSetDecorator
+    org.apache.commons.collections.set.AbstractSetDecorator
+    org.apache.commons.collections.set.AbstractSortedSetDecorator
+    org.apache.commons.collections.set.CompositeSet$SetMutator
+
+Concrete Classes:
+    org.apache.commons.collections.set.CompositeSet
+    org.apache.commons.collections.set.ListOrderedSet
+    org.apache.commons.collections.set.ListOrderedSet$1
+    org.apache.commons.collections.set.ListOrderedSet$OrderedSetIterator
+    org.apache.commons.collections.set.MapBackedSet
+    org.apache.commons.collections.set.PredicatedSet
+    org.apache.commons.collections.set.PredicatedSortedSet
+    org.apache.commons.collections.set.SynchronizedSet
+    org.apache.commons.collections.set.SynchronizedSortedSet
+    org.apache.commons.collections.set.TransformedSet
+    org.apache.commons.collections.set.TransformedSortedSet
+    org.apache.commons.collections.set.TypedSet
+    org.apache.commons.collections.set.TypedSortedSet
+    org.apache.commons.collections.set.UnmodifiableSet
+    org.apache.commons.collections.set.UnmodifiableSortedSet
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    org.apache.commons.collections
+    org.apache.commons.collections.collection
+    org.apache.commons.collections.functors
+    org.apache.commons.collections.iterators
+    org.apache.commons.collections.list
+
+Used By:
+    org.apache.commons.collections
+    org.apache.commons.collections.bag
+    org.apache.commons.collections.bidimap
+    org.apache.commons.collections.list
+    org.apache.commons.collections.map
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3
+--------------------------------------------------
+
+Stats:
+    Total Classes: 50
+    Concrete Classes: 48
+    Abstract Classes: 2
+
+    Ca: 17
+    Ce: 16
+
+    A: 0.04
+    I: 0.48
+    D: 0.48
+
+Abstract Classes:
+    org.apache.commons.lang3.ThreadUtils$ThreadGroupPredicate
+    org.apache.commons.lang3.ThreadUtils$ThreadPredicate
+
+Concrete Classes:
+    org.apache.commons.lang3.AnnotationUtils
+    org.apache.commons.lang3.AnnotationUtils$1
+    org.apache.commons.lang3.ArchUtils
+    org.apache.commons.lang3.ArrayUtils
+    org.apache.commons.lang3.ArrayUtils$1
+    org.apache.commons.lang3.BitField
+    org.apache.commons.lang3.BooleanUtils
+    org.apache.commons.lang3.CharEncoding
+    org.apache.commons.lang3.CharRange
+    org.apache.commons.lang3.CharRange$1
+    org.apache.commons.lang3.CharRange$CharacterIterator
+    org.apache.commons.lang3.CharSequenceUtils
+    org.apache.commons.lang3.CharSet
+    org.apache.commons.lang3.CharSetUtils
+    org.apache.commons.lang3.CharUtils
+    org.apache.commons.lang3.ClassPathUtils
+    org.apache.commons.lang3.ClassUtils
+    org.apache.commons.lang3.ClassUtils$1
+    org.apache.commons.lang3.ClassUtils$1$1
+    org.apache.commons.lang3.ClassUtils$2
+    org.apache.commons.lang3.ClassUtils$2$1
+    org.apache.commons.lang3.ClassUtils$Interfaces
+    org.apache.commons.lang3.Conversion
+    org.apache.commons.lang3.EnumUtils
+    org.apache.commons.lang3.JavaVersion
+    org.apache.commons.lang3.LocaleUtils
+    org.apache.commons.lang3.LocaleUtils$SyncAvoid
+    org.apache.commons.lang3.NotImplementedException
+    org.apache.commons.lang3.ObjectUtils
+    org.apache.commons.lang3.ObjectUtils$Null
+    org.apache.commons.lang3.RandomStringUtils
+    org.apache.commons.lang3.RandomUtils
+    org.apache.commons.lang3.Range
+    org.apache.commons.lang3.Range$ComparableComparator
+    org.apache.commons.lang3.SerializationException
+    org.apache.commons.lang3.SerializationUtils
+    org.apache.commons.lang3.SerializationUtils$ClassLoaderAwareObjectInputStream
+    org.apache.commons.lang3.StringEscapeUtils
+    org.apache.commons.lang3.StringEscapeUtils$CsvEscaper
+    org.apache.commons.lang3.StringEscapeUtils$CsvUnescaper
+    org.apache.commons.lang3.StringUtils
+    org.apache.commons.lang3.SystemUtils
+    org.apache.commons.lang3.ThreadUtils
+    org.apache.commons.lang3.ThreadUtils$1
+    org.apache.commons.lang3.ThreadUtils$AlwaysTruePredicate
+    org.apache.commons.lang3.ThreadUtils$NamePredicate
+    org.apache.commons.lang3.ThreadUtils$ThreadIdPredicate
+    org.apache.commons.lang3.Validate
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.nio.charset
+    java.text
+    java.util
+    java.util.concurrent
+    java.util.regex
+    org.apache.commons.lang3.arch
+    org.apache.commons.lang3.builder
+    org.apache.commons.lang3.exception
+    org.apache.commons.lang3.math
+    org.apache.commons.lang3.mutable
+    org.apache.commons.lang3.text
+    org.apache.commons.lang3.text.translate
+
+Used By:
+    com.opencsv
+    com.opencsv.bean
+    com.opencsv.bean.concurrent
+    com.opencsv.bean.customconverter
+    org.apache.commons.lang3.builder
+    org.apache.commons.lang3.concurrent
+    org.apache.commons.lang3.event
+    org.apache.commons.lang3.exception
+    org.apache.commons.lang3.math
+    org.apache.commons.lang3.mutable
+    org.apache.commons.lang3.reflect
+    org.apache.commons.lang3.text
+    org.apache.commons.lang3.text.translate
+    org.apache.commons.lang3.time
+    org.apache.commons.text
+    org.apache.commons.text.similarity
+    org.apache.commons.text.translate
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.arch
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 3
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 1
+
+    A: 0
+    I: 0.5
+    D: 0.5
+
+Abstract Classes:
+
+Concrete Classes:
+    org.apache.commons.lang3.arch.Processor
+    org.apache.commons.lang3.arch.Processor$Arch
+    org.apache.commons.lang3.arch.Processor$Type
+
+Depends Upon:
+    java.lang
+
+Used By:
+    org.apache.commons.lang3
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.builder
+--------------------------------------------------
+
+Stats:
+    Total Classes: 44
+    Concrete Classes: 37
+    Abstract Classes: 7
+
+    Ca: 5
+    Ce: 8
+
+    A: 0.16
+    I: 0.62
+    D: 0.23
+
+Abstract Classes:
+    org.apache.commons.lang3.builder.Builder
+    org.apache.commons.lang3.builder.Diff
+    org.apache.commons.lang3.builder.Diffable
+    org.apache.commons.lang3.builder.EqualsExclude
+    org.apache.commons.lang3.builder.HashCodeExclude
+    org.apache.commons.lang3.builder.ToStringExclude
+    org.apache.commons.lang3.builder.ToStringStyle
+
+Concrete Classes:
+    org.apache.commons.lang3.builder.CompareToBuilder
+    org.apache.commons.lang3.builder.DiffBuilder
+    org.apache.commons.lang3.builder.DiffBuilder$1
+    org.apache.commons.lang3.builder.DiffBuilder$10
+    org.apache.commons.lang3.builder.DiffBuilder$11
+    org.apache.commons.lang3.builder.DiffBuilder$12
+    org.apache.commons.lang3.builder.DiffBuilder$13
+    org.apache.commons.lang3.builder.DiffBuilder$14
+    org.apache.commons.lang3.builder.DiffBuilder$15
+    org.apache.commons.lang3.builder.DiffBuilder$16
+    org.apache.commons.lang3.builder.DiffBuilder$17
+    org.apache.commons.lang3.builder.DiffBuilder$18
+    org.apache.commons.lang3.builder.DiffBuilder$2
+    org.apache.commons.lang3.builder.DiffBuilder$3
+    org.apache.commons.lang3.builder.DiffBuilder$4
+    org.apache.commons.lang3.builder.DiffBuilder$5
+    org.apache.commons.lang3.builder.DiffBuilder$6
+    org.apache.commons.lang3.builder.DiffBuilder$7
+    org.apache.commons.lang3.builder.DiffBuilder$8
+    org.apache.commons.lang3.builder.DiffBuilder$9
+    org.apache.commons.lang3.builder.DiffResult
+    org.apache.commons.lang3.builder.EqualsBuilder
+    org.apache.commons.lang3.builder.HashCodeBuilder
+    org.apache.commons.lang3.builder.IDKey
+    org.apache.commons.lang3.builder.MultilineRecursiveToStringStyle
+    org.apache.commons.lang3.builder.RecursiveToStringStyle
+    org.apache.commons.lang3.builder.ReflectionDiffBuilder
+    org.apache.commons.lang3.builder.ReflectionToStringBuilder
+    org.apache.commons.lang3.builder.StandardToStringStyle
+    org.apache.commons.lang3.builder.ToStringBuilder
+    org.apache.commons.lang3.builder.ToStringStyle$DefaultToStringStyle
+    org.apache.commons.lang3.builder.ToStringStyle$JsonToStringStyle
+    org.apache.commons.lang3.builder.ToStringStyle$MultiLineToStringStyle
+    org.apache.commons.lang3.builder.ToStringStyle$NoClassNameToStringStyle
+    org.apache.commons.lang3.builder.ToStringStyle$NoFieldNameToStringStyle
+    org.apache.commons.lang3.builder.ToStringStyle$ShortPrefixToStringStyle
+    org.apache.commons.lang3.builder.ToStringStyle$SimpleToStringStyle
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    org.apache.commons.lang3
+    org.apache.commons.lang3.reflect
+    org.apache.commons.lang3.tuple
+
+Used By:
+    org.apache.commons.lang3
+    org.apache.commons.lang3.concurrent
+    org.apache.commons.lang3.reflect
+    org.apache.commons.lang3.text
+    org.apache.commons.lang3.tuple
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.concurrent
+--------------------------------------------------
+
+Stats:
+    Total Classes: 37
+    Concrete Classes: 27
+    Abstract Classes: 10
+
+    Ca: 0
+    Ce: 7
+
+    A: 0.27
+    I: 1
+    D: 0.27
+
+Abstract Classes:
+    org.apache.commons.lang3.concurrent.AbstractCircuitBreaker
+    org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$State
+    org.apache.commons.lang3.concurrent.AtomicInitializer
+    org.apache.commons.lang3.concurrent.AtomicSafeInitializer
+    org.apache.commons.lang3.concurrent.BackgroundInitializer
+    org.apache.commons.lang3.concurrent.CircuitBreaker
+    org.apache.commons.lang3.concurrent.Computable
+    org.apache.commons.lang3.concurrent.ConcurrentInitializer
+    org.apache.commons.lang3.concurrent.EventCountCircuitBreaker$StateStrategy
+    org.apache.commons.lang3.concurrent.LazyInitializer
+
+Concrete Classes:
+    org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$1
+    org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$State$1
+    org.apache.commons.lang3.concurrent.AbstractCircuitBreaker$State$2
+    org.apache.commons.lang3.concurrent.BackgroundInitializer$InitializationTask
+    org.apache.commons.lang3.concurrent.BasicThreadFactory
+    org.apache.commons.lang3.concurrent.BasicThreadFactory$1
+    org.apache.commons.lang3.concurrent.BasicThreadFactory$Builder
+    org.apache.commons.lang3.concurrent.CallableBackgroundInitializer
+    org.apache.commons.lang3.concurrent.CircuitBreakingException
+    org.apache.commons.lang3.concurrent.ConcurrentException
+    org.apache.commons.lang3.concurrent.ConcurrentRuntimeException
+    org.apache.commons.lang3.concurrent.ConcurrentUtils
+    org.apache.commons.lang3.concurrent.ConcurrentUtils$ConstantFuture
+    org.apache.commons.lang3.concurrent.ConstantInitializer
+    org.apache.commons.lang3.concurrent.EventCountCircuitBreaker
+    org.apache.commons.lang3.concurrent.EventCountCircuitBreaker$1
+    org.apache.commons.lang3.concurrent.EventCountCircuitBreaker$CheckIntervalData
+    org.apache.commons.lang3.concurrent.EventCountCircuitBreaker$StateStrategyClosed
+    org.apache.commons.lang3.concurrent.EventCountCircuitBreaker$StateStrategyOpen
+    org.apache.commons.lang3.concurrent.Memoizer
+    org.apache.commons.lang3.concurrent.Memoizer$1
+    org.apache.commons.lang3.concurrent.MultiBackgroundInitializer
+    org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$1
+    org.apache.commons.lang3.concurrent.MultiBackgroundInitializer$MultiBackgroundInitializerResults
+    org.apache.commons.lang3.concurrent.ThresholdCircuitBreaker
+    org.apache.commons.lang3.concurrent.TimedSemaphore
+    org.apache.commons.lang3.concurrent.TimedSemaphore$1
+
+Depends Upon:
+    java.beans
+    java.lang
+    java.util
+    java.util.concurrent
+    java.util.concurrent.atomic
+    org.apache.commons.lang3
+    org.apache.commons.lang3.builder
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.event
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 4
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 7
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    org.apache.commons.lang3.event.EventListenerSupport
+    org.apache.commons.lang3.event.EventListenerSupport$ProxyInvocationHandler
+    org.apache.commons.lang3.event.EventUtils
+    org.apache.commons.lang3.event.EventUtils$EventBindingInvocationHandler
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.util
+    java.util.concurrent
+    org.apache.commons.lang3
+    org.apache.commons.lang3.reflect
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.exception
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 5
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 6
+
+    A: 0.17
+    I: 0.75
+    D: 0.08
+
+Abstract Classes:
+    org.apache.commons.lang3.exception.ExceptionContext
+
+Concrete Classes:
+    org.apache.commons.lang3.exception.CloneFailedException
+    org.apache.commons.lang3.exception.ContextedException
+    org.apache.commons.lang3.exception.ContextedRuntimeException
+    org.apache.commons.lang3.exception.DefaultExceptionContext
+    org.apache.commons.lang3.exception.ExceptionUtils
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.util
+    org.apache.commons.lang3
+    org.apache.commons.lang3.tuple
+
+Used By:
+    org.apache.commons.lang3
+    org.apache.commons.lang3.time
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.math
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 3
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 4
+
+    A: 0
+    I: 0.67
+    D: 0.33
+
+Abstract Classes:
+
+Concrete Classes:
+    org.apache.commons.lang3.math.Fraction
+    org.apache.commons.lang3.math.IEEE754rUtils
+    org.apache.commons.lang3.math.NumberUtils
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.math
+    org.apache.commons.lang3
+
+Used By:
+    org.apache.commons.lang3
+    org.apache.commons.lang3.mutable
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.mutable
+--------------------------------------------------
+
+Stats:
+    Total Classes: 9
+    Concrete Classes: 8
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 4
+
+    A: 0.11
+    I: 0.8
+    D: 0.09
+
+Abstract Classes:
+    org.apache.commons.lang3.mutable.Mutable
+
+Concrete Classes:
+    org.apache.commons.lang3.mutable.MutableBoolean
+    org.apache.commons.lang3.mutable.MutableByte
+    org.apache.commons.lang3.mutable.MutableDouble
+    org.apache.commons.lang3.mutable.MutableFloat
+    org.apache.commons.lang3.mutable.MutableInt
+    org.apache.commons.lang3.mutable.MutableLong
+    org.apache.commons.lang3.mutable.MutableObject
+    org.apache.commons.lang3.mutable.MutableShort
+
+Depends Upon:
+    java.io
+    java.lang
+    org.apache.commons.lang3
+    org.apache.commons.lang3.math
+
+Used By:
+    org.apache.commons.lang3
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.reflect
+--------------------------------------------------
+
+Stats:
+    Total Classes: 14
+    Concrete Classes: 11
+    Abstract Classes: 3
+
+    Ca: 3
+    Ce: 6
+
+    A: 0.21
+    I: 0.67
+    D: 0.12
+
+Abstract Classes:
+    org.apache.commons.lang3.reflect.MemberUtils
+    org.apache.commons.lang3.reflect.TypeLiteral
+    org.apache.commons.lang3.reflect.Typed
+
+Concrete Classes:
+    org.apache.commons.lang3.reflect.ConstructorUtils
+    org.apache.commons.lang3.reflect.FieldUtils
+    org.apache.commons.lang3.reflect.InheritanceUtils
+    org.apache.commons.lang3.reflect.MemberUtils$Executable
+    org.apache.commons.lang3.reflect.MethodUtils
+    org.apache.commons.lang3.reflect.TypeUtils
+    org.apache.commons.lang3.reflect.TypeUtils$1
+    org.apache.commons.lang3.reflect.TypeUtils$GenericArrayTypeImpl
+    org.apache.commons.lang3.reflect.TypeUtils$ParameterizedTypeImpl
+    org.apache.commons.lang3.reflect.TypeUtils$WildcardTypeBuilder
+    org.apache.commons.lang3.reflect.TypeUtils$WildcardTypeImpl
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    org.apache.commons.lang3
+    org.apache.commons.lang3.builder
+
+Used By:
+    com.opencsv.bean
+    org.apache.commons.lang3.builder
+    org.apache.commons.lang3.event
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.text
+--------------------------------------------------
+
+Stats:
+    Total Classes: 21
+    Concrete Classes: 18
+    Abstract Classes: 3
+
+    Ca: 1
+    Ce: 8
+
+    A: 0.14
+    I: 0.89
+    D: 0.03
+
+Abstract Classes:
+    org.apache.commons.lang3.text.FormatFactory
+    org.apache.commons.lang3.text.StrLookup
+    org.apache.commons.lang3.text.StrMatcher
+
+Concrete Classes:
+    org.apache.commons.lang3.text.CompositeFormat
+    org.apache.commons.lang3.text.ExtendedMessageFormat
+    org.apache.commons.lang3.text.FormattableUtils
+    org.apache.commons.lang3.text.StrBuilder
+    org.apache.commons.lang3.text.StrBuilder$StrBuilderReader
+    org.apache.commons.lang3.text.StrBuilder$StrBuilderTokenizer
+    org.apache.commons.lang3.text.StrBuilder$StrBuilderWriter
+    org.apache.commons.lang3.text.StrLookup$1
+    org.apache.commons.lang3.text.StrLookup$MapStrLookup
+    org.apache.commons.lang3.text.StrLookup$SystemPropertiesStrLookup
+    org.apache.commons.lang3.text.StrMatcher$CharMatcher
+    org.apache.commons.lang3.text.StrMatcher$CharSetMatcher
+    org.apache.commons.lang3.text.StrMatcher$NoMatcher
+    org.apache.commons.lang3.text.StrMatcher$StringMatcher
+    org.apache.commons.lang3.text.StrMatcher$TrimMatcher
+    org.apache.commons.lang3.text.StrSubstitutor
+    org.apache.commons.lang3.text.StrTokenizer
+    org.apache.commons.lang3.text.WordUtils
+
+Depends Upon:
+    java.io
+    java.lang
+    java.nio
+    java.text
+    java.util
+    java.util.regex
+    org.apache.commons.lang3
+    org.apache.commons.lang3.builder
+
+Used By:
+    org.apache.commons.lang3
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.text.translate
+--------------------------------------------------
+
+Stats:
+    Total Classes: 13
+    Concrete Classes: 11
+    Abstract Classes: 2
+
+    Ca: 1
+    Ce: 4
+
+    A: 0.15
+    I: 0.8
+    D: 0.05
+
+Abstract Classes:
+    org.apache.commons.lang3.text.translate.CharSequenceTranslator
+    org.apache.commons.lang3.text.translate.CodePointTranslator
+
+Concrete Classes:
+    org.apache.commons.lang3.text.translate.AggregateTranslator
+    org.apache.commons.lang3.text.translate.EntityArrays
+    org.apache.commons.lang3.text.translate.JavaUnicodeEscaper
+    org.apache.commons.lang3.text.translate.LookupTranslator
+    org.apache.commons.lang3.text.translate.NumericEntityEscaper
+    org.apache.commons.lang3.text.translate.NumericEntityUnescaper
+    org.apache.commons.lang3.text.translate.NumericEntityUnescaper$OPTION
+    org.apache.commons.lang3.text.translate.OctalUnescaper
+    org.apache.commons.lang3.text.translate.UnicodeEscaper
+    org.apache.commons.lang3.text.translate.UnicodeUnescaper
+    org.apache.commons.lang3.text.translate.UnicodeUnpairedSurrogateRemover
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    org.apache.commons.lang3
+
+Used By:
+    org.apache.commons.lang3
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.time
+--------------------------------------------------
+
+Stats:
+    Total Classes: 57
+    Concrete Classes: 49
+    Abstract Classes: 8
+
+    Ca: 0
+    Ce: 8
+
+    A: 0.14
+    I: 1
+    D: 0.14
+
+Abstract Classes:
+    org.apache.commons.lang3.time.DateParser
+    org.apache.commons.lang3.time.DatePrinter
+    org.apache.commons.lang3.time.FastDateParser$PatternStrategy
+    org.apache.commons.lang3.time.FastDateParser$Strategy
+    org.apache.commons.lang3.time.FastDatePrinter$NumberRule
+    org.apache.commons.lang3.time.FastDatePrinter$Rule
+    org.apache.commons.lang3.time.FormatCache
+    org.apache.commons.lang3.time.StopWatch$State
+
+Concrete Classes:
+    org.apache.commons.lang3.time.DateFormatUtils
+    org.apache.commons.lang3.time.DateUtils
+    org.apache.commons.lang3.time.DateUtils$DateIterator
+    org.apache.commons.lang3.time.DateUtils$ModifyType
+    org.apache.commons.lang3.time.DurationFormatUtils
+    org.apache.commons.lang3.time.DurationFormatUtils$Token
+    org.apache.commons.lang3.time.FastDateFormat
+    org.apache.commons.lang3.time.FastDateFormat$1
+    org.apache.commons.lang3.time.FastDateParser
+    org.apache.commons.lang3.time.FastDateParser$1
+    org.apache.commons.lang3.time.FastDateParser$2
+    org.apache.commons.lang3.time.FastDateParser$3
+    org.apache.commons.lang3.time.FastDateParser$4
+    org.apache.commons.lang3.time.FastDateParser$5
+    org.apache.commons.lang3.time.FastDateParser$6
+    org.apache.commons.lang3.time.FastDateParser$CaseInsensitiveTextStrategy
+    org.apache.commons.lang3.time.FastDateParser$CopyQuotedStrategy
+    org.apache.commons.lang3.time.FastDateParser$ISO8601TimeZoneStrategy
+    org.apache.commons.lang3.time.FastDateParser$NumberStrategy
+    org.apache.commons.lang3.time.FastDateParser$StrategyAndWidth
+    org.apache.commons.lang3.time.FastDateParser$StrategyParser
+    org.apache.commons.lang3.time.FastDateParser$TimeZoneStrategy
+    org.apache.commons.lang3.time.FastDateParser$TimeZoneStrategy$TzInfo
+    org.apache.commons.lang3.time.FastDatePrinter
+    org.apache.commons.lang3.time.FastDatePrinter$CharacterLiteral
+    org.apache.commons.lang3.time.FastDatePrinter$DayInWeekField
+    org.apache.commons.lang3.time.FastDatePrinter$Iso8601_Rule
+    org.apache.commons.lang3.time.FastDatePrinter$PaddedNumberField
+    org.apache.commons.lang3.time.FastDatePrinter$StringLiteral
+    org.apache.commons.lang3.time.FastDatePrinter$TextField
+    org.apache.commons.lang3.time.FastDatePrinter$TimeZoneDisplayKey
+    org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNameRule
+    org.apache.commons.lang3.time.FastDatePrinter$TimeZoneNumberRule
+    org.apache.commons.lang3.time.FastDatePrinter$TwelveHourField
+    org.apache.commons.lang3.time.FastDatePrinter$TwentyFourHourField
+    org.apache.commons.lang3.time.FastDatePrinter$TwoDigitMonthField
+    org.apache.commons.lang3.time.FastDatePrinter$TwoDigitNumberField
+    org.apache.commons.lang3.time.FastDatePrinter$TwoDigitYearField
+    org.apache.commons.lang3.time.FastDatePrinter$UnpaddedMonthField
+    org.apache.commons.lang3.time.FastDatePrinter$UnpaddedNumberField
+    org.apache.commons.lang3.time.FastDatePrinter$WeekYear
+    org.apache.commons.lang3.time.FormatCache$MultipartKey
+    org.apache.commons.lang3.time.StopWatch
+    org.apache.commons.lang3.time.StopWatch$1
+    org.apache.commons.lang3.time.StopWatch$SplitState
+    org.apache.commons.lang3.time.StopWatch$State$1
+    org.apache.commons.lang3.time.StopWatch$State$2
+    org.apache.commons.lang3.time.StopWatch$State$3
+    org.apache.commons.lang3.time.StopWatch$State$4
+
+Depends Upon:
+    java.io
+    java.lang
+    java.text
+    java.util
+    java.util.concurrent
+    java.util.regex
+    org.apache.commons.lang3
+    org.apache.commons.lang3.exception
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.apache.commons.lang3.tuple
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 4
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 4
+
+    A: 0.33
+    I: 0.67
+    D: 0
+
+Abstract Classes:
+    org.apache.commons.lang3.tuple.Pair
+    org.apache.commons.lang3.tuple.Triple
+
+Concrete Classes:
+    org.apache.commons.lang3.tuple.ImmutablePair
+    org.apache.commons.lang3.tuple.ImmutableTriple
+    org.apache.commons.lang3.tuple.MutablePair
+    org.apache.commons.lang3.tuple.MutableTriple
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    org.apache.commons.lang3.builder
+
+Used By:
+    org.apache.commons.lang3.builder
+    org.apache.commons.lang3.exception
+
+--------------------------------------------------
+- Package: org.apache.commons.logging
+--------------------------------------------------
+
+Stats:
+    Total Classes: 10
+    Concrete Classes: 8
+    Abstract Classes: 2
+
+    Ca: 5
+    Ce: 7
+
+    A: 0.2
+    I: 0.58
+    D: 0.22
+
+Abstract Classes:
+    org.apache.commons.logging.Log
+    org.apache.commons.logging.LogFactory
+
+Concrete Classes:
+    org.apache.commons.logging.LogConfigurationException
+    org.apache.commons.logging.LogFactory$1
+    org.apache.commons.logging.LogFactory$2
+    org.apache.commons.logging.LogFactory$3
+    org.apache.commons.logging.LogFactory$4
+    org.apache.commons.logging.LogFactory$5
+    org.apache.commons.logging.LogFactory$6
+    org.apache.commons.logging.LogSource
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.net
+    java.security
+    java.util
+    org.apache.commons.logging.impl
+
+Used By:
+    org.apache.commons.beanutils
+    org.apache.commons.beanutils.converters
+    org.apache.commons.beanutils.locale
+    org.apache.commons.beanutils.locale.converters
+    org.apache.commons.logging.impl
+
+--------------------------------------------------
+- Package: org.apache.commons.logging.impl
+--------------------------------------------------
+
+Stats:
+    Total Classes: 18
+    Concrete Classes: 18
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 13
+
+    A: 0
+    I: 0.93
+    D: 0.07
+
+Abstract Classes:
+
+Concrete Classes:
+    org.apache.commons.logging.impl.AvalonLogger
+    org.apache.commons.logging.impl.Jdk13LumberjackLogger
+    org.apache.commons.logging.impl.Jdk14Logger
+    org.apache.commons.logging.impl.Log4JLogger
+    org.apache.commons.logging.impl.LogFactoryImpl
+    org.apache.commons.logging.impl.LogFactoryImpl$1
+    org.apache.commons.logging.impl.LogFactoryImpl$2
+    org.apache.commons.logging.impl.LogFactoryImpl$3
+    org.apache.commons.logging.impl.LogKitLogger
+    org.apache.commons.logging.impl.NoOpLog
+    org.apache.commons.logging.impl.ServletContextCleaner
+    org.apache.commons.logging.impl.SimpleLog
+    org.apache.commons.logging.impl.SimpleLog$1
+    org.apache.commons.logging.impl.WeakHashtable
+    org.apache.commons.logging.impl.WeakHashtable$1
+    org.apache.commons.logging.impl.WeakHashtable$Entry
+    org.apache.commons.logging.impl.WeakHashtable$Referenced
+    org.apache.commons.logging.impl.WeakHashtable$WeakKey
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.ref
+    java.lang.reflect
+    java.security
+    java.text
+    java.util
+    java.util.logging
+    javax.servlet
+    org.apache.avalon.framework.logger
+    org.apache.commons.logging
+    org.apache.log
+    org.apache.log4j
+
+Used By:
+    org.apache.commons.logging
+
+--------------------------------------------------
+- Package: org.apache.commons.text
+--------------------------------------------------
+
+Stats:
+    Total Classes: 35
+    Concrete Classes: 28
+    Abstract Classes: 7
+
+    Ca: 2
+    Ce: 9
+
+    A: 0.2
+    I: 0.82
+    D: 0.02
+
+Abstract Classes:
+    org.apache.commons.text.Builder
+    org.apache.commons.text.CharacterPredicate
+    org.apache.commons.text.CharacterPredicates
+    org.apache.commons.text.FormatFactory
+    org.apache.commons.text.StrLookup
+    org.apache.commons.text.StrMatcher
+    org.apache.commons.text.TextRandomProvider
+
+Concrete Classes:
+    org.apache.commons.text.AlphabetConverter
+    org.apache.commons.text.CharacterPredicates$1
+    org.apache.commons.text.CharacterPredicates$2
+    org.apache.commons.text.CompositeFormat
+    org.apache.commons.text.ExtendedMessageFormat
+    org.apache.commons.text.FormattableUtils
+    org.apache.commons.text.RandomStringGenerator
+    org.apache.commons.text.RandomStringGenerator$1
+    org.apache.commons.text.RandomStringGenerator$Builder
+    org.apache.commons.text.StrBuilder
+    org.apache.commons.text.StrBuilder$StrBuilderReader
+    org.apache.commons.text.StrBuilder$StrBuilderTokenizer
+    org.apache.commons.text.StrBuilder$StrBuilderWriter
+    org.apache.commons.text.StrLookup$1
+    org.apache.commons.text.StrLookup$MapStrLookup
+    org.apache.commons.text.StrLookup$SystemPropertiesStrLookup
+    org.apache.commons.text.StrMatcher$CharMatcher
+    org.apache.commons.text.StrMatcher$CharSetMatcher
+    org.apache.commons.text.StrMatcher$NoMatcher
+    org.apache.commons.text.StrMatcher$StringMatcher
+    org.apache.commons.text.StrMatcher$TrimMatcher
+    org.apache.commons.text.StrSubstitutor
+    org.apache.commons.text.StrTokenizer
+    org.apache.commons.text.StringEscapeUtils
+    org.apache.commons.text.StringEscapeUtils$1
+    org.apache.commons.text.StringEscapeUtils$Builder
+    org.apache.commons.text.StringEscapeUtils$XsiUnescaper
+    org.apache.commons.text.WordUtils
+
+Depends Upon:
+    java.io
+    java.lang
+    java.nio
+    java.text
+    java.util
+    java.util.concurrent
+    java.util.regex
+    org.apache.commons.lang3
+    org.apache.commons.text.translate
+
+Used By:
+    com.opencsv
+    com.opencsv.bean
+
+--------------------------------------------------
+- Package: org.apache.commons.text.diff
+--------------------------------------------------
+
+Stats:
+    Total Classes: 10
+    Concrete Classes: 7
+    Abstract Classes: 3
+
+    Ca: 0
+    Ce: 2
+
+    A: 0.3
+    I: 1
+    D: 0.3
+
+Abstract Classes:
+    org.apache.commons.text.diff.CommandVisitor
+    org.apache.commons.text.diff.EditCommand
+    org.apache.commons.text.diff.ReplacementsHandler
+
+Concrete Classes:
+    org.apache.commons.text.diff.DeleteCommand
+    org.apache.commons.text.diff.EditScript
+    org.apache.commons.text.diff.InsertCommand
+    org.apache.commons.text.diff.KeepCommand
+    org.apache.commons.text.diff.ReplacementsFinder
+    org.apache.commons.text.diff.StringsComparator
+    org.apache.commons.text.diff.StringsComparator$Snake
+
+Depends Upon:
+    java.lang
+    java.util
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.apache.commons.text.similarity
+--------------------------------------------------
+
+Stats:
+    Total Classes: 19
+    Concrete Classes: 16
+    Abstract Classes: 3
+
+    Ca: 0
+    Ce: 4
+
+    A: 0.16
+    I: 1
+    D: 0.16
+
+Abstract Classes:
+    org.apache.commons.text.similarity.EditDistance
+    org.apache.commons.text.similarity.SimilarityScore
+    org.apache.commons.text.similarity.Tokenizer
+
+Concrete Classes:
+    org.apache.commons.text.similarity.CosineDistance
+    org.apache.commons.text.similarity.CosineSimilarity
+    org.apache.commons.text.similarity.Counter
+    org.apache.commons.text.similarity.EditDistanceFrom
+    org.apache.commons.text.similarity.FuzzyScore
+    org.apache.commons.text.similarity.HammingDistance
+    org.apache.commons.text.similarity.JaccardDistance
+    org.apache.commons.text.similarity.JaccardSimilarity
+    org.apache.commons.text.similarity.JaroWinklerDistance
+    org.apache.commons.text.similarity.LevenshteinDetailedDistance
+    org.apache.commons.text.similarity.LevenshteinDistance
+    org.apache.commons.text.similarity.LevenshteinResults
+    org.apache.commons.text.similarity.LongestCommonSubsequence
+    org.apache.commons.text.similarity.LongestCommonSubsequenceDistance
+    org.apache.commons.text.similarity.RegexTokenizer
+    org.apache.commons.text.similarity.SimilarityScoreFrom
+
+Depends Upon:
+    java.lang
+    java.util
+    java.util.regex
+    org.apache.commons.lang3
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.apache.commons.text.translate
+--------------------------------------------------
+
+Stats:
+    Total Classes: 17
+    Concrete Classes: 14
+    Abstract Classes: 3
+
+    Ca: 1
+    Ce: 5
+
+    A: 0.18
+    I: 0.83
+    D: 0.01
+
+Abstract Classes:
+    org.apache.commons.text.translate.CharSequenceTranslator
+    org.apache.commons.text.translate.CodePointTranslator
+    org.apache.commons.text.translate.SinglePassTranslator
+
+Concrete Classes:
+    org.apache.commons.text.translate.AggregateTranslator
+    org.apache.commons.text.translate.CsvTranslators
+    org.apache.commons.text.translate.CsvTranslators$CsvEscaper
+    org.apache.commons.text.translate.CsvTranslators$CsvUnescaper
+    org.apache.commons.text.translate.EntityArrays
+    org.apache.commons.text.translate.JavaUnicodeEscaper
+    org.apache.commons.text.translate.LookupTranslator
+    org.apache.commons.text.translate.NumericEntityEscaper
+    org.apache.commons.text.translate.NumericEntityUnescaper
+    org.apache.commons.text.translate.NumericEntityUnescaper$OPTION
+    org.apache.commons.text.translate.OctalUnescaper
+    org.apache.commons.text.translate.UnicodeEscaper
+    org.apache.commons.text.translate.UnicodeUnescaper
+    org.apache.commons.text.translate.UnicodeUnpairedSurrogateRemover
+
+Depends Upon:
+    java.io
+    java.lang
+    java.security
+    java.util
+    org.apache.commons.lang3
+
+Used By:
+    org.apache.commons.text
+
+--------------------------------------------------
+- Package: org.apache.log
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.apache.log4j
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.intellij.lang.annotations
+--------------------------------------------------
+
+Stats:
+    Total Classes: 25
+    Concrete Classes: 2
+    Abstract Classes: 23
+
+    Ca: 0
+    Ce: 2
+
+    A: 0.92
+    I: 1
+    D: 0.92
+
+Abstract Classes:
+    org.intellij.lang.annotations.Flow
+    org.intellij.lang.annotations.Identifier
+    org.intellij.lang.annotations.JdkConstants$AdjustableOrientation
+    org.intellij.lang.annotations.JdkConstants$BoxLayoutAxis
+    org.intellij.lang.annotations.JdkConstants$CalendarMonth
+    org.intellij.lang.annotations.JdkConstants$CursorType
+    org.intellij.lang.annotations.JdkConstants$FlowLayoutAlignment
+    org.intellij.lang.annotations.JdkConstants$FontStyle
+    org.intellij.lang.annotations.JdkConstants$HorizontalAlignment
+    org.intellij.lang.annotations.JdkConstants$InputEventMask
+    org.intellij.lang.annotations.JdkConstants$ListSelectionMode
+    org.intellij.lang.annotations.JdkConstants$PatternFlags
+    org.intellij.lang.annotations.JdkConstants$TabLayoutPolicy
+    org.intellij.lang.annotations.JdkConstants$TabPlacement
+    org.intellij.lang.annotations.JdkConstants$TitledBorderJustification
+    org.intellij.lang.annotations.JdkConstants$TitledBorderTitlePosition
+    org.intellij.lang.annotations.JdkConstants$TreeSelectionMode
+    org.intellij.lang.annotations.Language
+    org.intellij.lang.annotations.MagicConstant
+    org.intellij.lang.annotations.Pattern
+    org.intellij.lang.annotations.PrintFormat
+    org.intellij.lang.annotations.RegExp
+    org.intellij.lang.annotations.Subst
+
+Concrete Classes:
+    org.intellij.lang.annotations.JdkConstants
+    org.intellij.lang.annotations.PrintFormatPattern
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.jetbrains.annotations
+--------------------------------------------------
+
+Stats:
+    Total Classes: 7
+    Concrete Classes: 0
+    Abstract Classes: 7
+
+    Ca: 0
+    Ce: 2
+
+    A: 1
+    I: 1
+    D: 1
+
+Abstract Classes:
+    org.jetbrains.annotations.Contract
+    org.jetbrains.annotations.Nls
+    org.jetbrains.annotations.NonNls
+    org.jetbrains.annotations.NotNull
+    org.jetbrains.annotations.Nullable
+    org.jetbrains.annotations.PropertyKey
+    org.jetbrains.annotations.TestOnly
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.json
+--------------------------------------------------
+
+Stats:
+    Total Classes: 23
+    Concrete Classes: 22
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 6
+
+    A: 0.04
+    I: 0.86
+    D: 0.1
+
+Abstract Classes:
+    org.json.JSONString
+
+Concrete Classes:
+    org.json.CDL
+    org.json.Cookie
+    org.json.CookieList
+    org.json.HTTP
+    org.json.HTTPTokener
+    org.json.JSONArray
+    org.json.JSONException
+    org.json.JSONML
+    org.json.JSONObject
+    org.json.JSONObject$1
+    org.json.JSONObject$Null
+    org.json.JSONPointer
+    org.json.JSONPointer$Builder
+    org.json.JSONPointerException
+    org.json.JSONStringer
+    org.json.JSONTokener
+    org.json.JSONWriter
+    org.json.Property
+    org.json.XML
+    org.json.XML$1
+    org.json.XML$1$1
+    org.json.XMLTokener
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.math
+    java.net
+    java.util
+
+Used By:
+    com.yonasadiel.openweatherapi
+
+--------------------------------------------------
+- Package: org.junit
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+
+--------------------------------------------------
+- Package Dependency Cycles:
+--------------------------------------------------
+
+com.opencsv
+    |
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+com.opencsv.bean
+    |
+    |   org.apache.commons.beanutils
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+com.opencsv.bean.concurrent
+    |
+    |   com.opencsv.bean
+    |   org.apache.commons.beanutils
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+com.opencsv.bean.customconverter
+    |
+    |   com.opencsv.bean
+    |   org.apache.commons.beanutils
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+com.yonasadiel
+    |
+    |   io.github.cdimascio.dotenv
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+com.yonasadiel.city
+    |
+    |   com.opencsv
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+com.yonasadiel.city.listeners
+    |
+    |   com.yonasadiel.city
+    |   com.opencsv
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+com.yonasadiel.city.views
+    |
+    |   com.yonasadiel.city
+    |   com.opencsv
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+com.yonasadiel.openweatherapi
+    |
+    |   io.github.cdimascio.dotenv
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+com.yonasadiel.weatherdata
+    |
+    |   com.yonasadiel.city
+    |   com.opencsv
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+com.yonasadiel.weatherdata.listeners
+    |
+    |   com.yonasadiel.weatherdata.views
+    |   com.yonasadiel.weatherdata
+    |   com.yonasadiel.city
+    |   com.opencsv
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+com.yonasadiel.weatherdata.views
+    |
+    |   com.yonasadiel.weatherdata
+    |   com.yonasadiel.city
+    |   com.opencsv
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+io.github.cdimascio.dotenv
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+io.github.cdimascio.dotenv.internal
+    |
+    |   io.github.cdimascio.dotenv
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin
+    |
+    |   kotlin.jvm.functions
+    |-> kotlin
+
+kotlin.collections
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.comparisons
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.concurrent
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.coroutines.experimental
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.coroutines.experimental.intrinsics
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.coroutines.experimental.jvm.internal
+    |
+    |   kotlin.coroutines.experimental
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.internal
+    |
+    |-> kotlin
+    |   kotlin.jvm.functions
+    |-> kotlin
+
+kotlin.internal.contracts
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.io
+    |
+    |   kotlin.collections
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.jvm
+    |
+    |-> kotlin
+    |   kotlin.jvm.functions
+    |-> kotlin
+
+kotlin.jvm.functions
+    |
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.jvm.internal
+    |
+    |   kotlin.reflect
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.math
+    |
+    |   kotlin.jvm.internal
+    |   kotlin.reflect
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.properties
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.ranges
+    |
+    |   kotlin.jvm.internal
+    |   kotlin.reflect
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.reflect
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.sequences
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.system
+    |
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+kotlin.text
+    |
+    |   kotlin.jvm.internal
+    |   kotlin.reflect
+    |-> kotlin.jvm.functions
+    |   kotlin
+    |-> kotlin.jvm.functions
+
+org.apache.commons.beanutils
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.beanutils.converters
+    |
+    |   org.apache.commons.beanutils
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.beanutils.locale
+    |
+    |   org.apache.commons.beanutils
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.beanutils.locale.converters
+    |
+    |   org.apache.commons.beanutils
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections
+    |
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections.bag
+    |
+    |   org.apache.commons.collections
+    |-> org.apache.commons.collections.bag
+
+org.apache.commons.collections.bidimap
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections.buffer
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections.collection
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections.comparators
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections.functors
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections.iterators
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections.keyvalue
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections.list
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections.map
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.collections.set
+    |
+    |-> org.apache.commons.collections
+    |   org.apache.commons.collections.bag
+    |-> org.apache.commons.collections
+
+org.apache.commons.lang3
+    |
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.lang3.builder
+    |
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.lang3.concurrent
+    |
+    |   org.apache.commons.lang3.builder
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.lang3.event
+    |
+    |   org.apache.commons.lang3.reflect
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.lang3.exception
+    |
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.lang3.math
+    |
+    |   org.apache.commons.lang3
+    |-> org.apache.commons.lang3.math
+
+org.apache.commons.lang3.mutable
+    |
+    |-> org.apache.commons.lang3.math
+    |   org.apache.commons.lang3
+    |-> org.apache.commons.lang3.math
+
+org.apache.commons.lang3.reflect
+    |
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.lang3.text
+    |
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.lang3.text.translate
+    |
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.lang3.time
+    |
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.lang3.tuple
+    |
+    |   org.apache.commons.lang3.builder
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.logging
+    |
+    |   org.apache.commons.logging.impl
+    |-> org.apache.commons.logging
+
+org.apache.commons.logging.impl
+    |
+    |   org.apache.commons.logging
+    |-> org.apache.commons.logging.impl
+
+org.apache.commons.text
+    |
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.text.similarity
+    |
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+org.apache.commons.text.translate
+    |
+    |-> org.apache.commons.lang3
+    |   org.apache.commons.lang3.math
+    |-> org.apache.commons.lang3
+
+
+--------------------------------------------------
+- Summary:
+--------------------------------------------------
+
+Name, Class Count, Abstract Class Count, Ca, Ce, A, I, D, V:
+
+Default,1,0,0,5,0,1,0,1
+com.opencsv,14,2,2,10,0.14,0.83,0.02,1
+com.opencsv.bean,24,10,2,19,0.42,0.9,0.32,1
+com.opencsv.bean.concurrent,5,0,1,8,0,0.89,0.11,1
+com.opencsv.bean.customconverter,2,0,0,8,0,1,0,1
+com.opencsv.enums,1,0,2,1,0,0.33,0.67,1
+com.opencsv.exceptions,7,0,3,3,0,0.5,0.5,1
+com.opencsv.stream.reader,1,0,1,2,0,0.67,0.33,1
+com.yonasadiel,4,0,0,9,0,1,0,1
+com.yonasadiel.city,6,0,5,7,0,0.58,0.42,1
+com.yonasadiel.city.listeners,1,0,1,4,0,0.8,0.2,1
+com.yonasadiel.city.views,6,0,1,8,0,0.89,0.11,1
+com.yonasadiel.openweatherapi,2,0,1,10,0,0.91,0.09,1
+com.yonasadiel.weatherdata,9,0,3,5,0,0.62,0.38,1
+com.yonasadiel.weatherdata.exceptions,1,0,1,1,0,0.5,0.5,1
+com.yonasadiel.weatherdata.listeners,1,0,1,4,0,0.8,0.2,1
+com.yonasadiel.weatherdata.views,5,0,2,10,0,0.83,0.17,1
+io.github.cdimascio.dotenv,8,1,3,8,0.12,0.73,0.15,1
+io.github.cdimascio.dotenv.internal,6,0,1,12,0,0.92,0.08,1
+java.awt,0,0,19,0,0,0,1,1
+java.awt.event,0,0,8,0,0,0,1,1
+java.awt.font,0,0,1,0,0,0,1,1
+java.awt.geom,0,0,1,0,0,0,1,1
+java.awt.image,0,0,2,0,0,0,1,1
+java.beans,0,0,8,0,0,0,1,1
+java.io,0,0,41,0,0,0,1,1
+java.lang,0,0,90,0,0,0,1,1
+java.lang.annotation,0,0,11,0,0,0,1,1
+java.lang.ref,0,0,5,0,0,0,1,1
+java.lang.reflect,0,0,25,0,0,0,1,1
+java.math,0,0,8,0,0,0,1,1
+java.net,0,0,9,0,0,0,1,1
+java.nio,0,0,2,0,0,0,1,1
+java.nio.charset,0,0,4,0,0,0,1,1
+java.nio.file,0,0,1,0,0,0,1,1
+java.security,0,0,5,0,0,0,1,1
+java.sql,0,0,5,0,0,0,1,1
+java.text,0,0,13,0,0,0,1,1
+java.util,0,0,58,0,0,0,1,1
+java.util.concurrent,0,0,9,0,0,0,1,1
+java.util.concurrent.atomic,0,0,4,0,0,0,1,1
+java.util.concurrent.locks,0,0,1,0,0,0,1,1
+java.util.logging,0,0,4,0,0,0,1,1
+java.util.regex,0,0,8,0,0,0,1,1
+java.util.stream,0,0,1,0,0,0,1,1
+javax.imageio,0,0,1,0,0,0,1,1
+javax.servlet,0,0,1,0,0,0,1,1
+javax.swing,0,0,20,0,0,0,1,1
+javax.swing.border,0,0,4,0,0,0,1,1
+javax.swing.plaf,0,0,12,0,0,0,1,1
+javax.swing.plaf.basic,0,0,13,0,0,0,1,1
+javax.swing.table,0,0,1,0,0,0,1,1
+javax.swing.text,0,0,2,0,0,0,1,1
+javax.swing.tree,0,0,1,0,0,0,1,1
+javax.xml.datatype,0,0,1,0,0,0,1,1
+kotlin,49,12,16,11,0.24,0.41,0.35,1
+kotlin.annotation,6,4,0,2,0.67,1,0.67,1
+kotlin.collections,118,20,8,18,0.17,0.69,0.14,1
+kotlin.comparisons,20,0,2,5,0,0.71,0.29,1
+kotlin.concurrent,5,0,0,5,0,1,0,1
+kotlin.coroutines.experimental,24,8,4,11,0.33,0.73,0.07,1
+kotlin.coroutines.experimental.intrinsics,5,0,4,6,0,0.6,0.4,1
+kotlin.coroutines.experimental.jvm.internal,2,1,4,5,0.5,0.56,0.06,1
+kotlin.experimental,1,0,0,1,0,1,0,1
+kotlin.internal,16,12,4,6,0.75,0.6,0.35,1
+kotlin.internal.contracts,10,7,0,3,0.7,1,0.7,1
+kotlin.io,37,2,0,15,0.05,1,0.05,1
+kotlin.jvm,18,16,1,5,0.89,0.83,0.72,1
+kotlin.jvm.functions,23,23,16,2,1,0.11,0.11,1
+kotlin.jvm.internal,75,14,19,10,0.19,0.34,0.47,1
+kotlin.jvm.internal.markers,9,9,7,1,1,0.12,0.12,1
+kotlin.jvm.internal.unsafe,1,0,0,1,0,1,0,1
+kotlin.math,1,0,0,2,0,1,0,1
+kotlin.properties,7,3,0,4,0.43,1,0.43,1
+kotlin.ranges,25,2,4,6,0.08,0.6,0.32,1
+kotlin.reflect,37,26,7,5,0.7,0.42,0.12,1
+kotlin.sequences,65,2,4,13,0.03,0.76,0.2,1
+kotlin.system,2,0,0,3,0,1,0,1
+kotlin.text,63,4,5,15,0.06,0.75,0.19,1
+mdlaf,1,0,2,17,0,0.89,0.11,1
+mdlaf.animation,2,0,1,5,0,0.83,0.17,1
+mdlaf.components.button,1,0,1,5,0,0.83,0.17,1
+mdlaf.components.checkbox,1,0,1,5,0,0.83,0.17,1
+mdlaf.components.label,1,0,1,5,0,0.83,0.17,1
+mdlaf.components.menu,1,0,1,5,0,0.83,0.17,1
+mdlaf.components.menubar,1,0,1,5,0,0.83,0.17,1
+mdlaf.components.menuitem,1,0,1,5,0,0.83,0.17,1
+mdlaf.components.panel,1,0,1,5,0,0.83,0.17,1
+mdlaf.components.password,6,0,1,9,0,0.9,0.1,1
+mdlaf.components.spinner,1,0,1,6,0,0.86,0.14,1
+mdlaf.components.table,5,0,1,8,0,0.89,0.11,1
+mdlaf.components.textfield,5,0,4,9,0,0.69,0.31,1
+mdlaf.components.tree,4,0,1,9,0,0.9,0.1,1
+mdlaf.resources,5,0,13,10,0,0.43,0.57,1
+mdlaf.shadows,2,0,1,7,0,0.88,0.12,1
+org.apache.avalon.framework.logger,0,0,1,0,0,0,1,1
+org.apache.commons.beanutils,76,9,5,16,0.12,0.76,0.12,1
+org.apache.commons.beanutils.converters,34,4,2,10,0.12,0.83,0.05,1
+org.apache.commons.beanutils.expression,2,1,2,1,0.5,0.33,0.17,1
+org.apache.commons.beanutils.locale,11,2,2,12,0.18,0.86,0.04,1
+org.apache.commons.beanutils.locale.converters,14,0,1,8,0,0.89,0.11,1
+org.apache.commons.collections,139,28,14,18,0.2,0.56,0.24,1
+org.apache.commons.collections.bag,18,3,1,9,0.17,0.9,0.07,1
+org.apache.commons.collections.bidimap,27,5,0,9,0.19,1,0.19,1
+org.apache.commons.collections.buffer,16,1,1,7,0.06,0.88,0.06,1
+org.apache.commons.collections.collection,10,3,7,8,0.3,0.53,0.17,1
+org.apache.commons.collections.comparators,7,0,2,4,0,0.67,0.33,1
+org.apache.commons.collections.functors,52,1,8,6,0.02,0.43,0.55,1
+org.apache.commons.collections.iterators,36,1,8,6,0.03,0.43,0.54,1
+org.apache.commons.collections.keyvalue,8,3,4,4,0.38,0.5,0.12,1
+org.apache.commons.collections.list,29,3,5,10,0.1,0.67,0.23,1
+org.apache.commons.collections.map,99,8,2,12,0.08,0.86,0.06,1
+org.apache.commons.collections.set,19,4,5,8,0.21,0.62,0.17,1
+org.apache.commons.lang3,50,2,17,16,0.04,0.48,0.48,1
+org.apache.commons.lang3.arch,3,0,1,1,0,0.5,0.5,1
+org.apache.commons.lang3.builder,44,7,5,8,0.16,0.62,0.23,1
+org.apache.commons.lang3.concurrent,37,10,0,7,0.27,1,0.27,1
+org.apache.commons.lang3.event,4,0,0,7,0,1,0,1
+org.apache.commons.lang3.exception,6,1,2,6,0.17,0.75,0.08,1
+org.apache.commons.lang3.math,3,0,2,4,0,0.67,0.33,1
+org.apache.commons.lang3.mutable,9,1,1,4,0.11,0.8,0.09,1
+org.apache.commons.lang3.reflect,14,3,3,6,0.21,0.67,0.12,1
+org.apache.commons.lang3.text,21,3,1,8,0.14,0.89,0.03,1
+org.apache.commons.lang3.text.translate,13,2,1,4,0.15,0.8,0.05,1
+org.apache.commons.lang3.time,57,8,0,8,0.14,1,0.14,1
+org.apache.commons.lang3.tuple,6,2,2,4,0.33,0.67,0,1
+org.apache.commons.logging,10,2,5,7,0.2,0.58,0.22,1
+org.apache.commons.logging.impl,18,0,1,13,0,0.93,0.07,1
+org.apache.commons.text,35,7,2,9,0.2,0.82,0.02,1
+org.apache.commons.text.diff,10,3,0,2,0.3,1,0.3,1
+org.apache.commons.text.similarity,19,3,0,4,0.16,1,0.16,1
+org.apache.commons.text.translate,17,3,1,5,0.18,0.83,0.01,1
+org.apache.log,0,0,1,0,0,0,1,1
+org.apache.log4j,0,0,1,0,0,0,1,1
+org.intellij.lang.annotations,25,23,0,2,0.92,1,0.92,1
+org.jetbrains.annotations,7,7,0,2,1,1,1,1
+org.json,23,1,1,6,0.04,0.86,0.1,1
+org.junit,0,0,2,0,0,0,1,1

@@ -67,7 +67,9 @@ This program works with IntelliJ IDEA and Maven. Below are description for Maven
 
     mvn exec:java -Dexec.mainClass="com.yonasadiel.WeatherForecast"
 
-### Dependencies
+## Dependencies
+
+[JDepend Result](jdepend.txt)
 
 * [material-ui-swing:0.9.2.6](https://github.com/atarw/material-ui-swing)
 * [java-dotenv:3.1.1](https://github.com/cdimascio/java-dotenv)
