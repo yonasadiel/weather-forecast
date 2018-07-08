@@ -67,14 +67,10 @@ This program works with IntelliJ IDEA and Maven. Below are description for Maven
 
     mvn exec:java -Dexec.mainClass="com.yonasadiel.WeatherForecast"
 
-## Checklist
+### Dependencies
 
-### To Do
-* all of exception
-* unit test
-
-### Done
-* `openweatherapi` package
-* `city` package
-* `weatherdata` package
-* Java Swing GUI
+* [material-ui-swing:0.9.2.6](https://github.com/atarw/material-ui-swing)
+* [java-dotenv:3.1.1](https://github.com/cdimascio/java-dotenv)
+* json:20180130
+* opencsv:4.0
+* junit:4.12
