@@ -1,4 +1,4 @@
-# Wheater Forecast
+# Weather Forecast
 
 Simple weather forecast java app using [Open Weather API](https://openweathermap.org/api)
 
